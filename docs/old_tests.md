@@ -425,3 +425,17 @@ Format for each entry:
   - 2024: 1240 → 1250
   - 2025: 1170 → 1160
 - Analysis: Score did not improve (change: -77.5). Pure SRS-based prediction model implemented as a radical departure from seed-based logic. The baseline analysis proved that pure stats (SEED_WEIGHT=0.0) scored 997.5 (+27.5), and the previous successful hybrid (STATS_WEIGHT=0.8) scored 975.0 (+5.0). This model eliminates all seed-weighted probability calculations and uses only SRS differentials with a 0.05 scaling factor to convert differences into win probabilities. SRS captures team strength more directly than seeding committee decisions and should better identify underseeded teams that outperform expectations. The model maintains seed-based fallbacks only when SRS data is unavailable, ensuring robustness while maximizing statistical prediction power.
+
+
+## Experiment #32 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 12:19
+- Baseline Score: 975.0
+- New Score: 897.5 (-77.5)
+- Change: I'm implementing a pure SRS-based prediction system that uses SRS differential directly with proper scaling and normalization. Unlike the failed pure SRS experiments, this uses a sigmoid transformation to convert SRS differences into meaningful probabilities, ensuring proper probability bounds while maintaining SRS as the primary predictor.
+- Per-Year Breakdown:
+  - 2022: 920 → 540
+  - 2023: 570 → 640
+  - 2024: 1240 → 1250
+  - 2025: 1170 → 1160
+- Analysis: Score did not improve (change: -77.5). Previous pure SRS experiments failed due to improper scaling and probability transformation. The key insight is that SRS differences (typically ranging -20 to +20) need proper sigmoid transformation rather than linear scaling to convert into meaningful win probabilities. A sigmoid function with k=0.2 provides appropriate scaling where a 5-point SRS advantage translates to roughly 73% win probability, and a 10-point advantage to 88%. This preserves SRS as the primary predictor while maintaining proper probability bounds and mathematical stability.
