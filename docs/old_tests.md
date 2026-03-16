@@ -1596,3 +1596,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Multiple experiments with scaling factors from 0.05 to 0.50 consistently showed minimal impact (+0.0 results), suggesting the fundamental issue may not be scaling alone but rather the magnitude of performance score differences between teams. The composite system successfully improved scores by +77.5 initially, but subsequent optimizations hit a scaling threshold where statistical differences aren't large enough to flip game outcomes regardless of the scaling factor used. This indicates that creating larger performance score gaps between teams (through adjusted weights or bonuses) may be more effective than simply scaling existing small differences more aggressively.
+
+
+## Experiment #115 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 18:06
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a defensive rating bonus for tournament-proven teams by adding significant performance score boosts (+0.4) to teams with both strong SRS ratings (>8) AND solid defensive efficiency (def_rtg < 108). This combination identifies teams with overall strength and defensive capability, which historically correlates with tournament success. The bonus should create larger performance score gaps and help identify teams that can advance deeper than their seeds suggest, especially valuable in high-value later rounds.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams with both strong SRS ratings (>8) AND solid defensive efficiency (def_rtg < 108) represent a combination that should be highly predictive of tournament success. Defense becomes increasingly important in tournament play where possessions are limited and games are often decided by stops. The dual criteria identify teams that have both demonstrated overall statistical strength throughout the season and possess the defensive capability to limit opponents, which is essential for advancing deep in tournament play. The +0.4 performance bonus is substantial enough to create meaningful score gaps and should help these well-rounded teams win more head-to-head matchups, particularly valuable in later rounds where the 95% performance weighting makes this bonus highly influential.
