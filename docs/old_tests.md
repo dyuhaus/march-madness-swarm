@@ -607,3 +607,17 @@ Format for each entry:
   - 2024: 1290 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams that reach the championship game have proven themselves through 5 rounds of elimination games, making their regular season statistics extremely predictive compared to initial seeding decisions. The championship game represents the single highest-value decision (320 points = 1/6 of total bracket), so maximizing stats influence (95%) while minimizing seed influence (5%) in this specific game could significantly improve overall bracket performance. This surgical approach targets only the championship while preserving the proven 90% stats weight for all other rounds.
+
+
+## Experiment #45 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 12:27
+- Baseline Score: 1052.5
+- New Score: 910.0 (-142.5)
+- Change: I'm implementing a dramatic increase in the SRS weighting within the composite performance score system from 0.6 to 1.2, while reducing other factors proportionally. Previous experiments proved that SRS is the strongest single predictor (+27.5 with pure stats), and the composite system already improved scores by +77.5. This maximizes SRS influence while maintaining the proven architectural framework.
+- Per-Year Breakdown:
+  - 2022: 620 → 580
+  - 2023: 1120 → 630
+  - 2024: 1290 → 1250
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -142.5). The composite performance score system represents the most successful architectural change so far (+77.5 improvement). SRS has been consistently identified as the strongest single predictor across all experiments, and doubling its weight from 0.6 to 1.2 while proportionally reducing other factors should maximize its predictive power within the proven framework. This approach avoids the architectural failures of pure SRS models while pushing SRS influence to dominate the composite calculation.
