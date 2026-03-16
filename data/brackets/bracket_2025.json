@@ -62,14 +62,14 @@
       "round_num": 0,
       "round": "Round of 64",
       "team1": {
-        "name": "BYU",
+        "name": "Brigham Young",
         "seed": 6
       },
       "team2": {
-        "name": "VCU",
+        "name": "Virginia Commonwealth",
         "seed": 11
       },
-      "winner": "BYU"
+      "winner": "Brigham Young"
     },
     {
       "game_id": 5,
@@ -286,14 +286,14 @@
       "round_num": 0,
       "round": "Round of 64",
       "team1": {
-        "name": "Ole Miss",
+        "name": "Mississippi",
         "seed": 6
       },
       "team2": {
         "name": "North Carolina",
         "seed": 11
       },
-      "winner": "Ole Miss"
+      "winner": "Mississippi"
     },
     {
       "game_id": 21,
@@ -482,14 +482,14 @@
       "round_num": 1,
       "round": "Round of 32",
       "team1": {
-        "name": "BYU",
+        "name": "Brigham Young",
         "seed": 6
       },
       "team2": {
         "name": "Wisconsin",
         "seed": 3
       },
-      "winner": "BYU"
+      "winner": "Brigham Young"
     },
     {
       "game_id": 35,
@@ -594,14 +594,14 @@
       "round_num": 1,
       "round": "Round of 32",
       "team1": {
-        "name": "Ole Miss",
+        "name": "Mississippi",
         "seed": 6
       },
       "team2": {
         "name": "Iowa State",
         "seed": 3
       },
-      "winner": "Ole Miss"
+      "winner": "Mississippi"
     },
     {
       "game_id": 43,
@@ -692,7 +692,7 @@
       "round_num": 2,
       "round": "Sweet 16",
       "team1": {
-        "name": "BYU",
+        "name": "Brigham Young",
         "seed": 6
       },
       "team2": {
@@ -748,7 +748,7 @@
       "round_num": 2,
       "round": "Sweet 16",
       "team1": {
-        "name": "Ole Miss",
+        "name": "Mississippi",
         "seed": 6
       },
       "team2": {

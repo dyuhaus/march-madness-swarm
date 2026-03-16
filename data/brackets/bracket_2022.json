@@ -174,7 +174,7 @@
       "round_num": 0,
       "round": "Round of 64",
       "team1": {
-        "name": "LSU",
+        "name": "Louisiana State",
         "seed": 6
       },
       "team2": {
@@ -202,7 +202,7 @@
       "round_num": 0,
       "round": "Round of 64",
       "team1": {
-        "name": "USC",
+        "name": "Southern California",
         "seed": 7
       },
       "team2": {
@@ -318,7 +318,7 @@
         "seed": 7
       },
       "team2": {
-        "name": "Loyola Chicago",
+        "name": "Loyola (IL)",
         "seed": 10
       },
       "winner": "Ohio State"

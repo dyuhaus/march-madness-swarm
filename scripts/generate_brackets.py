@@ -43,9 +43,9 @@ def make_2022():
         g(9,  0, "San Diego State", 8, "Creighton", 9, "Creighton"),
         g(10, 0, "Iowa", 5, "Richmond", 12, "Richmond"),
         g(11, 0, "Providence", 4, "South Dakota State", 13, "Providence"),
-        g(12, 0, "LSU", 6, "Iowa State", 11, "Iowa State"),
+        g(12, 0, "Louisiana State", 6, "Iowa State", 11, "Iowa State"),
         g(13, 0, "Wisconsin", 3, "Colgate", 14, "Wisconsin"),
-        g(14, 0, "USC", 7, "Miami (FL)", 10, "Miami (FL)"),
+        g(14, 0, "Southern California", 7, "Miami (FL)", 10, "Miami (FL)"),
         g(15, 0, "Auburn", 2, "Jacksonville State", 15, "Auburn"),
         # === SOUTH REGION (1 Arizona) === Round of 64 (games 16-23)
         g(16, 0, "Arizona", 1, "Wright State", 16, "Arizona"),
@@ -54,7 +54,7 @@ def make_2022():
         g(19, 0, "Illinois", 4, "Chattanooga", 13, "Illinois"),
         g(20, 0, "Colorado State", 6, "Michigan", 11, "Michigan"),
         g(21, 0, "Tennessee", 3, "Longwood", 14, "Tennessee"),
-        g(22, 0, "Ohio State", 7, "Loyola Chicago", 10, "Ohio State"),
+        g(22, 0, "Ohio State", 7, "Loyola (IL)", 10, "Ohio State"),
         g(23, 0, "Villanova", 2, "Delaware", 15, "Villanova"),
         # === WEST REGION (1 Gonzaga) === Round of 64 (games 24-31)
         g(24, 0, "Gonzaga", 1, "Georgia State", 16, "Gonzaga"),
@@ -129,7 +129,7 @@ def make_2023():
         g(3,  0, "Tennessee", 4, "Louisiana", 13, "Tennessee"),
         g(4,  0, "Kentucky", 6, "Providence", 11, "Kentucky"),
         g(5,  0, "Kansas State", 3, "Montana State", 14, "Kansas State"),
-        g(6,  0, "Michigan State", 7, "USC", 10, "Michigan State"),
+        g(6,  0, "Michigan State", 7, "Southern California", 10, "Michigan State"),
         g(7,  0, "Marquette", 2, "Vermont", 15, "Marquette"),
         # === MIDWEST REGION (1 Houston) === Round of 64 (games 8-15)
         g(8,  0, "Houston", 1, "Northern Kentucky", 16, "Houston"),
@@ -152,7 +152,7 @@ def make_2023():
         # === WEST REGION (1 Kansas) === Round of 64 (games 24-31)
         g(24, 0, "Kansas", 1, "Howard", 16, "Kansas"),
         g(25, 0, "Arkansas", 8, "Illinois", 9, "Arkansas"),
-        g(26, 0, "Saint Mary's", 5, "VCU", 12, "Saint Mary's"),
+        g(26, 0, "Saint Mary's", 5, "Virginia Commonwealth", 12, "Saint Mary's"),
         g(27, 0, "Connecticut", 4, "Iona", 13, "Connecticut"),
         g(28, 0, "TCU", 6, "Arizona State", 11, "TCU"),
         g(29, 0, "Gonzaga", 3, "Grand Canyon", 14, "Gonzaga"),
@@ -220,7 +220,7 @@ def make_2024():
         g(1,  0, "Florida Atlantic", 8, "Northwestern", 9, "Northwestern"),
         g(2,  0, "San Diego State", 5, "UAB", 12, "San Diego State"),
         g(3,  0, "Auburn", 4, "Yale", 13, "Yale"),
-        g(4,  0, "BYU", 6, "Duquesne", 11, "Duquesne"),
+        g(4,  0, "Brigham Young", 6, "Duquesne", 11, "Duquesne"),
         g(5,  0, "Illinois", 3, "Morehead State", 14, "Illinois"),
         g(6,  0, "Washington State", 7, "Drake", 10, "Washington State"),
         g(7,  0, "Iowa State", 2, "South Dakota State", 15, "Iowa State"),
@@ -313,7 +313,7 @@ def make_2025():
         g(1,  0, "Mississippi State", 8, "Baylor", 9, "Baylor"),
         g(2,  0, "Oregon", 5, "Liberty", 12, "Oregon"),
         g(3,  0, "Arizona", 4, "Akron", 13, "Arizona"),
-        g(4,  0, "BYU", 6, "VCU", 11, "BYU"),
+        g(4,  0, "Brigham Young", 6, "Virginia Commonwealth", 11, "Brigham Young"),
         g(5,  0, "Wisconsin", 3, "Montana", 14, "Wisconsin"),
         g(6,  0, "Saint Mary's", 7, "Vanderbilt", 10, "Saint Mary's"),
         g(7,  0, "Alabama", 2, "Robert Morris", 15, "Alabama"),
@@ -331,7 +331,7 @@ def make_2025():
         g(17, 0, "Louisville", 8, "Creighton", 9, "Creighton"),
         g(18, 0, "Michigan", 5, "UC San Diego", 12, "Michigan"),
         g(19, 0, "Texas A&M", 4, "Yale", 13, "Texas A&M"),
-        g(20, 0, "Ole Miss", 6, "North Carolina", 11, "Ole Miss"),
+        g(20, 0, "Mississippi", 6, "North Carolina", 11, "Mississippi"),
         g(21, 0, "Iowa State", 3, "Lipscomb", 14, "Iowa State"),
         g(22, 0, "Marquette", 7, "New Mexico", 10, "New Mexico"),
         g(23, 0, "Michigan State", 2, "Bryant", 15, "Michigan State"),
@@ -348,7 +348,7 @@ def make_2025():
         # === EAST Round of 32 (games 32-35) ===
         g(32, 1, "Duke", 1, "Baylor", 9, "Duke"),
         g(33, 1, "Oregon", 5, "Arizona", 4, "Arizona"),
-        g(34, 1, "BYU", 6, "Wisconsin", 3, "BYU"),
+        g(34, 1, "Brigham Young", 6, "Wisconsin", 3, "Brigham Young"),
         g(35, 1, "Saint Mary's", 7, "Alabama", 2, "Alabama"),
         # === MIDWEST Round of 32 (games 36-39) ===
         g(36, 1, "Houston", 1, "Gonzaga", 8, "Houston"),
@@ -358,7 +358,7 @@ def make_2025():
         # === SOUTH Round of 32 (games 40-43) ===
         g(40, 1, "Auburn", 1, "Creighton", 9, "Auburn"),
         g(41, 1, "Michigan", 5, "Texas A&M", 4, "Michigan"),
-        g(42, 1, "Ole Miss", 6, "Iowa State", 3, "Ole Miss"),
+        g(42, 1, "Mississippi", 6, "Iowa State", 3, "Mississippi"),
         g(43, 1, "New Mexico", 10, "Michigan State", 2, "Michigan State"),
         # === WEST Round of 32 (games 44-47) ===
         g(44, 1, "Florida", 1, "Connecticut", 8, "Florida"),
@@ -368,13 +368,13 @@ def make_2025():
 
         # === EAST Sweet 16 (games 48-49) ===
         g(48, 2, "Duke", 1, "Arizona", 4, "Duke"),
-        g(49, 2, "BYU", 6, "Alabama", 2, "Alabama"),
+        g(49, 2, "Brigham Young", 6, "Alabama", 2, "Alabama"),
         # === MIDWEST Sweet 16 (games 50-51) ===
         g(50, 2, "Houston", 1, "Purdue", 4, "Houston"),
         g(51, 2, "Kentucky", 3, "Tennessee", 2, "Tennessee"),
         # === SOUTH Sweet 16 (games 52-53) ===
         g(52, 2, "Auburn", 1, "Michigan", 5, "Auburn"),
-        g(53, 2, "Ole Miss", 6, "Michigan State", 2, "Michigan State"),
+        g(53, 2, "Mississippi", 6, "Michigan State", 2, "Michigan State"),
         # === WEST Sweet 16 (games 54-55) ===
         g(54, 2, "Florida", 1, "Maryland", 4, "Florida"),
         g(55, 2, "Texas Tech", 3, "Arkansas", 10, "Texas Tech"),
