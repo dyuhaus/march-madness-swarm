@@ -2090,3 +2090,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Round-specific performance scaling represents a dual approach to the persistent +0.0 result pattern. The key insight is that (1) the base scaling factor of 0.05 appears too conservative to allow statistical differences to cross the 0.5 decision threshold, and (2) later rounds are worth dramatically more points (Final Four + Championship = 50% of bracket value), making statistical accuracy increasingly critical. By implementing progressive scaling from 0.10 in early rounds to 0.25 in the championship, this targets both the general scaling bottleneck and maximizes impact in the highest-value games where proven statistical advantages should be most decisive.
+
+
+## Experiment #145 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 18:26
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a tournament championship excellence bonus system that gives substantial performance score boosts to teams with elite SRS ratings (>10), recognizing that historically dominant teams often outperform their seeding in high-pressure tournament situations. This targets identifying championship-caliber teams that can advance deeper than their seeds suggest, particularly valuable in later rounds where the 95% performance weighting makes this bonus highly influential.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams with elite SRS ratings (>10) represent historically dominant programs that often outperform their tournament seeding. The championship excellence bonus system recognizes that truly elite teams with SRS values significantly above average (10+ represents roughly top 15-20 nationally) have shown consistent ability to win high-pressure tournament games regardless of matchup or round. This approach targets identifying championship-caliber teams early and giving them appropriate advantages in the performance-weighted system, especially valuable in later rounds where the 95% performance weighting makes statistical excellence more decisive.
