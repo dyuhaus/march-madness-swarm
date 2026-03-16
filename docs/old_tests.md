@@ -1792,3 +1792,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams with 30+ wins represent sustained excellence throughout a long season and historically outperform their tournament seeding. This single-criterion bonus system avoids the complexity issues that caused previous multi-criteria bonuses to fail, while targeting teams that have proven consistency and durability - key factors for deep tournament runs where mental toughness and execution under pressure become paramount. The substantial +0.6 performance score bonus should create larger gaps between proven winners and average teams, making the composite system more likely to flip outcomes where sustained excellence should predict tournament success.
+
+
+## Experiment #127 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 18:14
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a championship-focused round-specific performance weighting system that dramatically increases the composite performance score influence from 95% to 99.5% specifically in the championship game (round 5). The championship alone is worth 320 points (1/6 of total bracket value), and teams reaching the final have proven themselves through 5 elimination rounds. This surgical targeting of only the highest-value single game should maximize statistical accuracy where it matters most, while preserving the current successful weighting for all other rounds.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams reaching the championship game have proven themselves through 5 rounds of elimination, making their regular season statistical performance extremely predictive compared to initial seeding decisions. The championship represents the single highest-value decision (320 points = 1/6 of total bracket), so surgical optimization targeting only this game with extreme statistical weighting (99.5%) while preserving proven weights elsewhere may be the key to breaking through scoring plateaus.
