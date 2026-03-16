@@ -495,3 +495,17 @@ Format for each entry:
   - 2024: 1240 → 1290
   - 2025: 1170 → 1180
 - Analysis: Score improved by 77.5 points. Composite performance scoring represents a different approach than previous experiments - instead of adjusting seed-based probabilities with individual stat factors, this creates a unified team strength metric combining multiple statistics. The key insight is that SRS (0.6 weight) captures overall team quality, while offensive efficiency, rebounding, and turnover rates provide complementary performance indicators. This should better identify teams that significantly outperform or underperform their seeding, particularly important for capturing high-value upset predictions in later rounds.
+
+
+## Experiment #37 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 12:23
+- Baseline Score: 1052.5
+- New Score: 1045.0 (-7.5)
+- Change: I'm implementing a round-specific performance weighting system that dramatically increases the performance score influence in later rounds (up to 95% in championship) while reducing it in early rounds. This targets the highest-value games where teams have proven themselves through elimination and statistical performance becomes more predictive than initial seeding.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1270
+  - 2025: 1180 → 1170
+- Analysis: Score did not improve (change: -7.5). Teams that advance to later rounds have proven themselves through elimination games, making their regular season statistics more predictive than initial seeding. The Final Four (480 points total) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing accuracy in these rounds through round-specific performance weighting could significantly improve overall bracket performance. This approach gradually increases stats influence from 70% in early rounds to 95% in the championship, recognizing that by later rounds, traditional seeding becomes less reliable as weaker teams have been eliminated.
