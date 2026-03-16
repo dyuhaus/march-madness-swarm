@@ -719,3 +719,17 @@ Format for each entry:
   - 2024: 1290 → 1270
   - 2025: 1180 → 1170
 - Analysis: Score did not improve (change: -7.5). Teams that advance to later rounds have proven themselves through elimination games, making their regular season statistics more predictive than initial seeding decisions. The Final Four (480 points) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing statistical accuracy in these rounds through progressive round-specific weighting could significantly improve overall bracket performance. This approach recognizes that by later rounds, traditional seeding becomes less reliable as weaker teams have been eliminated and execution under pressure becomes paramount.
+
+
+## Experiment #53 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 12:37
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a championship-specific performance weighting system that dramatically increases performance score influence to 98% specifically in the championship game while keeping all other rounds at 90%. Since the championship alone is worth 320 points (1/6 of total bracket) and teams reaching the final have proven themselves through 5 elimination rounds, their statistical performance should almost completely override seeding in this highest-value single game.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The championship game represents the single highest-value decision (320 points = 1/6 of total bracket). Teams that reach the final have proven themselves through 5 rounds of elimination games, making their regular season statistical performance extremely predictive compared to initial seeding decisions. This surgical approach targets only the championship game with extreme stats weighting (98/2) while preserving the proven 90/10 weighting for all other rounds.
