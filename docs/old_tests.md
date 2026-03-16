@@ -803,3 +803,17 @@ Format for each entry:
   - 2024: 1290 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The recent string of +0.0 results suggests that the composite performance score system may need more aggressive scaling to overcome seed-based predictions. The current 0.05 scaling factor appears too conservative - even when teams have meaningfully different statistical profiles, the performance probability may not deviate enough from 0.5 to change outcomes. Increasing the scaling factor should make statistical advantages more decisive while maintaining the proven 90/10 performance/seed weighting structure.
+
+
+## Experiment #59 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 12:41
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a more aggressive performance score scaling factor, increasing it from 0.05 to 0.10 (2x increase). The recent string of +0.0 results suggests that the composite performance score system needs more aggressive scaling to overcome seed-based predictions. Even when teams have meaningfully different statistical profiles, the current scaling may not deviate enough from 0.5 to change game outcomes. This should make statistical advantages more decisive while maintaining the proven 90/10 performance/seed weighting structure.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The recent pattern of multiple +0.0 results with the composite performance score system suggests that statistical differences between teams may not be translating into actual game outcome changes due to insufficient scaling. When teams have meaningfully different performance scores, the probability calculation needs to deviate enough from 0.5 to cross the decision threshold. The scaling factor directly controls how much statistical advantage is required to flip a game outcome, making it a critical parameter for allowing the proven statistical superiority to actually improve predictions.
