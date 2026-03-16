@@ -509,3 +509,31 @@ Format for each entry:
   - 2024: 1290 → 1270
   - 2025: 1180 → 1170
 - Analysis: Score did not improve (change: -7.5). Teams that advance to later rounds have proven themselves through elimination games, making their regular season statistics more predictive than initial seeding. The Final Four (480 points total) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing accuracy in these rounds through round-specific performance weighting could significantly improve overall bracket performance. This approach gradually increases stats influence from 70% in early rounds to 95% in the championship, recognizing that by later rounds, traditional seeding becomes less reliable as weaker teams have been eliminated.
+
+
+## Experiment #38 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 12:23
+- Baseline Score: 1052.5
+- New Score: 1042.5 (-10.0)
+- Change: I'm implementing a "tournament-proven teams" bonus system that gives significant performance score boosts to teams with exceptional regular season dominance (SRS > 15 AND wins > 28). These teams historically outperform their seeds in high-pressure tournament situations, especially in later rounds. This targets identifying true championship contenders that the seeding committee may have undervalued.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1250
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -10.0). Teams with exceptional regular season dominance (SRS > 15 AND wins > 28) represent truly elite programs that often outperform their tournament seeding. These dual criteria identify teams that both dominated statistically and sustained excellence throughout the season. The tournament-proven bonus system recognizes that championship-level teams typically combine statistical dominance with proven consistency, making them more likely to succeed in high-pressure tournament situations regardless of their seed. This should help identify underseeded championship contenders like UConn in 2023 (4-seed that won it all) or other elite teams that the seeding committee may have undervalued.
+
+
+## Experiment #39 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 12:24
+- Baseline Score: 1052.5
+- New Score: 910.0 (-142.5)
+- Change: I'm implementing a SRS-dominant hybrid model that dramatically increases SRS weight from 0.6 to 2.0 within the composite performance score system. Previous experiments showed pure stats models score +27.5 but fail architecturally, while the current composite system (+77.5) successfully improved scores. Since SRS is consistently identified as the strongest predictor of tournament success, massively increasing its influence while maintaining the proven composite framework should capture more statistical advantage.
+- Per-Year Breakdown:
+  - 2022: 620 → 580
+  - 2023: 1120 → 630
+  - 2024: 1290 → 1250
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -142.5). SRS weight dramatically increased from 0.6 to 2.0 within the proven composite performance score framework. This builds on the successful +77.5 improvement from the composite model while maximizing the influence of SRS, which has been consistently identified as the strongest single predictor of tournament success. The approach maintains the architectural stability that pure SRS models lacked while pushing SRS influence to dominate the composite score calculation.
