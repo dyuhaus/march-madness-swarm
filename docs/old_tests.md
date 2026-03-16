@@ -215,3 +215,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Championship game strategy tested - implementing a hard rule that always picks 1-seeds over non-1-seeds in the championship game (round 5). This bypasses all other probability calculations and stats adjustments for this specific scenario. The logic is that the championship game is worth 320 points (1/6 of total bracket value) and represents the single highest-leverage decision in the entire bracket. Since 1-seeds have historically won about 50% of championships and are the most likely to reach the final game, this aggressive strategy maximizes our probability of getting the highest-value game correct, even if it means sacrificing some nuance in prediction.
+
+
+## Experiment #17 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 11:53
+- Baseline Score: 970.0
+- New Score: 960.0 (-10.0)
+- Change: I'm implementing a multi-tiered upset protection system that significantly reduces upset probabilities for 1-2 seeds in early rounds while being more aggressive about picking 1-2 seeds to advance in later rounds. This targets the high-value late rounds where 1-2 seeds historically perform well, while reducing early-round upset picks that may be over-aggressive.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 540
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: -10.0). Added a new elite seed protection system that recognizes two key patterns: (1) 1-2 seeds almost never lose to 10+ seeds in early rounds (R64/R32), which prevents over-aggressive upset picks, and (2) 1-2 seeds have strong advantages over 3+ seeds in later rounds (Sweet 16+), which maximizes high-value game accuracy. This system overrides normal probability calculations when these protection rules apply, creating a tiered approach that balances conservative early-round picks with aggressive late-round favoritism toward top seeds.
