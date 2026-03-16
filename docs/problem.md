@@ -92,6 +92,8 @@ To improve further from 997.5, consider:
 
 - Previous experiments revealed that dramatically increasing SRS weight beyond 1.0 consistently caused significant score drops (-140+ points), suggesting the current 0.6 weight may be near optimal. Effective field goal percentage is a proven tournament predictor that measures shooting efficiency under pressure, which becomes increasingly important in later rounds where shot quality and execution matter most. This balanced approach maintains SRS as the primary factor while recognizing that shooting efficiency may be underweighted in the current system.
 
+- The composite performance score system has been highly successful (+77.5 improvement), proving that comprehensive statistical analysis significantly outperforms seed-based predictions. However, recent experiments consistently scored +0.0, suggesting that the 90/10 performance/seed weighting may have reached a local optimum. Moving closer to pure statistical prediction (95/5) should capture more of the proven statistical advantage while maintaining minimal architectural stability through seed fallbacks. This targets the fundamental insight that stats are dramatically better predictors than seeds, as demonstrated by the theoretical +27.5 improvement from pure stats models.
+
 ## Open Questions
 
 - What SPECIFIC games does the algorithm get wrong? (Run verbose test to find out)

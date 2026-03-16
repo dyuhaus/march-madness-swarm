@@ -1447,3 +1447,17 @@ Format for each entry:
   - 2024: 1320 → 1330
   - 2025: 1180 → 1170
 - Analysis: Score did not improve (change: -85.0). The composite performance score system works well but needs better factor weighting to create larger performance differences between teams. Making SRS and effective field goal percentage equal primary factors (0.35 each) while increasing turnover rate importance to -0.25 should create more decisive statistical differences that can overcome the 0.5 threshold and flip game outcomes where superior teams should win.
+
+
+## Experiment #105 — PASS
+- Agent: agent-3
+- Date: 2026-03-16 14:22
+- Baseline Score: 1067.5
+- New Score: 1070.0 (+2.5)
+- Change: I'm implementing a dramatic shift toward stats-dominant prediction by reducing SEED_WEIGHT from 0.1 to 0.05 and increasing PERFORMANCE_WEIGHT from 0.9 to 0.95. Previous experiments proved that pure stats (SEED_WEIGHT=0.0) would score +27.5 if implemented correctly, and the current composite system already achieved +77.5 improvement. This pushes even closer to pure statistical prediction while maintaining minimal seed fallback for architectural stability.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score improved by 2.5 points. The composite performance score system has been highly successful (+77.5 improvement), proving that comprehensive statistical analysis significantly outperforms seed-based predictions. However, recent experiments consistently scored +0.0, suggesting that the 90/10 performance/seed weighting may have reached a local optimum. Moving closer to pure statistical prediction (95/5) should capture more of the proven statistical advantage while maintaining minimal architectural stability through seed fallbacks. This targets the fundamental insight that stats are dramatically better predictors than seeds, as demonstrated by the theoretical +27.5 improvement from pure stats models.

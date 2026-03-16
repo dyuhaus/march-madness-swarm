@@ -26,8 +26,8 @@ Current approach: Composite performance score with seed fallback.
 # =============================================================================
 
 # How much to weight composite performance score vs seeds
-PERFORMANCE_WEIGHT = 0.9
-SEED_WEIGHT = 0.1
+PERFORMANCE_WEIGHT = 0.95
+SEED_WEIGHT = 0.05
 
 # Seed advantage: higher seed (lower number) gets this base win probability
 # This is the core of the seed-based model
