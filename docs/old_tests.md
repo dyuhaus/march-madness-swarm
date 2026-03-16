@@ -1251,3 +1251,17 @@ Format for each entry:
   - 2024: 1320 → 1320
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (320 points per game × 2 = 640 points) and Championship (320 points) represent 960 of 1,920 total points (50% of total bracket value), so maximizing statistical accuracy in these highest-value rounds through round-specific performance weighting should be the most impactful optimization strategy. Previous experiments with dramatic round-specific weighting failed, but this focuses specifically on the two highest-leverage rounds where proven teams should matter most.
+
+
+## Experiment #91 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 14:12
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a more aggressive performance score scaling factor, increasing it from 0.05 to 0.12 (2.4x increase). The recent pattern of multiple +0.0 results suggests that statistical differences between teams aren't translating into actual game outcome changes because the current scaling is too conservative. Even when teams have meaningfully different composite performance scores, the probability calculation needs to deviate enough from 0.5 to actually flip game outcomes. This should allow the proven statistical advantages to cross the decision threshold more frequently.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1150
+  - 2024: 1320 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The composite performance score system has been the most successful approach, achieving +77.5 improvement, but subsequent experiments consistently scored +0.0, indicating a fundamental scaling issue. Previous attempts with scaling factors of 0.05, 0.10, 0.15, 0.20, and 0.30 all failed to cross the 0.5 decision threshold for game outcomes. The key insight is that performance score scaling directly controls how much statistical advantage is required to flip a game outcome. A moderate increase to 0.12 (2.4x the original) may be the right balance to make statistical differences meaningful without being too aggressive.
