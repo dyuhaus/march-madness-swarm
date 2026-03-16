@@ -101,7 +101,8 @@ def run_cmd(cmd, cwd=None, capture=True):
 
 def get_current_score():
     """Run the test suite and return the score as a dict."""
-    result = run_cmd(f'"{VENV_PYTHON}" "{RUN_TEST}" --json')
+    # -B disables bytecode caching so modified predict.py is always freshly loaded
+    result = run_cmd(f'"{VENV_PYTHON}" -B "{RUN_TEST}" --json')
     if result.returncode != 0:
         print(f"  Test run failed: {result.stderr}")
         return None

@@ -53,12 +53,20 @@ The seed probability and stats adjustment are combined as a weighted average (70
 
 ### CRITICAL INSIGHT: Why Most Changes Score +0.0
 
-The algorithm is DETERMINISTIC with a 0.5 threshold. Small parameter tweaks don't flip any game outcome because the combined probability stays on the same side of 0.5. To actually change the score, you must either:
-1. Make changes LARGE enough to cross the 0.5 threshold for specific games
-2. Add TEAM-SPECIFIC logic that targets known wrong predictions
-3. Use stat values that create large enough differentials to override seed-based predictions
+The algorithm is DETERMINISTIC with a 0.5 threshold. Small parameter tweaks don't flip any game outcome because the combined probability stays on the same side of 0.5. 25 consecutive experiments proved this: changes like SEED_WEIGHT 0.7->0.5, seed probability 0.65->0.72, and similar small tweaks ALL scored exactly 970.0.
 
-The key is to identify WHICH SPECIFIC GAMES the algorithm gets wrong, then figure out what stat-based or rule-based change would flip those specific predictions.
+### PROVEN IMPROVEMENT: Pure Stats Model Scores 997.5 (+27.5)
+
+Setting SEED_WEIGHT=0.0 and STATS_WEIGHT=1.0 (ignoring seeds entirely, using only team stats) scores 997.5 — a +27.5 improvement. This proves:
+1. SRS and other stats are BETTER predictors than seed-based probabilities
+2. The current 70/30 seed/stats split massively underweights stats
+3. BOLD structural changes work; timid parameter tweaks don't
+
+To improve further from 997.5, consider:
+- Using SRS differential directly as the prediction metric
+- Adding more stat factors (efg_pct, trb_pct, tov_pct)
+- Building a composite "power rating" from multiple stats
+- Using different stat weights for different rounds
 
 ### Successful Strategies
 *(Changes that improved the score)*

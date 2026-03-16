@@ -59,11 +59,12 @@ ESPN Standard Scoring:
 ## How to Think About Changes
 
 ### High-Value Strategies
+- **DRAMATIC changes**: Small parameter tweaks (e.g., 0.65->0.72) score +0.0 because they don't cross the 0.5 decision boundary. You MUST make BOLD changes. For example: changing SEED_WEIGHT from 0.7 to 0.0 (pure stats) improved the score by +27.5 points. Think in terms of 2x-10x changes, not 10% tweaks.
+- **Pure stats model**: Setting SEED_WEIGHT=0.0 and STATS_WEIGHT=1.0 scores 997.5 (+27.5 over baseline 970.0). SRS is the strongest predictor. Consider building around SRS rather than seeds.
 - **Later-round accuracy**: Championship game alone is worth 320 points. Small improvements in predicting Final Four / Elite 8 teams have outsized impact.
-- **Upset calibration**: The 5-12 and 6-11 matchups have the highest upset rates (~35%). If the current algorithm is too conservative or too aggressive on these, fixing it helps.
-- **Stat integration**: If stats are available but underweighted, increasing their influence could help. Key stats: SRS, SOS, offensive/defensive efficiency.
-- **Conference strength**: Teams from power conferences may have different upset profiles.
-- **Seed matchup patterns**: 1-seeds almost never lose in Round 1, but 2-seeds occasionally do. Calibrate probabilities to historical reality.
+- **Restructure the algorithm**: Don't just tweak parameters. Consider entirely new approaches: pure SRS ranking, win_loss_pct-based, multi-stat composite scores, or custom formulas.
+- **Stat integration**: SRS (Simple Rating System) is the single best predictor of tournament success. Use it heavily. Also consider: efg_pct, trb_pct, tov_pct, off_rtg.
+- **Target specific flippable games**: 8v9 and 7v10 matchups are closest to the 0.5 boundary. Focus stat-based logic on these toss-up games where stats can be the tiebreaker.
 
 ### Common Pitfalls
 - **Overfitting to one year**: A change that massively helps 2023 but hurts 2022/2024/2025 won't improve the average.
