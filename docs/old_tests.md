@@ -1673,3 +1673,20 @@ Format for each entry:
   - 2024: 1330 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -12.9). Tournament success is heavily dependent on shot-making under pressure. Previous experiments showed that effective field goal percentage has significant predictive power (Experiment #65 improved scores when balancing it with SRS). Making shooting efficiency the dominant factor (0.8 weight) while reducing SRS to a secondary role (0.2) targets the fundamental insight that execution under tournament pressure often matters more than regular season dominance. This recognizes that March Madness games are often decided by which team can make shots when it matters most.
+
+
+## Experiment #120 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 18:09
+- Baseline Score: 1008.6
+- New Score: 997.1 (-11.5)
+- Change: Unspecified change
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1120
+  - 2024: 1330 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -11.5). Teams that protect the ball well (low turnover rate) have historically been undervalued in our composite performance score system. Tournament play emphasizes ball security exponentially more than regular season games because every possession matters in elimination scenarios. The -0.3 weight for turnover rate (doubled from -0.15) better reflects that teams who avoid costly turnovers under pressure often outperform their seeds, especially in later rounds where the 95% performance weighting makes this factor highly influential. Additionally, slightly increasing SRS weight from 0.4 to 0.5 while reducing shooting efficiency from 0.5 to 0.4 creates a more balanced approach between overall team strength and execution under pressure.
