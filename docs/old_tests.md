@@ -369,3 +369,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Championship game seed decay should be higher than Final Four decay to be more conservative about upsets in the single highest-value game. The championship (320 points) represents 1/6 of total bracket value, and historically higher seeds perform better in finals than mid-range decay factors suggest. A decay of 0.75 preserves more seed advantage than the previous 0.55, aligning better with championship game dynamics where teams that reach the final typically favor higher seeds more strongly.
+
+
+## Experiment #28 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 12:17
+- Baseline Score: 970.0
+- New Score: 897.5 (-72.5)
+- Change: I'm implementing a pure SRS-based prediction model that completely ignores seeds and uses only Simple Rating System (SRS) values to predict winners. Previous experiments showed that pure stats (SEED_WEIGHT=0.0, STATS_WEIGHT=1.0) scored 997.5 (+27.5), proving that stats are better predictors than seeds. Since SRS is the strongest single predictor available and captures overall team strength, I'm replacing the entire seed-based probability system with a direct SRS comparison model.
+- Per-Year Breakdown:
+  - 2022: 940 → 540
+  - 2023: 580 → 640
+  - 2024: 1240 → 1250
+  - 2025: 1120 → 1160
+- Analysis: Score did not improve (change: -72.5). Pure SRS-based prediction model implemented as fundamental architectural change. Previous experiments proved that pure stats (SEED_WEIGHT=0.0) scored 997.5 (+27.5), indicating SRS is a superior predictor to seeds. This model eliminates all seed-based probability calculations and uses only SRS differential to predict winners. SRS captures team strength more accurately than seeding committee decisions, especially for identifying underseeded teams that outperform expectations. The 0.08 scaling factor converts SRS differences (typically ranging -20 to +20) into reasonable win probabilities, while maintaining fallback to seed comparison when SRS data is unavailable.
