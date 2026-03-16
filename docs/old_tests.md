@@ -439,3 +439,17 @@ Format for each entry:
   - 2024: 1240 → 1250
   - 2025: 1170 → 1160
 - Analysis: Score did not improve (change: -77.5). Previous pure SRS experiments failed due to improper scaling and probability transformation. The key insight is that SRS differences (typically ranging -20 to +20) need proper sigmoid transformation rather than linear scaling to convert into meaningful win probabilities. A sigmoid function with k=0.2 provides appropriate scaling where a 5-point SRS advantage translates to roughly 73% win probability, and a 10-point advantage to 88%. This preserves SRS as the primary predictor while maintaining proper probability bounds and mathematical stability.
+
+
+## Experiment #33 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 12:20
+- Baseline Score: 975.0
+- New Score: 970.0 (-5.0)
+- Change: I'm implementing a round-specific stats weighting system that dramatically increases stats weight in later rounds (up to 90% in championship) while reducing it in early rounds to 50%. This targets the highest-value games where teams have proven themselves through elimination and stats become more predictive than initial seeding.
+- Per-Year Breakdown:
+  - 2022: 920 → 940
+  - 2023: 570 → 570
+  - 2024: 1240 → 1240
+  - 2025: 1170 → 1130
+- Analysis: Score did not improve (change: -5.0). Round-specific weighting approach tested - teams that advance to later rounds have proven themselves through elimination games, making their regular season statistics more predictive than initial seeding. The Final Four (480 points total) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing accuracy in these rounds through progressive stats weighting could significantly improve overall bracket performance. This approach starts with equal seed/stats weighting (50/50) in early rounds and gradually shifts to stats-dominant (90/10) in the championship, recognizing that by the Final Four, traditional seeding becomes less reliable as weaker teams have been eliminated.
