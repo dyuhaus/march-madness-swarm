@@ -411,3 +411,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1170
 - Analysis: Score improved by 5.0 points. The baseline analysis proved that SEED_WEIGHT=0.0, STATS_WEIGHT=1.0 scores 997.5 (+27.5), demonstrating that stats are significantly better predictors than seeds. However, pure stats implementations failed due to architectural issues. A hybrid approach with dramatically increased stats weighting (20/80 instead of 70/30) should capture most of the statistical advantage while maintaining seed-based fallbacks for robustness.
+
+
+## Experiment #31 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 12:19
+- Baseline Score: 975.0
+- New Score: 897.5 (-77.5)
+- Change: I'm implementing a radical SRS-only prediction model that completely abandons seed-based probabilities and uses pure Simple Rating System (SRS) differentials to predict winners. The previous successful experiment proved that STATS_WEIGHT=0.8 improved scores to 975.0, and the baseline analysis showed pure stats scored 997.5 (+27.5). This eliminates all seed-based logic and uses SRS as the sole predictor, with a scaling factor that converts SRS differences into win probabilities.
+- Per-Year Breakdown:
+  - 2022: 920 → 540
+  - 2023: 570 → 640
+  - 2024: 1240 → 1250
+  - 2025: 1170 → 1160
+- Analysis: Score did not improve (change: -77.5). Pure SRS-based prediction model implemented as a radical departure from seed-based logic. The baseline analysis proved that pure stats (SEED_WEIGHT=0.0) scored 997.5 (+27.5), and the previous successful hybrid (STATS_WEIGHT=0.8) scored 975.0 (+5.0). This model eliminates all seed-weighted probability calculations and uses only SRS differentials with a 0.05 scaling factor to convert differences into win probabilities. SRS captures team strength more directly than seeding committee decisions and should better identify underseeded teams that outperform expectations. The model maintains seed-based fallbacks only when SRS data is unavailable, ensuring robustness while maximizing statistical prediction power.
