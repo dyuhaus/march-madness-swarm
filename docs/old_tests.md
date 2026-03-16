@@ -1349,3 +1349,31 @@ Format for each entry:
   - 2024: 1320 → 1320
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Change was not beneficial.
+
+
+## Experiment #98 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 14:17
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a "statistical excellence amplifier" system that gives substantial performance score bonuses to teams with exceptional individual metrics: +1.0 for elite SRS (>15), +0.8 for elite shooting (efg_pct >0.60), and +0.6 for elite defense (def_rtg <85). This creates larger performance score differences between elite and average teams, making the proven composite system more likely to flip outcomes where statistical excellence should matter most.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The composite performance score system's +0.0 results pattern appears to be caused by insufficient performance score differences between teams rather than scaling issues. Instead of trying to make small differences more decisive, creating larger gaps through statistical excellence bonuses (elite SRS, shooting, defense) may be more effective at crossing the 0.5 decision threshold and flipping game outcomes where elite teams should dominate.
+
+
+## Experiment #99 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 14:18
+- Baseline Score: 1067.5
+- New Score: 1047.5 (-20.0)
+- Change: I'm implementing a double bonus system for teams with exceptional combined metrics (SRS > 10 AND efg_pct > 0.52) that gives them +0.8 to their composite performance score. This combination identifies teams with both strong overall dominance and solid shooting efficiency - two key predictors of tournament success. Additionally, I'm increasing the performance score scaling factor from 0.05 to 0.08 to make statistical differences more decisive in flipping game outcomes.
+- Per-Year Breakdown:
+  - 2022: 610 → 600
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1300
+  - 2025: 1180 → 1130
+- Analysis: Score did not improve (change: -20.0). Previous experiments showed that combined excellence bonuses (SRS + shooting) consistently failed with very restrictive thresholds (SRS > 12, efg_pct > 0.55) but may work with more inclusive criteria. The key insight is that teams with both strong overall performance (SRS > 10) AND solid shooting efficiency (efg_pct > 0.52) represent a broader set of tournament-ready teams. Additionally, increasing the performance score scaling factor from 0.05 to 0.08 should make statistical differences more decisive in crossing the 0.5 decision threshold that has caused many +0.0 results.
