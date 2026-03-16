@@ -383,3 +383,17 @@ Format for each entry:
   - 2024: 1240 → 1250
   - 2025: 1120 → 1160
 - Analysis: Score did not improve (change: -72.5). Pure SRS-based prediction model implemented as fundamental architectural change. Previous experiments proved that pure stats (SEED_WEIGHT=0.0) scored 997.5 (+27.5), indicating SRS is a superior predictor to seeds. This model eliminates all seed-based probability calculations and uses only SRS differential to predict winners. SRS captures team strength more accurately than seeding committee decisions, especially for identifying underseeded teams that outperform expectations. The 0.08 scaling factor converts SRS differences (typically ranging -20 to +20) into reasonable win probabilities, while maintaining fallback to seed comparison when SRS data is unavailable.
+
+
+## Experiment #29 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 12:18
+- Baseline Score: 970.0
+- New Score: 885.0 (-85.0)
+- Change: I'm implementing a comprehensive pure stats prediction model that completely eliminates seed-based probabilities and uses a weighted combination of ALL available team statistics. Unlike the failed pure SRS attempt, this uses the full STAT_FACTORS system with enhanced weights for proven predictors like SRS, offensive rating, and win-loss record. This should capture team quality more accurately than seeds while avoiding the single-metric limitation.
+- Per-Year Breakdown:
+  - 2022: 940 → 610
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1110
+- Analysis: Score did not improve (change: -85.0). Comprehensive pure stats model implemented with enhanced stat factor weights and additional metrics. This approach uses SEED_WEIGHT=0.0 and STATS_WEIGHT=1.0 to completely eliminate seed bias, but unlike the failed pure SRS attempt, it leverages ALL available stat factors with optimized weights. Key improvements: increased SRS weight to 0.08, added efg_pct (0.15), win_loss_pct (0.12), fg_pct (0.10), and other advanced metrics. The model handles percentage stats normalization and calculates win-loss percentage when not directly available. This should capture comprehensive team quality better than either seeds or single-metric approaches.
