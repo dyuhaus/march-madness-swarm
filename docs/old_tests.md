@@ -76,3 +76,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Early round decay adjustment tested - reducing Round of 64 decay from 1.0 to 0.95 and Round of 32 decay from 0.90 to 0.85 makes the algorithm more willing to pick upsets in the first two rounds where common upset patterns (12-over-5, 11-over-6) occur frequently. This targets the historical ~35-37% upset rates in these matchups while preserving seed advantages in later rounds where they're more important for scoring.
+
+
+## Experiment #6 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 11:46
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm adjusting the seed win probabilities to be more conservative for 12-over-5 and 11-over-6 upsets, reducing them from 0.65/0.63 to 0.72/0.70. While these are common upset picks, the algorithm may be picking too many of them, and being slightly more conservative while still allowing some upsets could improve overall accuracy without sacrificing too much upset detection.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Seed probability calibration tested - adjusting the 5-12 and 6-11 upset probabilities to be more conservative (0.65→0.72 and 0.63→0.70) to reduce over-prediction of these common upset picks. The algorithm may have been picking too many 12-over-5 and 11-over-6 upsets, and a more conservative approach could improve first-round accuracy without completely eliminating upset detection in these historically upset-prone matchups.
