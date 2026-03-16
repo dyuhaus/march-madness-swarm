@@ -649,3 +649,31 @@ Format for each entry:
   - 2024: 1290 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Defensive excellence bonus specifically targeting teams with def_rtg < 95 represents a different approach than previous defensive rating experiments. Elite defense (typically top 20 nationally) often translates to tournament success beyond what offensive metrics suggest, particularly in later rounds where games are decided by a few possessions. The +1.0 bonus is substantial and should meaningfully impact head-to-head comparisons between teams with and without elite defense.
+
+
+## Experiment #48 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 12:29
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a "late-round championship bias" system that significantly increases the performance score weighting to 99% specifically in the Final Four and Championship rounds, while keeping earlier rounds at 90%. Since these rounds represent 800/1920 points (42% of total value), maximizing statistical accuracy in the highest-value games should improve overall bracket performance where proven teams matter most.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistics more predictive than initial seeding decisions. The Final Four (320 points/game × 2 = 640 points) and Championship (320 points) represent 960 of 1,920 total points (50%), so maximizing statistical accuracy in these highest-value rounds through extreme performance weighting (99%) while maintaining reasonable weighting in earlier rounds (90%) could significantly improve overall bracket performance where proven teams with superior metrics should dominate seeding considerations.
+
+
+## Experiment #49 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 12:30
+- Baseline Score: 1052.5
+- New Score: 1042.5 (-10.0)
+- Change: I'm implementing a moderate SRS boost within the proven composite performance framework. Instead of the dramatic 2.0x increases that failed (-140+ points), I'm increasing SRS weight from 0.6 to 0.8 while proportionally reducing other factors. This should capture more of SRS's proven predictive power (+27.5 from pure stats) while maintaining the architectural stability that made the composite system successful (+77.5).
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1250
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -10.0). The key insight is finding the "Goldilocks zone" for SRS weighting - previous experiments showed that modest increases (0.6 → 0.8) may work better than dramatic jumps (0.6 → 2.0) which caused -140 point drops. SRS is consistently the strongest predictor, but the composite system's success (+77.5) comes from balanced integration rather than overwhelming dominance of any single factor. The proportional reduction of other factors maintains the composite framework while maximizing SRS influence.
