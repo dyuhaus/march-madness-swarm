@@ -705,3 +705,17 @@ Format for each entry:
   - 2024: 1290 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The recent string of +0.0 results suggests that the composite performance score system may need more aggressive scaling to overcome seed-based predictions. The current 0.05 scaling factor appears too conservative - even when teams have meaningfully different statistical profiles, the performance probability may not deviate enough from 0.5 to change outcomes. Increasing the scaling factor should make statistical advantages more decisive while maintaining the proven 90/10 performance/seed weighting structure.
+
+
+## Experiment #52 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 12:32
+- Baseline Score: 1052.5
+- New Score: 1045.0 (-7.5)
+- Change: I'm implementing a round-specific performance weighting system that dramatically increases performance score influence in later rounds (up to 95% in championship) while using more conservative weighting (70%) in early rounds. This targets the high-value games (Final Four + Championship = 800 points) where proven teams should matter more than initial seeding decisions.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1270
+  - 2025: 1180 → 1170
+- Analysis: Score did not improve (change: -7.5). Teams that advance to later rounds have proven themselves through elimination games, making their regular season statistics more predictive than initial seeding decisions. The Final Four (480 points) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing statistical accuracy in these rounds through progressive round-specific weighting could significantly improve overall bracket performance. This approach recognizes that by later rounds, traditional seeding becomes less reliable as weaker teams have been eliminated and execution under pressure becomes paramount.
