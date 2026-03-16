@@ -104,3 +104,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1130
 - Analysis: Score did not improve (change: +0.0). Tested increasing stats weight from 30% to 50% (making it equal to seed weight) to allow team performance statistics more influence on predictions. This targets the hypothesis that regular season performance metrics like SRS, offensive efficiency, and win-loss records may be underutilized in the current heavily seed-biased approach and could help identify teams that are seeded poorly relative to their actual strength.
+
+
+## Experiment #8 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 11:47
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing round-specific seed win probability adjustments to better reflect how tournament dynamics change in later rounds. Instead of using the same upset rates throughout, I'll create separate probability tables for early rounds (R64, R32) vs later rounds (Sweet 16+) where advancing teams have proven themselves and seed advantages matter less. This should improve prediction accuracy in the high-value later rounds.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Teams that advance to later rounds (Sweet 16+) have already proven they can win tournament games, which suggests that seed-based probabilities should be different in later rounds than in early rounds. The traditional upset rates from the first two rounds may not apply well to teams that have already survived multiple elimination games. This round-specific probability adjustment could better capture the tournament's changing dynamics as weaker teams are eliminated and the remaining field becomes more competitive.
