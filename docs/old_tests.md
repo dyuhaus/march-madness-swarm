@@ -132,3 +132,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Round-specific weighting tested - gradually shifting from seed-heavy (70/30) in early rounds to equal weighting (50/50) in the championship game. This approach recognizes that teams reaching later rounds have proven themselves through actual tournament performance, making their regular season statistics more predictive than initial seeding. The championship game gets equal weight between seeds and stats since it's the highest-value game (320 points) and teams that reach it have demonstrated tournament-level capability.
+
+
+## Experiment #10 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 11:49
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm adding a significant defensive rating bonus for teams with elite defense (def_rtg < 95) to help identify potential Cinderella teams and strong defensive squads that might outperform their seeds. Elite defense often translates to tournament success, especially in close games, and the current -0.01 weight severely undervalues this critical stat.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Elite defensive teams (def_rtg < 95) often outperform their seeds in the tournament. Defense becomes more crucial in tournament settings where possessions are limited and every stop matters. A defensive rating below 95 is typically in the top 20 nationally and indicates a team that can consistently force difficult shots and create turnovers, which translates well to tournament success regardless of seed.
