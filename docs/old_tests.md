@@ -1307,3 +1307,17 @@ Format for each entry:
   - 2024: 1320 → 1320
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making statistical accuracy in these highest-value rounds the most impactful optimization strategy. Round-specific performance weighting that dramatically increases stats influence in later rounds should maximize accuracy where it matters most for overall bracket scoring.
+
+
+## Experiment #95 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 14:15
+- Baseline Score: 1067.5
+- New Score: 1052.5 (-15.0)
+- Change: I'm implementing a stronger SRS-focused composite performance score by increasing SRS weight from 0.4 to 0.45 while reducing effective field goal percentage from 0.5 to 0.45. Previous experiments showed that balanced adjustments between these key factors can improve scores (Experiment #65: +15.0), and that modest SRS increases work better than dramatic ones which consistently caused -140+ point drops. This targets the optimal balance between overall team strength (SRS) and shooting efficiency (efg_pct).
+- Per-Year Breakdown:
+  - 2022: 610 → 620
+  - 2023: 1160 → 1120
+  - 2024: 1320 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -15.0). The pattern shows that SRS and effective field goal percentage are the two most influential factors in the composite performance system. Experiment #65 proved that balanced adjustments between these factors (SRS 0.6→0.4, efg_pct 0.3→0.5) can improve scores by +15.0 points. However, attempts to dramatically increase SRS weight to 1.0+ consistently cause -140+ point score drops, suggesting there's an optimal balance point. Modest adjustments in the SRS 0.4-0.5 range may capture more of its predictive power without triggering the architectural failures that occur with extreme SRS weighting.
