@@ -1419,3 +1419,17 @@ Format for each entry:
   - 2024: 1320 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The tanh-based sigmoid transformation provides a mathematically sound approach to converting performance score differences into more decisive probabilities. The formula `0.5 + 0.45 * tanh(score_diff * 3.0)` creates a steeper probability curve where small statistical advantages (0.2 performance difference) translate to ~62% win probability and larger advantages (0.5 difference) translate to ~90%. This should allow meaningful statistical differences to overcome the 0.5 decision threshold that has caused many +0.0 results, while maintaining the proven composite performance score framework that achieved +77.5 improvement.
+
+
+## Experiment #103 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 14:21
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a more aggressive exponential probability transformation that converts performance score differences into much more decisive probabilities. Instead of linear scaling, I'm using an exponential decay function that makes even modest statistical advantages (0.3 performance difference) translate to ~70% win probability, which should finally allow the proven composite system to flip more game outcomes where teams have meaningful statistical differences.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1150
+  - 2024: 1320 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The pattern of +0.0 results with the composite performance score system suggests that the fundamental issue is probability transformation rather than scaling factors. Linear scaling (0.5 + score_diff * factor) appears mathematically insufficient to create probability deviations large enough to cross the 0.5 decision threshold, even with very large scaling factors (up to 0.50). Exponential transformations that create asymptotic probability curves may be necessary to convert statistical differences into decisive game outcome changes. The formula `0.5 + 0.4 * (1 - exp(-|score_diff| * 3.0))` creates much more aggressive probability mapping where a 0.3 performance difference yields ~70% win probability instead of ~52% with linear scaling.
