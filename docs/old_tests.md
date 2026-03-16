@@ -2073,3 +2073,20 @@ Format for each entry:
   - 2024: 1330 → 1250
   - 2025: 1180 → 1160
 - Analysis: Score did not improve (change: -101.5). Pure SRS differential represents a simplified but potentially more effective approach than complex composite scoring. Previous experiments showed that SRS is consistently the strongest single predictor, with pure stats models theoretically scoring +27.5 improvement. The key insight is using an optimized sigmoid transformation (exponential with 0.3 scaling factor) to convert SRS differences into decisive win probabilities, where a 5-point SRS advantage translates to ~80% win probability. This avoids the architectural complexity and scaling issues that plagued composite systems while maximizing the proven predictive power of SRS.
+
+
+## Experiment #144 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 18:25
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a systematic performance score scaling optimization by increasing the scaling factor from 0.05 to 0.10 (2x increase) and adding round-specific amplification that progressively increases scaling in later rounds. The pattern of many +0.0 results suggests statistical differences aren't crossing the 0.5 threshold. This targets both the general scaling issue and the high-value later rounds (Final Four + Championship = 50% of bracket points) where statistical advantages should be more decisive.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Round-specific performance scaling represents a dual approach to the persistent +0.0 result pattern. The key insight is that (1) the base scaling factor of 0.05 appears too conservative to allow statistical differences to cross the 0.5 decision threshold, and (2) later rounds are worth dramatically more points (Final Four + Championship = 50% of bracket value), making statistical accuracy increasingly critical. By implementing progressive scaling from 0.10 in early rounds to 0.25 in the championship, this targets both the general scaling bottleneck and maximizes impact in the highest-value games where proven statistical advantages should be most decisive.
