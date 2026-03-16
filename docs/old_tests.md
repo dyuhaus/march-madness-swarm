@@ -1195,3 +1195,17 @@ Format for each entry:
   - 2024: 1320 → 1320
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Turnover rate (tov_pct) becomes exponentially more important in tournament play where possessions are precious and games are often decided by just a few points. Teams that protect the ball well historically outperform their seeds, especially in later rounds where defensive pressure intensifies. The previous weight of -0.15 severely undervalued this critical tournament skill. Ball security often separates teams that can execute under pressure from those that crumble in high-stakes situations.
+
+
+## Experiment #87 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 14:09
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing an exponential scaling system with round-specific amplification that dramatically increases the impact of performance score differences, especially in high-value later rounds. Instead of linear scaling (0.05), I'm using an exponential transformation that makes small statistical advantages extremely decisive in determining game outcomes, with scaling factors that increase from 1.0 in early rounds to 3.0 in the championship.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1150
+  - 2024: 1320 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Exponential scaling with round-specific amplification represents a new approach to address the persistent +0.0 result pattern. The key insight is that linear scaling factors (0.05-0.30) appear fundamentally too conservative to allow statistical differences to cross the 0.5 decision threshold. An exponential transformation `0.5 + 0.4 * (1 - exp(-|scaled_diff| * 2.0))` combined with increasing scaling factors by round (1.0 in R64 to 3.0 in Championship) should make even small statistical advantages extremely decisive in high-value games. This targets the fundamental scaling issue while maximizing impact in the highest-value rounds where statistical accuracy matters most for overall bracket scoring.
