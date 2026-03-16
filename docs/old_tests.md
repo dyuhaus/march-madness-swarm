@@ -1809,3 +1809,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams reaching the championship game have proven themselves through 5 rounds of elimination, making their regular season statistical performance extremely predictive compared to initial seeding decisions. The championship represents the single highest-value decision (320 points = 1/6 of total bracket), so surgical optimization targeting only this game with extreme statistical weighting (99.5%) while preserving proven weights elsewhere may be the key to breaking through scoring plateaus.
+
+
+## Experiment #128 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 18:15
+- Baseline Score: 1008.6
+- New Score: 997.1 (-11.5)
+- Change: I'm implementing a championship-focused SRS weighting system that dramatically increases SRS weight from 0.4 to 0.6 while reducing effective field goal percentage from 0.5 to 0.3. Previous experiments showed that modest SRS increases work better than extreme ones (1.0+ caused -140 point drops), and SRS is consistently the strongest single predictor. This balanced reweighting should capture more of SRS's proven predictive power while maintaining shooting efficiency as an important but secondary factor.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1120
+  - 2024: 1330 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -11.5). Previous experiments revealed a critical SRS weighting pattern in composite systems. While SRS is consistently the strongest predictor (pure stats models would theoretically score +27.5), dramatically increasing SRS weight beyond 1.0 consistently causes -140+ point score drops. The "Goldilocks zone" appears to be 0.4-0.8 where SRS can dominate without overwhelming complementary factors. Experiment #65 proved that balanced adjustments between SRS and effective field goal percentage can improve scores (+15.0). This experiment tests 0.6 SRS weight (50% increase from 0.4) as potentially optimal for capturing more of SRS's predictive power while maintaining system stability.
