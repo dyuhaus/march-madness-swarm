@@ -1517,3 +1517,17 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -2.5). Rebounding percentage (trb_pct) may be significantly underweighted in tournament prediction models. Tournament games are often decided by possessions and second-chance points, making teams that dominate the boards more likely to outperform their seeds. Dramatically increasing rebounding weight from 0.2 to 0.4 while slightly reducing SRS may create larger performance score differences between teams, helping overcome the scaling issues that caused many recent +0.0 results in the composite performance system.
+
+
+## Experiment #110 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 14:26
+- Baseline Score: 1070.0
+- New Score: 1050.0 (-20.0)
+- Change: I'm implementing a round-specific SRS weighting system that dramatically increases SRS influence in later rounds while reducing effective field goal percentage proportionally. Teams reaching the Final Four and Championship have proven themselves through elimination games, making their overall dominance (SRS) more predictive than shooting efficiency. This targets the highest-value games (800 points = 42% of total) where proven statistical excellence should matter most.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1120
+  - 2024: 1330 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -20.0). Round-specific SRS weighting represents a new optimization strategy that recognizes SRS becomes increasingly predictive as tournaments progress and weaker teams are eliminated. Teams reaching the Final Four and Championship have proven themselves through multiple elimination games, making their regular season dominance (measured by SRS) more predictive than shooting efficiency in the highest-value rounds. This approach dynamically adjusts the composite performance score calculation to maximize statistical accuracy in games worth the most points (Final Four + Championship = 800 points = 42% of total bracket value).
