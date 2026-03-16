@@ -999,3 +999,17 @@ Format for each entry:
   - 2024: 1320 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The pattern of multiple consecutive +0.0 results with the composite performance score system suggests a fundamental scaling issue. Previous experiments with 0.05, 0.10, and 0.20 scaling factors all resulted in no score changes, indicating that statistical differences between teams aren't large enough to overcome the 0.5 decision threshold. A dramatic increase to 0.30 (6x the original) should make even modest statistical advantages translate into actual game outcome changes, allowing the proven composite system to better utilize the statistical data for predictions.
+
+
+## Experiment #73 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 13:58
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a round-specific performance weighting system that dramatically increases performance score influence in the Final Four (95%) and Championship (98%) rounds while keeping earlier rounds at 90%. This targets the highest-value games (800 points = 42% of total bracket) where teams have proven themselves through multiple eliminations and statistical performance should almost completely override initial seeding decisions.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistics increasingly predictive compared to initial seeding decisions. The Final Four (320 points per game × 2 = 640 points) and Championship (320 points) represent 960 of 1,920 total points (50% of total bracket value). Round-specific performance weighting that dramatically increases stats influence in these highest-value rounds (95% for Final Four, 98% for Championship) should maximize statistical accuracy where it matters most for overall bracket scoring.
