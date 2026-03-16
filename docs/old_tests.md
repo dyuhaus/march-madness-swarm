@@ -1928,3 +1928,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The composite performance score system has shown significant success (+77.5, +15.0, +2.5 improvements) but many recent experiments scored exactly +0.0, indicating a critical scaling bottleneck. The issue appears to be that statistical differences between teams, even when meaningful, aren't large enough to cross the 0.5 decision threshold due to conservative scaling factors (0.05-0.30 range tested). This suggests that dramatically more aggressive scaling (8x+ increases to 0.40+) may be necessary to allow the proven composite statistical advantages to actually translate into changed game predictions and improved bracket accuracy.
+
+
+## Experiment #135 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 18:19
+- Baseline Score: 1008.6
+- New Score: 1002.9 (-5.7)
+- Change: I'm implementing a tournament-tested turnover protection bonus system that gives substantial performance score boosts (+0.5) to teams with excellent ball security (tov_pct < 0.16). Elite ball security becomes exponentially more important in tournament play where possessions are precious and turnovers can be devastating in close elimination games. This should help identify teams that execute well under pressure and avoid costly mistakes that often eliminate higher seeds.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 850
+  - 2021: 770 → 770
+  - 2022: 620 → 610
+  - 2023: 1160 → 1140
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -5.7). Teams with elite ball security (turnover rate < 16%) represent a critical tournament advantage that may have been undervalued in previous experiments. Tournament play emphasizes ball security exponentially more than regular season games because every possession matters in elimination scenarios, and costly turnovers often eliminate higher-seeded teams in high-pressure situations. The turnover protection bonus system targets teams that demonstrate the discipline and execution necessary for deep tournament runs.
