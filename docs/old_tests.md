@@ -1223,3 +1223,17 @@ Format for each entry:
   - 2024: 1320 → 1320
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Round-specific performance scaling implemented to address the fundamental issue that statistical differences between teams weren't large enough to flip game outcomes past the 0.5 decision threshold. The scaling factor increases from 0.05 in early rounds to 0.25 in the championship, making statistical advantages more decisive in the highest-value games (Final Four + Championship = 50% of total bracket value) where proven teams should dominate. This targets the pattern of multiple +0.0 results by ensuring meaningful performance score differences actually translate to probability changes that cross the decision boundary.
+
+
+## Experiment #89 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 14:10
+- Baseline Score: 1067.5
+- New Score: 922.5 (-145.0)
+- Change: I'm implementing a dynamic round-specific SRS weighting system that progressively increases SRS influence in higher-value later rounds while maintaining balanced weighting in early rounds. The key insight is that SRS becomes increasingly predictive as weaker teams are eliminated, and later rounds are worth dramatically more points (Final Four + Championship = 800 points = 42% of total bracket). This targets maximizing statistical accuracy in the highest-value games where proven SRS dominance should matter most.
+- Per-Year Breakdown:
+  - 2022: 610 → 620
+  - 2023: 1160 → 640
+  - 2024: 1320 → 1250
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -145.0). Round-specific SRS weighting represents a new approach that recognizes SRS becomes increasingly predictive as tournaments progress and weaker teams are eliminated. The key insight is that teams reaching later rounds have proven themselves through multiple elimination games, making their regular season dominance (measured by SRS) more predictive than in early rounds where upsets are more random. By progressively increasing SRS weight from 0.4 in early rounds to 0.9 in the championship, this targets the highest-value games (Final Four + Championship = 800 points = 42% of total bracket) where statistical excellence should matter most. The proportional adjustment of other factors maintains system balance while maximizing SRS influence where it's most predictive.
