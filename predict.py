@@ -18,16 +18,16 @@ The algorithm can use any logic: seed-based, stat-based, hybrid,
 machine-learning-inspired, heuristic, etc. Anything goes as long as
 there's no data leakage (no peeking at actual tournament results).
 
-Current approach: Seed-based baseline with stat adjustments.
+Current approach: Composite performance score with seed fallback.
 """
 
 # =============================================================================
 # CONFIGURATION — Tunable parameters
 # =============================================================================
 
-# How much to weight seed differential vs stats
-SEED_WEIGHT = 0.2
-STATS_WEIGHT = 0.8
+# How much to weight composite performance score vs seeds
+PERFORMANCE_WEIGHT = 0.9
+SEED_WEIGHT = 0.1
 
 # Seed advantage: higher seed (lower number) gets this base win probability
 # This is the core of the seed-based model
@@ -54,16 +54,18 @@ ROUND_SEED_DECAY = {
     5: 0.55,  # Championship
 }
 
-# Stats that improve a team's win probability (if available)
-# Each stat has a weight indicating how much it contributes
-STAT_FACTORS = {
-    "wins": 0.02,           # More wins = slight boost
-    "losses": -0.03,        # More losses = slight penalty
-    "srs": 0.03,            # Simple Rating System (Sports Ref)
-    "sos_all": 0.02,        # Strength of Schedule
-    "off_rtg": 0.01,        # Offensive rating
-    "def_rtg": -0.01,       # Defensive rating (lower is better)
-    "pace": 0.0,            # Pace (neutral by default)
+# Composite performance score factors
+# These create a comprehensive team strength rating
+PERFORMANCE_FACTORS = {
+    "srs": 0.6,             # Simple Rating System - most important
+    "off_rtg": 0.15,        # Offensive efficiency
+    "def_rtg": -0.1,        # Defensive efficiency (lower is better)
+    "wins": 0.05,           # Win total
+    "losses": -0.05,        # Loss penalty
+    "sos_all": 0.1,         # Strength of schedule
+    "efg_pct": 0.3,         # Effective field goal percentage
+    "trb_pct": 0.2,         # Rebounding percentage
+    "tov_pct": -0.15,       # Turnover percentage (lower is better)
 }
 
 
@@ -166,21 +168,31 @@ def _predict_game(name1, seed1, name2, seed2, round_num, team_stats):
     Predict the winner of a single game.
     
     Uses a combination of:
-    1. Seed-based probability (historical upset rates)
-    2. Team stats adjustment (when available)
+    1. Composite performance score (heavily weighted)
+    2. Seed-based probability fallback
     
     Returns the predicted winner's name.
     """
+    # Calculate composite performance scores for both teams
+    perf_score1 = _calculate_performance_score(name1, team_stats)
+    perf_score2 = _calculate_performance_score(name2, team_stats)
+    
     # Calculate base probability from seeds
     seed_prob = _seed_probability(seed1, seed2, round_num)
     
-    # Calculate stats adjustment
-    stats_adj = _stats_adjustment(name1, name2, team_stats)
-    
-    # Combine: weighted average
-    # seed_prob is probability that team1 wins (0 to 1)
-    # stats_adj is adjustment favoring team1 (negative = favors team2)
-    combined_prob = (SEED_WEIGHT * seed_prob) + (STATS_WEIGHT * (0.5 + stats_adj))
+    # If both teams have performance scores, use them heavily
+    if perf_score1 is not None and perf_score2 is not None:
+        # Convert performance score difference to probability
+        score_diff = perf_score1 - perf_score2
+        # Scale the difference to a probability (sigmoid-like)
+        perf_prob = 0.5 + (score_diff * 0.05)  # Adjust scaling as needed
+        perf_prob = max(0.01, min(0.99, perf_prob))
+        
+        # Combine performance and seed probabilities
+        combined_prob = (PERFORMANCE_WEIGHT * perf_prob) + (SEED_WEIGHT * seed_prob)
+    else:
+        # Fall back to seed-based prediction if stats unavailable
+        combined_prob = seed_prob
     
     # Clamp to [0.01, 0.99]
     combined_prob = max(0.01, min(0.99, combined_prob))
@@ -190,6 +202,37 @@ def _predict_game(name1, seed1, name2, seed2, round_num, team_stats):
         return name1
     else:
         return name2
+
+
+def _calculate_performance_score(team_name, team_stats):
+    """
+    Calculate a composite performance score for a team.
+    
+    Returns float representing overall team strength, or None if no stats.
+    """
+    stats = _get_team_stats(team_name, team_stats)
+    if not stats:
+        return None
+    
+    score = 0.0
+    factor_count = 0
+    
+    for stat_name, weight in PERFORMANCE_FACTORS.items():
+        value = stats.get(stat_name)
+        if value is not None and isinstance(value, (int, float)):
+            # Normalize percentage stats (0-1 range) to be comparable
+            if stat_name.endswith('_pct'):
+                if value > 1:  # Assume it's already a percentage (0-100)
+                    value = value / 100.0
+            
+            score += value * weight
+            factor_count += 1
+    
+    # Return None if we don't have enough stats to make a meaningful score
+    if factor_count < 3:
+        return None
+    
+    return score
 
 
 def _seed_probability(seed1, seed2, round_num):
@@ -236,35 +279,6 @@ def _seed_probability(seed1, seed2, round_num):
         return adjusted_prob
     else:
         return 1.0 - adjusted_prob
-
-
-def _stats_adjustment(name1, name2, team_stats):
-    """
-    Calculate a stats-based adjustment favoring team1 or team2.
-    
-    Returns float: positive favors team1, negative favors team2.
-    Range roughly [-0.5, 0.5].
-    """
-    stats1 = _get_team_stats(name1, team_stats)
-    stats2 = _get_team_stats(name2, team_stats)
-    
-    if not stats1 and not stats2:
-        return 0.0  # No stats available
-    
-    adjustment = 0.0
-    
-    for stat_name, weight in STAT_FACTORS.items():
-        val1 = stats1.get(stat_name, 0) if stats1 else 0
-        val2 = stats2.get(stat_name, 0) if stats2 else 0
-        
-        if isinstance(val1, (int, float)) and isinstance(val2, (int, float)):
-            diff = val1 - val2
-            adjustment += diff * weight
-    
-    # Normalize to roughly [-0.5, 0.5]
-    adjustment = max(-0.5, min(0.5, adjustment))
-    
-    return adjustment
 
 
 def _get_team_stats(team_name, all_stats):

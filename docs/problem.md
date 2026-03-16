@@ -88,6 +88,8 @@ To improve further from 997.5, consider:
 
 - The baseline analysis proved that SEED_WEIGHT=0.0, STATS_WEIGHT=1.0 scores 997.5 (+27.5), demonstrating that stats are significantly better predictors than seeds. However, pure stats implementations failed due to architectural issues. A hybrid approach with dramatically increased stats weighting (20/80 instead of 70/30) should capture most of the statistical advantage while maintaining seed-based fallbacks for robustness.
 
+- Composite performance scoring represents a different approach than previous experiments - instead of adjusting seed-based probabilities with individual stat factors, this creates a unified team strength metric combining multiple statistics. The key insight is that SRS (0.6 weight) captures overall team quality, while offensive efficiency, rebounding, and turnover rates provide complementary performance indicators. This should better identify teams that significantly outperform or underperform their seeding, particularly important for capturing high-value upset predictions in later rounds.
+
 ## Open Questions
 
 - What SPECIFIC games does the algorithm get wrong? (Run verbose test to find out)

@@ -467,3 +467,31 @@ Format for each entry:
   - 2024: 1240 → 1250
   - 2025: 1170 → 1180
 - Analysis: Score did not improve (change: -55.0). SRS weight has been dramatically increased from 0.03 to 0.15 (5x increase) within the proven hybrid structure. Previous experiments established that SRS is the strongest single predictor and that pure stats models score +27.5 but fail architecturally. The hybrid approach with SEED_WEIGHT=0.2, STATS_WEIGHT=0.8 successfully improved scores to 975.0. This change targets maximizing SRS influence while maintaining the proven hybrid framework that avoids architectural failures.
+
+
+## Experiment #35 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 12:21
+- Baseline Score: 975.0
+- New Score: 975.0 (+0.0)
+- Change: I'm implementing a "championship focus" strategy that dramatically increases stats weight specifically in the championship game (to 95%) while keeping other rounds at the proven 80% stats weight. Since the championship alone is worth 320 points (1/6 of total bracket), and teams that reach the final have already proven themselves through multiple elimination games, their regular season statistics should be the primary predictor rather than initial seeding decisions.
+- Per-Year Breakdown:
+  - 2022: 920 → 920
+  - 2023: 570 → 570
+  - 2024: 1240 → 1240
+  - 2025: 1170 → 1170
+- Analysis: Score did not improve (change: +0.0). Teams that reach the championship game have proven themselves through 5 rounds of elimination games, making their regular season statistics extremely predictive compared to initial seeding decisions. The championship game represents the single highest-value decision (320 points = 1/6 of total bracket), so maximizing stats influence (95%) while minimizing seed influence (5%) in this specific game could significantly improve overall bracket performance. This surgical approach targets only the championship while preserving the proven 80% stats weight for all other rounds.
+
+
+## Experiment #36 — PASS
+- Agent: agent-4
+- Date: 2026-03-16 12:22
+- Baseline Score: 975.0
+- New Score: 1052.5 (+77.5)
+- Change: I'm implementing a composite performance score system that combines multiple statistical factors into a single team strength metric, then uses this for direct head-to-head comparisons. Instead of relying primarily on seeds with minor stat adjustments, this creates a comprehensive team rating that weighs SRS heavily (0.6) along with offensive efficiency, win percentage, and other key metrics. This should better identify truly strong teams regardless of seeding.
+- Per-Year Breakdown:
+  - 2022: 920 → 620
+  - 2023: 570 → 1120
+  - 2024: 1240 → 1290
+  - 2025: 1170 → 1180
+- Analysis: Score improved by 77.5 points. Composite performance scoring represents a different approach than previous experiments - instead of adjusting seed-based probabilities with individual stat factors, this creates a unified team strength metric combining multiple statistics. The key insight is that SRS (0.6 weight) captures overall team quality, while offensive efficiency, rebounding, and turnover rates provide complementary performance indicators. This should better identify teams that significantly outperform or underperform their seeding, particularly important for capturing high-value upset predictions in later rounds.
