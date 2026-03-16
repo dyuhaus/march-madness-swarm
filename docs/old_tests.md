@@ -537,3 +537,17 @@ Format for each entry:
   - 2024: 1290 → 1250
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -142.5). SRS weight dramatically increased from 0.6 to 2.0 within the proven composite performance score framework. This builds on the successful +77.5 improvement from the composite model while maximizing the influence of SRS, which has been consistently identified as the strongest single predictor of tournament success. The approach maintains the architectural stability that pure SRS models lacked while pushing SRS influence to dominate the composite score calculation.
+
+
+## Experiment #40 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 12:24
+- Baseline Score: 1052.5
+- New Score: 1045.0 (-7.5)
+- Change: I'm implementing a round-specific performance weighting system that gradually increases the performance score's influence from 70% in early rounds to 99% in the championship game. Teams that reach later rounds have proven themselves through elimination games, making their statistical performance more predictive than initial seeding. This targets the highest-value games (Final Four + Championship = 800 points) where proven teams with superior stats should dominate seeding considerations.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1270
+  - 2025: 1180 → 1170
+- Analysis: Score did not improve (change: -7.5). Round-specific performance weighting recognizes that teams advancing to later rounds have proven themselves through elimination games, making their regular season statistics more predictive than initial seeding decisions. The Final Four (480 points) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing statistical accuracy in these rounds while maintaining seed-based predictions in early rounds could significantly improve overall bracket performance. This progressive weighting system starts at 70% stats influence in the Round of 64 and increases to 99% in the championship game.
