@@ -1707,3 +1707,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams that reach the championship game have proven themselves through 5 rounds of elimination games, making their regular season statistical performance extremely predictive compared to initial seeding decisions. The championship game represents the single highest-value decision (320 points = 1/6 of total bracket), so maximizing stats influence (99%) while minimizing seed influence (1%) in this specific game should significantly improve overall bracket performance. This surgical approach targets only the championship while preserving the proven 95% stats weight for all other rounds.
+
+
+## Experiment #122 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 18:11
+- Baseline Score: 1008.6
+- New Score: 995.7 (-12.9)
+- Change: I'm implementing a comprehensive recalibration of the composite performance score by dramatically reducing the effective field goal percentage weight from 0.5 to 0.2 while increasing SRS weight from 0.4 to 0.6, and adding win percentage as a calculated factor with 0.3 weight. The recent baseline shows that effective field goal percentage may have been overweighted relative to its tournament predictive power, while SRS (overall team strength) and win percentage (sustained success) are likely underutilized. This rebalances toward proven statistical predictors.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 850
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1120
+  - 2024: 1330 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -12.9). The previous successful experiments showed that balanced statistical factor weighting is crucial - Experiment #65 improved scores by reducing SRS weight while increasing effective field goal percentage weight. However, subsequent experiments attempting to make shooting efficiency dominant consistently failed or had no effect. This suggests that SRS (overall team strength) should remain the primary factor, but effective field goal percentage may have been overweighted. Win percentage provides another fundamental measure of sustained success that could be underutilized in the current system.
