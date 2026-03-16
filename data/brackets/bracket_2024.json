@@ -1,0 +1,7 @@
+{
+  "year": 2024,
+  "games": [],
+  "total_games": 63,
+  "source": "fallback_data",
+  "note": "Scraping failed or returned incomplete data. Run scrape_data.py again or manually populate."
+}
