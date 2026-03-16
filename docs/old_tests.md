@@ -1139,3 +1139,17 @@ Format for each entry:
   - 2024: 1320 → 1320
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams with both strong SRS ratings (>8) AND excellent ball security (turnover rate <18%) represent a combination that's highly predictive of tournament success. Ball security becomes increasingly critical in tournament play where games are often decided by a few possessions and turnovers can be devastating in close games. This dual criteria identifies teams that dominate statistically while also having the discipline to protect possessions under pressure, which is essential for deep tournament runs.
+
+
+## Experiment #83 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 14:06
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: Reducing the minimum factor requirement for performance score calculation from 3 to 1, allowing the composite system to utilize statistical data for more teams even when they have incomplete profiles. This should expand statistical influence across more games.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The composite performance score system requires a minimum number of statistical factors (previously 3+) to calculate a performance score for teams. Many teams may have incomplete statistical profiles but still have some valuable data (like SRS or efg_pct) that could improve predictions over pure seed-based fallbacks. Reducing the minimum factor requirement to 1+ allows the system to utilize whatever statistical data is available, expanding the influence of the proven statistical approach to more games throughout the bracket.
