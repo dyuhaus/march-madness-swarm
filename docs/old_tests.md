@@ -1860,3 +1860,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -4.3). Effective field goal percentage appears to be a crucial tournament predictor that may have been underweighted in previous experiments. Tournament games are often decided by shot-making under pressure, especially in later rounds where defenses tighten and execution becomes paramount. Making shooting efficiency the dominant factor (0.7 weight) while reducing SRS to secondary importance (0.3 weight) recognizes that March Madness success depends heavily on which team can maintain shooting accuracy when it matters most. This represents a fundamental shift from overall season dominance to tournament-specific execution skills.
+
+
+## Experiment #131 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 18:17
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a championship defensive excellence bonus system that gives substantial performance score boosts (+1.5) to teams with elite defensive ratings (def_rtg < 90). Elite defense becomes increasingly critical in high-pressure tournament situations where possessions are limited and games are often decided by stops. This bonus should create larger performance score gaps and help identify defensively dominant teams that can shut down higher-seeded opponents, particularly valuable in later rounds where the 95% performance weighting makes this bonus highly influential.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams with elite defensive efficiency (def_rtg < 90) represent historically dominant defensive programs that often outperform their tournament seeding. Elite defense (typically top 10-15 nationally) becomes increasingly critical in tournament play where possessions are limited and games are often decided by stops. The substantial +1.5 performance score bonus should create larger gaps between defensively elite teams and average teams, making the composite system more likely to flip outcomes where defensive excellence should predict tournament success, particularly valuable in later rounds where the 95% performance weighting makes this bonus highly influential.
