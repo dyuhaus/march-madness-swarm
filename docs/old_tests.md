@@ -1377,3 +1377,17 @@ Format for each entry:
   - 2024: 1320 → 1300
   - 2025: 1180 → 1130
 - Analysis: Score did not improve (change: -20.0). Previous experiments showed that combined excellence bonuses (SRS + shooting) consistently failed with very restrictive thresholds (SRS > 12, efg_pct > 0.55) but may work with more inclusive criteria. The key insight is that teams with both strong overall performance (SRS > 10) AND solid shooting efficiency (efg_pct > 0.52) represent a broader set of tournament-ready teams. Additionally, increasing the performance score scaling factor from 0.05 to 0.08 should make statistical differences more decisive in crossing the 0.5 decision threshold that has caused many +0.0 results.
+
+
+## Experiment #100 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 14:19
+- Baseline Score: 1067.5
+- New Score: 1060.0 (-7.5)
+- Change: I'm implementing a multi-dimensional statistical excellence system that gives escalating bonuses to teams based on how many elite statistical categories they achieve. Teams get +0.5 for each elite threshold they meet: SRS > 10, efg_pct > 0.55, def_rtg < 95, and wins >= 30. This creates much larger performance score gaps between truly elite teams and average ones, making the proven composite system more likely to flip outcomes where statistical excellence should dominate.
+- Per-Year Breakdown:
+  - 2022: 610 → 600
+  - 2023: 1160 → 1170
+  - 2024: 1320 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -7.5). The multi-dimensional statistical excellence system creates larger performance score gaps by rewarding teams that achieve elite thresholds across multiple categories (SRS > 10, efg_pct > 0.55, def_rtg < 95, wins >= 30). This approach targets the fundamental scaling issue that has caused many +0.0 results by ensuring that truly dominant teams have meaningfully higher performance scores than average teams, making the composite system more likely to flip outcomes where statistical excellence should predict tournament success.
