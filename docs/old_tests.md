@@ -1647,3 +1647,29 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The composite performance score system has been highly successful, achieving improvements of +77.5, then +15.0, then +2.5 points. However, many subsequent experiments scored exactly +0.0, indicating that statistical differences between teams weren't large enough to flip game outcomes past the 0.5 decision threshold. This suggests that the performance score scaling factor (which converts statistical differences into probability changes) may be the critical bottleneck preventing further improvements. Previous attempts with scaling factors from 0.05 to 0.50 showed that there may be an optimal "Goldilocks zone" where statistical advantages become decisive without causing system instability. The key insight is that even when teams have meaningfully different composite performance scores, small scaling factors prevent those differences from translating into actual game prediction changes.
+
+
+## Experiment #118 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 18:08
+- Baseline Score: 1008.6
+- New Score: None (+0.0)
+- Change: Failed to parse response
+- Analysis: Score did not improve (change: +0.0). Change was not beneficial.
+
+
+## Experiment #119 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 18:09
+- Baseline Score: 1008.6
+- New Score: 995.7 (-12.9)
+- Change: I'm implementing a dramatic increase in the effective field goal percentage weight from 0.5 to 0.8 while reducing SRS weight from 0.4 to 0.2. Shooting efficiency becomes increasingly critical in tournament play where defenses tighten and games are often decided by shot-making under pressure. This makes shooting the dominant factor in team evaluation while maintaining SRS as a secondary strength indicator.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1100
+  - 2019: 860 → 860
+  - 2021: 770 → 750
+  - 2022: 620 → 630
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -12.9). Tournament success is heavily dependent on shot-making under pressure. Previous experiments showed that effective field goal percentage has significant predictive power (Experiment #65 improved scores when balancing it with SRS). Making shooting efficiency the dominant factor (0.8 weight) while reducing SRS to a secondary role (0.2) targets the fundamental insight that execution under tournament pressure often matters more than regular season dominance. This recognizes that March Madness games are often decided by which team can make shots when it matters most.
