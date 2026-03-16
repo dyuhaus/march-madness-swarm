@@ -1027,3 +1027,17 @@ Format for each entry:
   - 2024: 1320 → 1250
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -162.5). SRS appears to have an optimal weight range within composite systems. Previous experiments showed that dramatically increasing SRS to 1.0+ caused -140 point drops, but moderate increases within the 0.4-0.8 range may capture more of its predictive power without triggering the architectural failures. The key insight is finding the balance where SRS dominates but doesn't overwhelm other complementary factors that provide stability to the composite framework.
+
+
+## Experiment #75 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 14:00
+- Baseline Score: 1067.5
+- New Score: 1052.5 (-15.0)
+- Change: I'm implementing a championship-focused SRS weighting system that dramatically increases SRS weight from 0.4 to 0.7 while reducing effective field goal percentage from 0.5 to 0.2. Previous experiments showed that SRS is consistently the strongest predictor (+27.5 with pure stats), but attempts to increase it to 1.0+ caused score drops (-140+ points). This balanced increase should capture more of SRS's predictive power while maintaining the proven composite framework that improved scores by +77.5 points.
+- Per-Year Breakdown:
+  - 2022: 610 → 620
+  - 2023: 1160 → 1120
+  - 2024: 1320 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -15.0). The pattern of experiments shows that SRS has an optimal weight range within composite systems. Previous attempts to increase SRS to 1.0+ consistently caused -140+ point drops, but the current 0.4 weight may be underutilizing its predictive power. The key insight is finding the "Goldilocks zone" where SRS dominates but doesn't overwhelm complementary factors that provide stability to the composite framework. This experiment tests whether 0.7 (75% increase from 0.4) captures more of SRS's proven advantage while staying below the critical 1.0+ threshold that causes architectural failures.
