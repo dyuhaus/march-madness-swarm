@@ -1321,3 +1321,31 @@ Format for each entry:
   - 2024: 1320 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -15.0). The pattern shows that SRS and effective field goal percentage are the two most influential factors in the composite performance system. Experiment #65 proved that balanced adjustments between these factors (SRS 0.6→0.4, efg_pct 0.3→0.5) can improve scores by +15.0 points. However, attempts to dramatically increase SRS weight to 1.0+ consistently cause -140+ point score drops, suggesting there's an optimal balance point. Modest adjustments in the SRS 0.4-0.5 range may capture more of its predictive power without triggering the architectural failures that occur with extreme SRS weighting.
+
+
+## Experiment #96 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 14:16
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a "defensive excellence" bonus system that gives substantial performance score boosts (+1.0) to teams with elite defensive ratings (def_rtg < 98). Defense wins championships and becomes increasingly important in tournament play where possessions are limited and every stop matters. Elite defense (typically top 25-30 nationally) often translates to tournament success beyond what offensive metrics suggest, particularly in later rounds where games are decided by a few possessions.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Elite defense (def_rtg < 98) represents teams in roughly the top 25-30 nationally and historically correlates strongly with tournament success. Defense becomes increasingly important in high-pressure tournament situations where possessions are limited and every stop matters. The substantial +1.0 bonus should meaningfully impact head-to-head comparisons and help identify defensive powerhouses that can shut down higher-seeded but offensively-focused opponents, particularly valuable in later rounds where the 90% performance weighting makes this bonus highly influential.
+
+
+## Experiment #97 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 14:16
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a three-tiered statistical weighting system that dramatically increases performance score influence in later rounds (Round 3: 95%, Round 4: 97%, Round 5: 99%) while keeping early rounds at 90%. This targets the highest-value games where teams have proven themselves through multiple eliminations. The Final Four + Championship represent 50% of total bracket value (960/1920 points), so maximizing statistical accuracy in these specific rounds should improve overall scoring where proven teams matter most.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Change was not beneficial.
