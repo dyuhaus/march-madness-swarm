@@ -91,38 +91,73 @@ def predict_bracket(bracket, team_stats):
             - predicted_winner: str
     """
     predictions = []
-    
-    # Track advancing teams for later rounds
-    # In round 0 (R64), all teams are from the bracket
-    # In round 1+, we need to use our own predictions
-    advancing = {}  # game_id -> predicted winner
-    
+
+    # Track advancing teams for later rounds.
+    # In round 0 (R64), teams come from the bracket data.
+    # In round 1+, we use our OWN predicted winners so errors cascade
+    # just like a real bracket submission.
+    advancing = {}  # game_id -> {"name": str, "seed": int}
+
+    # Build feeder map: for each later-round game, which two earlier
+    # game_ids feed into it.  Scheme:
+    #   R64  0-31  -> R32 32-47  (pairs: 0+1->32, 2+3->33, ...)
+    #   R32 32-47  -> S16 48-55  (pairs: 32+33->48, 34+35->49, ...)
+    #   S16 48-55  -> E8  56-59  (pairs: 48+49->56, 50+51->57, ...)
+    #   E8  56-59  -> FF  60-61  (pairs: 56+57->60, 58+59->61)
+    #   FF  60-61  -> NC  62     (pair:  60+61->62)
+    round_offsets = [(0, 32, 32), (32, 48, 16), (48, 56, 8),
+                     (56, 60, 4), (60, 62, 2)]
+    feeder = {}  # game_id -> (feeder_game_id_1, feeder_game_id_2)
+    for src_start, dst_start, count in round_offsets:
+        for i in range(count // 2):
+            feeder[dst_start + i] = (src_start + 2 * i, src_start + 2 * i + 1)
+
     # Sort games by round so we process earlier rounds first
-    games = sorted(bracket.get("games", []), key=lambda g: (g["round_num"], g["game_id"]))
-    
+    games = sorted(bracket.get("games", []),
+                   key=lambda g: (g["round_num"], g["game_id"]))
+
     for game in games:
         game_id = game["game_id"]
         round_num = game["round_num"]
-        
-        team1 = game.get("team1", {})
-        team2 = game.get("team2", {})
-        
-        name1 = team1.get("name", "Unknown")
-        name2 = team2.get("name", "Unknown")
-        seed1 = team1.get("seed")
-        seed2 = team2.get("seed")
-        
+
+        if round_num == 0:
+            # First round: read teams directly from bracket
+            team1 = game.get("team1", {})
+            team2 = game.get("team2", {})
+            name1 = team1.get("name", "Unknown")
+            name2 = team2.get("name", "Unknown")
+            seed1 = team1.get("seed")
+            seed2 = team2.get("seed")
+        else:
+            # Later rounds: use our own predicted advancing teams
+            feed = feeder.get(game_id)
+            if feed and feed[0] in advancing and feed[1] in advancing:
+                t1 = advancing[feed[0]]
+                t2 = advancing[feed[1]]
+                name1, seed1 = t1["name"], t1["seed"]
+                name2, seed2 = t2["name"], t2["seed"]
+            else:
+                # Fallback to bracket data if feeder info missing
+                team1 = game.get("team1", {})
+                team2 = game.get("team2", {})
+                name1 = team1.get("name", "Unknown")
+                name2 = team2.get("name", "Unknown")
+                seed1 = team1.get("seed")
+                seed2 = team2.get("seed")
+
         # Predict the winner
         winner = _predict_game(name1, seed1, name2, seed2, round_num, team_stats)
-        
+
         predictions.append({
             "game_id": game_id,
             "round_num": round_num,
             "predicted_winner": winner,
         })
-        
-        advancing[game_id] = winner
-    
+
+        # Store the advancing team with its seed
+        winner_seed = seed1 if winner == name1 else seed2
+        advancing[game_id] = {"name": winner, "seed": winner_seed}
+
     return predictions
 
 
