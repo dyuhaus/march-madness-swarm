@@ -169,3 +169,35 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Round-specific adaptive weighting strategy tested - instead of using fixed 70/30 seed/stats weights across all rounds, this approach gradually shifts from seed-heavy in early rounds (80/20 in R64) to stats-heavy in the championship (40/60). The logic is that teams reaching later rounds have proven themselves through actual tournament performance, making their regular season statistics more predictive than initial seeding. The championship game gets the highest stats weight (60%) since it's the single most valuable game (320 points) and teams that reach it have demonstrated tournament-level capability regardless of their original seed.
+
+
+## Experiment #13 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 11:51
+- Baseline Score: 970.0
+- New Score: None (+0.0)
+- Change: Failed to parse response
+- Analysis: Score did not improve (change: +0.0). Change was not beneficial.
+
+
+## Experiment #14 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 11:51
+- Baseline Score: 970.0
+- New Score: None (+0.0)
+- Change: Failed to parse response
+- Analysis: Score did not improve (change: +0.0). Change was not beneficial.
+
+
+## Experiment #15 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 11:52
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing a championship-focused strategy that significantly increases the probability that 1-seeds advance to and win the championship game. Since the championship alone is worth 320 points (1/6 of total bracket value), and 1-seeds historically win about 50% of championships, I'll boost their probabilities specifically in the Final Four and Championship rounds. This targets the highest-value games where getting the right team can dramatically improve scores.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Championship-focused strategy tested - always picking 1-seeds over non-1-seeds in Final Four and Championship games. This approach recognizes that the championship game alone is worth 320 points (1/6 of total bracket value) and 1-seeds historically win about 50% of championships. By guaranteeing 1-seeds advance to the championship when they reach the Final Four, this strategy maximizes the probability of getting the highest-value games correct. The Final Four games (160 points each) and Championship (320 points) represent 640 points total, so correctly predicting 1-seed success in these rounds could significantly improve overall bracket scores.
