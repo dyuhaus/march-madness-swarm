@@ -2277,3 +2277,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The critical scaling bottleneck has been definitively identified through 150+ experiments. The composite performance score system successfully improved scores by +77.5, +15.0, and +2.5 points, proving that comprehensive statistical analysis significantly outperforms seed-based predictions. However, subsequent experiments consistently scored +0.0 due to performance score scaling factors (0.05-0.40 tested) being too conservative to cross the 0.5 decision threshold and actually flip game outcomes. This suggests that dramatically more aggressive scaling (7x+ increases to 0.35+) may be necessary to allow proven statistical advantages to translate into changed game predictions and improved bracket accuracy. The pattern shows the algorithm needs sufficient scaling magnitude to overcome the deterministic 0.5 threshold barrier.
+
+
+## Experiment #156 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 18:33
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a tournament defensive excellence bonus system that gives substantial performance score boosts (+0.6) to teams with very good defensive ratings (def_rtg < 102). Previous experiments with more restrictive thresholds consistently failed, suggesting they were too selective. Tournament success often correlates with solid defense that can limit opponents, especially in later rounds where the 95% performance weighting makes this bonus highly influential.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Previous experiments with defensive rating bonuses using very restrictive thresholds (def_rtg < 90, < 95, < 98, < 100) consistently failed because they applied to too few teams. Defense becomes exponentially more important in tournament play where possessions are precious. Using a more inclusive threshold (def_rtg < 102) should identify more defensively solid teams that can outperform their seeding by limiting opponents' scoring efficiency. The substantial +0.6 bonus should create larger performance score gaps that help overcome the persistent scaling threshold issues seen in recent experiments.
