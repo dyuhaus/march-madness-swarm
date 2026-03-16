@@ -1775,3 +1775,20 @@ Format for each entry:
   - 2024: 1330 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -11.5). The pattern from 100+ experiments reveals a critical SRS weighting threshold in composite systems. SRS weights in the 0.4-0.8 range can improve performance, but exceeding 1.0+ consistently causes -140+ point drops suggesting architectural breakdown. The "Goldilocks zone" appears to be 0.4-0.8 where SRS can dominate without overwhelming complementary factors. This experiment tests 0.65 SRS weight (62.5% increase) as the optimal balance between maximizing SRS influence and maintaining system stability.
+
+
+## Experiment #126 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 18:13
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a tournament excellence multiplier system that gives substantial performance score bonuses (+0.6) to teams with exceptional win totals (>= 30 wins). Teams with 30+ wins have demonstrated sustained excellence throughout a long season and historically outperform their tournament seeding. This single-criterion bonus should create larger performance score gaps and help the proven composite system flip more outcomes where proven winners should dominate.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams with 30+ wins represent sustained excellence throughout a long season and historically outperform their tournament seeding. This single-criterion bonus system avoids the complexity issues that caused previous multi-criteria bonuses to fail, while targeting teams that have proven consistency and durability - key factors for deep tournament runs where mental toughness and execution under pressure become paramount. The substantial +0.6 performance score bonus should create larger gaps between proven winners and average teams, making the composite system more likely to flip outcomes where sustained excellence should predict tournament success.
