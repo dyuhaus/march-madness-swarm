@@ -1461,3 +1461,17 @@ Format for each entry:
   - 2024: 1320 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score improved by 2.5 points. The composite performance score system has been highly successful (+77.5 improvement), proving that comprehensive statistical analysis significantly outperforms seed-based predictions. However, recent experiments consistently scored +0.0, suggesting that the 90/10 performance/seed weighting may have reached a local optimum. Moving closer to pure statistical prediction (95/5) should capture more of the proven statistical advantage while maintaining minimal architectural stability through seed fallbacks. This targets the fundamental insight that stats are dramatically better predictors than seeds, as demonstrated by the theoretical +27.5 improvement from pure stats models.
+
+
+## Experiment #106 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 14:23
+- Baseline Score: 1070.0
+- New Score: 1067.5 (-2.5)
+- Change: I'm implementing a much more aggressive scaling factor for performance score differences, increasing it from 0.05 to 1.0 (20x increase). This should make statistical advantages much more decisive in flipping game outcomes, allowing the proven composite system to better utilize the statistical data that has shown superior predictive power.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1150
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -2.5). The key insight from experiments #63-#105 is that the composite performance score system achieved significant improvement (+77.5 points) by creating comprehensive statistical ratings, but subsequent attempts consistently scored +0.0 due to insufficient scaling factors. The probability transformation from performance score differences to game predictions requires much more aggressive scaling than the conservative 0.05-0.30 range that was tested. Even when teams have meaningfully different statistical profiles, small scaling factors prevent the probabilities from deviating enough from 0.5 to cross the decision threshold and flip outcomes. The solution appears to be dramatically increasing the scaling factor (20x increase from 0.05 to 1.0) to make statistical advantages decisive in determining game outcomes.
