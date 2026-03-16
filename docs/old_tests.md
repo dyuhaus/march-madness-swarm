@@ -2030,3 +2030,29 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making round-specific statistical weighting the most critical optimization strategy for maximizing overall bracket performance. This approach recognizes that by later rounds, traditional seeding becomes less reliable as weaker teams have been eliminated and proven statistical excellence should dominate prediction logic.
+
+
+## Experiment #141 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 18:23
+- Baseline Score: 1008.6
+- New Score: None (+0.0)
+- Change: Failed to parse response
+- Analysis: Score did not improve (change: +0.0). Change was not beneficial.
+
+
+## Experiment #142 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 18:24
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a round-specific performance weighting system that dramatically increases stats influence in the Final Four (99%) and Championship (99.5%) rounds while keeping earlier rounds at 95%. The Final Four and Championship represent 50% of total bracket value (960 points), and teams reaching these rounds have proven themselves through multiple eliminations, making their statistical performance extremely predictive compared to initial seeding decisions.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making round-specific statistical weighting the most critical optimization strategy. By implementing extreme stats weighting (99-99.5%) in the two highest-value rounds while preserving the proven 95% weighting for earlier rounds, this targets the fundamental insight that proven teams with superior statistics should almost completely override seeding considerations in games worth the most points.
