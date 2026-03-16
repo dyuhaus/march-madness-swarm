@@ -1083,3 +1083,17 @@ Format for each entry:
   - 2024: 1320 → 1360
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -140.0). The pattern shows that SRS has an optimal weight range within composite systems. Experiments consistently prove that increasing SRS weight beyond certain thresholds (0.8+, 1.0+) causes significant score drops (-140+ points), suggesting over-reliance on SRS breaks the balanced composite framework. The key insight is that while SRS is the strongest individual predictor, the composite system's success comes from balanced integration rather than overwhelming dominance of any single factor. Offensive rating directly measures scoring efficiency per possession, which becomes increasingly critical in tournament play where possessions are limited and execution under pressure is paramount.
+
+
+## Experiment #79 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 14:03
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a dynamic performance scaling system that dramatically increases the scaling factor in later rounds from 0.05 to 0.20+ for Final Four/Championship games. The pattern of multiple +0.0 results suggests statistical differences aren't crossing the 0.5 threshold to flip outcomes. By making performance scores more decisive in the highest-value games (800 points = 42% of bracket), this should allow proven statistical advantages to actually change predictions where they matter most.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Round-specific performance scaling represents a new approach to address the persistent +0.0 result pattern. By dramatically increasing scaling factors in later rounds (0.05→0.30 for Championship), statistical differences become more decisive in the highest-value games where they matter most for overall bracket scoring. This targets the fundamental issue that even when teams have meaningfully different performance scores, the probability transformation may not deviate enough from 0.5 to change outcomes without aggressive scaling in high-leverage games.
