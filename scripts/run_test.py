@@ -29,7 +29,7 @@ sys.path.insert(0, SCRIPT_DIR)
 
 from scorer import score_bracket, format_scorecard
 
-YEARS = [2022, 2023, 2024, 2025]
+YEARS = [2018, 2019, 2021, 2022, 2023, 2024, 2025]
 DATA_DIR = os.path.join(PROJECT_DIR, "data")
 BRACKETS_DIR = os.path.join(DATA_DIR, "brackets")
 STATS_DIR = os.path.join(DATA_DIR, "team_stats")
