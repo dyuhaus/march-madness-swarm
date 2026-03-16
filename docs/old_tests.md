@@ -146,3 +146,26 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Elite defensive teams (def_rtg < 95) often outperform their seeds in the tournament. Defense becomes more crucial in tournament settings where possessions are limited and every stop matters. A defensive rating below 95 is typically in the top 20 nationally and indicates a team that can consistently force difficult shots and create turnovers, which translates well to tournament success regardless of seed.
+
+
+## Experiment #11 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 11:49
+- Baseline Score: 970.0
+- New Score: None (+0.0)
+- Change: Failed to parse response
+- Analysis: Score did not improve (change: +0.0). Change was not beneficial.
+
+
+## Experiment #12 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 11:50
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing an adaptive stats weighting system that reduces stats influence in early rounds (20%) where seeds are more predictive, but increases it significantly in later rounds (up to 60% in championship) where proven teams matter more. This targets the high-value games where team quality becomes more important than initial seeding.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Round-specific adaptive weighting strategy tested - instead of using fixed 70/30 seed/stats weights across all rounds, this approach gradually shifts from seed-heavy in early rounds (80/20 in R64) to stats-heavy in the championship (40/60). The logic is that teams reaching later rounds have proven themselves through actual tournament performance, making their regular season statistics more predictive than initial seeding. The championship game gets the highest stats weight (60%) since it's the single most valuable game (320 points) and teams that reach it have demonstrated tournament-level capability regardless of their original seed.
