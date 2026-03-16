@@ -299,3 +299,59 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Teams that reach later rounds have proven themselves through elimination games, making their regular season statistics more predictive than initial seeding. The Final Four (480 points total) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing accuracy in these rounds through stats-heavy weighting could significantly improve overall bracket performance. This approach recognizes that by the Final Four, traditional seeding becomes less reliable as weaker teams have been eliminated and execution under pressure becomes paramount.
+
+
+## Experiment #23 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 11:57
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing a "Final Four Focus" strategy that dramatically increases 1-seed win probabilities specifically in the Final Four (85%) and Championship (90%) games. Since these rounds alone are worth 800 points (42% of total), maximizing 1-seed success in the highest-value games should significantly improve average scores, especially given that 1-seeds historically perform very well when they reach these late rounds.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). The Final Four Focus strategy implements a hard override that always picks 1-seeds over non-1-seeds in the Final Four (160 pts/game) and Championship (320 pts) rounds. This targets the 800 highest-value points (42% of total bracket) based on the principle that 1-seeds who reach these late rounds have already proven their superiority by advancing through multiple elimination games, making them extremely likely to win against lower seeds in the most valuable games.
+
+
+## Experiment #24 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 11:58
+- Baseline Score: 970.0
+- New Score: 960.0 (-10.0)
+- Change: I'm implementing a strategic "elite team identification" system that recognizes teams with exceptional combined seed+stats performance and gives them significant advantages in later rounds. Teams with seed ≤ 3 AND SRS > 10 get substantial probability boosts in Sweet 16+ rounds, targeting the high-value games where truly elite teams should dominate.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 540
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: -10.0). Elite team identification strategy tested - teams with both high seeding (≤3) AND exceptional regular season performance (SRS > 10) receive escalating probability boosts in later rounds (15% in Sweet 16, up to 30% in Championship). This targets teams that combine tournament pedigree with proven dominance, recognizing that truly elite programs often outperform expectations in high-pressure situations. The dual criteria ensure only teams with both seeding committee respect and statistical excellence receive the boost.
+
+
+## Experiment #25 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 11:58
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing a "1-seed championship insurance" strategy that recognizes 1-seeds are underrepresented in championship games by the current algorithm. Since the championship is worth 320 points (1/6 of total bracket) and 1-seeds historically win ~50% of championships but reach finals more often, I'm adding a rule that always picks a 1-seed over any 2+ seed in the championship game. This surgical change targets only the highest-value single game while preserving all other prediction logic.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Championship game rule tested - implementing a targeted override that always picks 1-seeds over 2+ seeds specifically in the championship game only. This differs from previous attempts by being more surgical (only affecting 1 vs 2+ seed matchups in the final, not all 1-seed vs non-1-seed matchups). The championship game is worth 320 points (1/6 of total bracket) and represents the highest-leverage decision. While 1-seeds win ~50% of championships overall, they have significantly higher win rates when facing 2+ seeds in finals compared to other 1-seeds, making this a data-driven approach to maximize the probability of getting the single most valuable game correct.
+
+
+## Experiment #26 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 11:59
+- Baseline Score: 970.0
+- New Score: 950.0 (-20.0)
+- Change: I'm replacing the simple linear seed difference calculation (3% per seed) with an exponential model for later-round matchups. The current approach treats the difference between 1v4 and 2v3 the same as 5v8 and 6v7, but historically, top seeds have much stronger advantages over mid-seeds than mid-seeds have over each other. This should improve accuracy in high-value later rounds.
+- Per-Year Breakdown:
+  - 2022: 940 → 960
+  - 2023: 580 → 520
+  - 2024: 1240 → 1220
+  - 2025: 1120 → 1100
+- Analysis: Score did not improve (change: -20.0). The exponential seed advantage model for later rounds recognizes that seed differences become more meaningful as they increase. A 1-seed vs 4-seed matchup should have a much stronger probability advantage than a 5-seed vs 8-seed, but the previous linear model (3% per seed) treated them equally. The exponential formula `0.5 + 0.4 * (1 - (1.4 ** (-seed_diff)))` creates increasing advantages for larger seed gaps, better reflecting tournament dynamics where top seeds dominate when facing mid-to-lower seeds in later rounds.
