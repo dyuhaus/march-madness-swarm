@@ -57,13 +57,13 @@ ROUND_SEED_DECAY = {
 # Composite performance score factors
 # These create a comprehensive team strength rating
 PERFORMANCE_FACTORS = {
-    "srs": 0.6,             # Simple Rating System - most important
+    "srs": 0.4,             # Simple Rating System - balanced with shooting
     "off_rtg": 0.15,        # Offensive efficiency
     "def_rtg": -0.1,        # Defensive efficiency (lower is better)
     "wins": 0.05,           # Win total
     "losses": -0.05,        # Loss penalty
     "sos_all": 0.1,         # Strength of schedule
-    "efg_pct": 0.3,         # Effective field goal percentage
+    "efg_pct": 0.5,         # Effective field goal percentage - increased importance
     "trb_pct": 0.2,         # Rebounding percentage
     "tov_pct": -0.15,       # Turnover percentage (lower is better)
 }

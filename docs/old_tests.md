@@ -887,3 +887,17 @@ Format for each entry:
   - 2024: 1290 → 1250
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -142.5). SRS should be the dominant factor in the composite performance score system. Previous experiments consistently showed that SRS is the strongest single predictor of tournament success, and pure stats models would score +27.5 if architectural issues didn't prevent implementation. By making SRS weight 1.0 (primary factor) while keeping other complementary stats at much smaller weights, this maximizes SRS influence within the proven composite framework that successfully improved scores by +77.5.
+
+
+## Experiment #65 — PASS
+- Agent: agent-3
+- Date: 2026-03-16 13:50
+- Baseline Score: 1052.5
+- New Score: 1067.5 (+15.0)
+- Change: I'm implementing a balanced statistical weighting adjustment by reducing the SRS weight from 0.6 to 0.4 while increasing the effective field goal percentage weight from 0.3 to 0.5. Previous experiments showed that dramatically increasing SRS weight to 1.0+ caused significant score drops (-140+ points), suggesting the current 0.6 weight may already be near optimal. However, effective field goal percentage is a proven tournament predictor that measures shooting efficiency, which becomes crucial in high-pressure games where shot quality matters most.
+- Per-Year Breakdown:
+  - 2022: 620 → 610
+  - 2023: 1120 → 1160
+  - 2024: 1290 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score improved by 15.0 points. Previous experiments revealed that dramatically increasing SRS weight beyond 1.0 consistently caused significant score drops (-140+ points), suggesting the current 0.6 weight may be near optimal. Effective field goal percentage is a proven tournament predictor that measures shooting efficiency under pressure, which becomes increasingly important in later rounds where shot quality and execution matter most. This balanced approach maintains SRS as the primary factor while recognizing that shooting efficiency may be underweighted in the current system.

@@ -90,6 +90,8 @@ To improve further from 997.5, consider:
 
 - Composite performance scoring represents a different approach than previous experiments - instead of adjusting seed-based probabilities with individual stat factors, this creates a unified team strength metric combining multiple statistics. The key insight is that SRS (0.6 weight) captures overall team quality, while offensive efficiency, rebounding, and turnover rates provide complementary performance indicators. This should better identify teams that significantly outperform or underperform their seeding, particularly important for capturing high-value upset predictions in later rounds.
 
+- Previous experiments revealed that dramatically increasing SRS weight beyond 1.0 consistently caused significant score drops (-140+ points), suggesting the current 0.6 weight may be near optimal. Effective field goal percentage is a proven tournament predictor that measures shooting efficiency under pressure, which becomes increasingly important in later rounds where shot quality and execution matter most. This balanced approach maintains SRS as the primary factor while recognizing that shooting efficiency may be underweighted in the current system.
+
 ## Open Questions
 
 - What SPECIFIC games does the algorithm get wrong? (Run verbose test to find out)
