@@ -2192,3 +2192,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The key insight from 149 experiments is that linear probability scaling (`score_diff * 0.05`) creates tiny probability changes that rarely cross the 0.5 decision threshold to flip game outcomes. Even when teams have meaningfully different composite performance scores, linear scaling factors from 0.05 to 0.50 consistently produced +0.0 results. The solution appears to be exponential/sigmoid probability transformations that create steeper curves where moderate statistical advantages (0.3 performance difference) translate to decisive probabilities (~70%) instead of barely moving from 50%. This addresses the fundamental scaling bottleneck that prevented the proven composite performance system from reaching its full potential.
+
+
+## Experiment #151 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 18:30
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a championship-focused performance scaling system that dramatically increases the performance score scaling factor from 0.05 to 1.0 specifically in the championship game (round 5) while keeping other rounds at 0.05. The championship alone is worth 320 points (1/6 of total bracket), and teams reaching the final have proven themselves through 5 elimination rounds, making their statistical performance extremely predictive. This surgical change targets only the highest-value single game where statistical advantages should be most decisive.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The championship game represents the single highest-value decision (320 points = 1/6 of total bracket), and teams reaching the final have proven themselves through 5 rounds of elimination games, making their regular season statistical performance extremely predictive compared to initial seeding decisions. Round-specific performance scaling that dramatically increases the scaling factor specifically in the championship game (from 0.05 to 1.0) should allow statistical advantages to be much more decisive in the single most valuable game, while preserving proven scaling for all other rounds. This surgical approach targets only the championship where proven teams with superior statistics should dominate seeding considerations.
