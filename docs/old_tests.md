@@ -1962,3 +1962,37 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The logistic sigmoid probability transformation may be more effective than linear scaling for converting performance score differences into decisive win probabilities. The formula `1 / (1 + exp(-k * score_diff))` creates a smooth S-curve where moderate statistical advantages (0.3-0.5 performance difference) translate to more decisive probabilities (65-75%) compared to linear scaling that barely moves probabilities away from 50%. This mathematical approach could be key to allowing statistical advantages to cross the 0.5 decision threshold and actually flip game outcomes.
+
+
+## Experiment #137 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 18:21
+- Baseline Score: 1008.6
+- New Score: 987.1 (-21.5)
+- Change: I'm implementing a "SOS tiebreaker amplification" system that dramatically increases the SOS weight from 0.05 to 0.3 in the tiebreaker logic when performance scores are close. Strength of schedule becomes critically important when teams are statistically similar, as it identifies which teams have been battle-tested against quality competition throughout the season. This should help the algorithm better distinguish between equally-performing teams and favor those that have proven themselves against tougher opponents.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1120
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 980
+  - 2023: 1160 → 640
+  - 2024: 1330 → 1340
+  - 2025: 1180 → 1200
+- Analysis: Score did not improve (change: -21.5). The SOS tiebreaker system represents a critical insight for close statistical matchups. When teams have similar composite performance scores (within 2.0 points), strength of schedule becomes the determining factor to identify which teams have been battle-tested against quality opponents. Dramatically increasing the SOS weight from 0.05 to 0.3 in tiebreaker situations should help distinguish between equally-performing teams and favor those that have proven themselves against tougher competition throughout the season, which historically translates to better tournament performance in high-pressure situations.
+
+
+## Experiment #138 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 18:21
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a championship-focused scaling amplification system that dramatically increases the performance score scaling factor specifically in the Final Four (0.20) and Championship (0.35) rounds while keeping earlier rounds at the proven 0.05. Since these two rounds alone represent 50% of total bracket value (960 points), making statistical differences more decisive in these highest-value games should improve overall scoring where proven teams with superior stats should dominate seeding decisions.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Round-specific performance score scaling represents a targeted approach to address the persistent pattern of +0.0 results in the composite performance system. The key insight is that the Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making statistical accuracy in these rounds the most critical optimization target. Teams advancing to these rounds have proven themselves through multiple elimination games, making their statistical advantages more meaningful and deserving of more aggressive scaling factors that can actually flip game outcomes where proven excellence should dominate seeding decisions.
