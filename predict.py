@@ -22,12 +22,12 @@ Current approach: Seed-based baseline with stat adjustments.
 """
 
 # =============================================================================
-# CONFIGURATION â€” Tunable parameters
+# CONFIGURATION — Tunable parameters
 # =============================================================================
 
 # How much to weight seed differential vs stats
-SEED_WEIGHT = 0.7
-STATS_WEIGHT = 0.3
+SEED_WEIGHT = 0.2
+STATS_WEIGHT = 0.8
 
 # Seed advantage: higher seed (lower number) gets this base win probability
 # This is the core of the seed-based model
@@ -46,7 +46,7 @@ SEED_WIN_PROBABILITIES = {
 
 # Upset bonus: in later rounds, seed advantage matters less
 ROUND_SEED_DECAY = {
-    0: 1.0,   # Round of 64 â€” seeds matter most
+    0: 1.0,   # Round of 64 — seeds matter most
     1: 0.90,  # Round of 32
     2: 0.80,  # Sweet 16
     3: 0.70,  # Elite 8
@@ -81,7 +81,7 @@ def predict_bracket(bracket, team_stats):
             - round_num: int (0-5)
             - team1: dict with "name", "seed", optionally "score"
             - team2: dict with "name", "seed", optionally "score"
-            - winner: str (actual winner â€” DO NOT USE for predictions!)
+            - winner: str (actual winner — DO NOT USE for predictions!)
         team_stats: dict of team_name -> stat dict
     
     Returns:

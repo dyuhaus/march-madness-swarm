@@ -397,3 +397,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1110
 - Analysis: Score did not improve (change: -85.0). Comprehensive pure stats model implemented with enhanced stat factor weights and additional metrics. This approach uses SEED_WEIGHT=0.0 and STATS_WEIGHT=1.0 to completely eliminate seed bias, but unlike the failed pure SRS attempt, it leverages ALL available stat factors with optimized weights. Key improvements: increased SRS weight to 0.08, added efg_pct (0.15), win_loss_pct (0.12), fg_pct (0.10), and other advanced metrics. The model handles percentage stats normalization and calculates win-loss percentage when not directly available. This should capture comprehensive team quality better than either seeds or single-metric approaches.
+
+
+## Experiment #30 — PASS
+- Agent: agent-3
+- Date: 2026-03-16 12:18
+- Baseline Score: 970.0
+- New Score: 975.0 (+5.0)
+- Change: I'm implementing a stats-dominant hybrid model with SEED_WEIGHT=0.2 and STATS_WEIGHT=0.8, representing a dramatic shift toward proven statistical predictors while maintaining seed-based fallbacks when stats are unavailable. This targets the +27.5 improvement shown by pure stats while avoiding the architectural failures of recent experiments.
+- Per-Year Breakdown:
+  - 2022: 940 → 920
+  - 2023: 580 → 570
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1170
+- Analysis: Score improved by 5.0 points. The baseline analysis proved that SEED_WEIGHT=0.0, STATS_WEIGHT=1.0 scores 997.5 (+27.5), demonstrating that stats are significantly better predictors than seeds. However, pure stats implementations failed due to architectural issues. A hybrid approach with dramatically increased stats weighting (20/80 instead of 70/30) should capture most of the statistical advantage while maintaining seed-based fallbacks for robustness.

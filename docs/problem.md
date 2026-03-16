@@ -86,6 +86,8 @@ To improve further from 997.5, consider:
 - Multi-tiered upset protection: -10
 - Elite team identification: -10
 
+- The baseline analysis proved that SEED_WEIGHT=0.0, STATS_WEIGHT=1.0 scores 997.5 (+27.5), demonstrating that stats are significantly better predictors than seeds. However, pure stats implementations failed due to architectural issues. A hybrid approach with dramatically increased stats weighting (20/80 instead of 70/30) should capture most of the statistical advantage while maintaining seed-based fallbacks for robustness.
+
 ## Open Questions
 
 - What SPECIFIC games does the algorithm get wrong? (Run verbose test to find out)
