@@ -1562,3 +1562,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The composite performance score system has achieved significant improvements (+77.5, then +15.0, then +2.5) but recent experiments consistently scored +0.0, indicating a scaling issue where statistical differences between teams aren't large enough to flip game outcomes past the 0.5 decision threshold. Previous attempts with very aggressive scaling factors (0.30-1.0+) either had no effect or caused dramatic score drops. The key insight is that there's likely a narrow optimal range for the performance score scaling factor where statistical advantages become decisive without causing system instability. Conservative increases (60% from 0.05 to 0.08) may be more effective than dramatic jumps.
+
+
+## Experiment #113 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 18:05
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a defensive excellence bonus system that gives significant performance score boosts to teams with very good defensive efficiency (def_rtg < 105). Previous experiments with more restrictive thresholds (<90, <95, <100) had no effect because they were too selective. Tournament success often correlates with solid defense that can limit opponents and create extra possessions, especially valuable in later rounds where the 95% performance weighting makes this bonus influential.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Previous defensive bonus experiments with very restrictive thresholds (def_rtg < 90, < 95, < 98, < 100) consistently had no effect (+0.0 results), suggesting they were too selective and applied to too few teams to create meaningful performance score differences. Tournament success often correlates with solid defense that can limit opponents and create extra possessions. A more inclusive threshold (def_rtg < 105) should identify a broader set of defensively competent teams that can outperform their seeding through their ability to slow down opponents, which becomes increasingly valuable in later rounds where the 95% performance weighting makes defensive bonuses highly influential in game predictions.
