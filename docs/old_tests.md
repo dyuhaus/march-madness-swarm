@@ -635,3 +635,17 @@ Format for each entry:
   - 2024: 1290 → 1250
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -140.0). Round-specific SRS weighting represents a new approach that recognizes SRS becomes increasingly predictive in later rounds as weaker teams are eliminated. Teams reaching the Final Four and Championship have proven themselves through multiple elimination games, making their regular season dominance (measured by SRS) more predictive than in early rounds where upsets are more common. The scaling system (0.6 → 2.0) dramatically increases SRS influence in high-value games while proportionally reducing other factors to maintain balanced composite scores.
+
+
+## Experiment #47 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 12:29
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a defensive balance bonus system that significantly boosts teams with excellent defensive ratings (def_rtg < 95) by +1.0 in their composite performance score. Defense wins championships and becomes increasingly critical in tournament play where possessions are limited. This should help identify defensively elite teams that outperform their seeds, particularly in high-value later rounds.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Defensive excellence bonus specifically targeting teams with def_rtg < 95 represents a different approach than previous defensive rating experiments. Elite defense (typically top 20 nationally) often translates to tournament success beyond what offensive metrics suggest, particularly in later rounds where games are decided by a few possessions. The +1.0 bonus is substantial and should meaningfully impact head-to-head comparisons between teams with and without elite defense.
