@@ -915,3 +915,17 @@ Format for each entry:
   - 2024: 1320 → 1270
   - 2025: 1180 → 1170
 - Analysis: Score did not improve (change: -15.0). Teams that advance to later rounds have proven themselves through multiple elimination games, making their regular season statistics more predictive than initial seeding decisions. The Final Four (480 points) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing statistical accuracy in these rounds through round-specific weighting could significantly improve overall bracket performance. Early rounds should maintain more balanced seed/stats weighting since upsets are more random, while later rounds should heavily favor statistical performance as weaker teams are eliminated.
+
+
+## Experiment #67 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 13:53
+- Baseline Score: 1067.5
+- New Score: 1047.5 (-20.0)
+- Change: I'm implementing a tournament-proven teams identification system that gives substantial performance score bonuses to teams with exceptional combined statistical excellence (SRS > 8 AND efg_pct > 0.52). This combination identifies teams that have both strong overall performance and elite shooting efficiency, which becomes crucial in tournament play. Unlike previous failed attempts with higher thresholds, these more inclusive criteria should identify more teams that can outperform their seeding while still being selective enough to be meaningful.
+- Per-Year Breakdown:
+  - 2022: 610 → 600
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1300
+  - 2025: 1180 → 1130
+- Analysis: Score did not improve (change: -20.0). Previous attempts at championship-caliber team bonuses with very high thresholds (SRS > 12, efg_pct > 0.55) consistently failed or had no effect, suggesting these criteria were too restrictive and applied to very few teams. More inclusive thresholds (SRS > 8 AND efg_pct > 0.52) should identify a broader set of strong teams that combine good overall performance with solid shooting efficiency, which are key predictors of tournament success. The bonus system targets teams that have both statistical strength and the shooting ability to perform under tournament pressure.
