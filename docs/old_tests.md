@@ -1153,3 +1153,17 @@ Format for each entry:
   - 2024: 1320 → 1320
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The composite performance score system requires a minimum number of statistical factors (previously 3+) to calculate a performance score for teams. Many teams may have incomplete statistical profiles but still have some valuable data (like SRS or efg_pct) that could improve predictions over pure seed-based fallbacks. Reducing the minimum factor requirement to 1+ allows the system to utilize whatever statistical data is available, expanding the influence of the proven statistical approach to more games throughout the bracket.
+
+
+## Experiment #84 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 14:06
+- Baseline Score: 1067.5
+- New Score: 820.0 (-247.5)
+- Change: I'm implementing a comprehensive offensive rating focused system by dramatically increasing the weight of offensive rating from 0.15 to 0.6 while reducing SRS from 0.4 to 0.2. Previous experiments show that balanced statistical factors work better than over-weighting any single metric. Offensive efficiency directly measures a team's ability to score points per possession, which is fundamental to winning games and becomes critical in tournament play where possessions are limited and execution matters most.
+- Per-Year Breakdown:
+  - 2022: 610 → 470
+  - 2023: 1160 → 540
+  - 2024: 1320 → 1350
+  - 2025: 1180 → 920
+- Analysis: Score did not improve (change: -247.5). Experiment #65 proved that balanced statistical factor weighting is more effective than over-emphasizing any single metric. Reducing SRS from 0.6 to 0.4 while increasing effective field goal percentage from 0.3 to 0.5 improved scores by +15.0 points, demonstrating that shooting efficiency (efg_pct) may be underweighted relative to its tournament predictive power. Offensive rating measures points per 100 possessions and directly captures a team's ability to score efficiently, which is fundamental to winning games. Tournament play often features tighter defenses, making offensive efficiency even more critical for success.
