@@ -1209,3 +1209,17 @@ Format for each entry:
   - 2024: 1320 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Exponential scaling with round-specific amplification represents a new approach to address the persistent +0.0 result pattern. The key insight is that linear scaling factors (0.05-0.30) appear fundamentally too conservative to allow statistical differences to cross the 0.5 decision threshold. An exponential transformation `0.5 + 0.4 * (1 - exp(-|scaled_diff| * 2.0))` combined with increasing scaling factors by round (1.0 in R64 to 3.0 in Championship) should make even small statistical advantages extremely decisive in high-value games. This targets the fundamental scaling issue while maximizing impact in the highest-value rounds where statistical accuracy matters most for overall bracket scoring.
+
+
+## Experiment #88 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 14:09
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a round-specific scaling system that dramatically increases the impact of performance score differences in later rounds. The current 0.05 scaling factor appears too conservative - even when teams have meaningful statistical differences, the probability doesn't deviate enough from 0.5 to flip outcomes. By scaling from 0.05 in early rounds up to 0.25 in the championship, statistical advantages should become more decisive in the highest-value games where they matter most for overall bracket scoring.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Round-specific performance scaling implemented to address the fundamental issue that statistical differences between teams weren't large enough to flip game outcomes past the 0.5 decision threshold. The scaling factor increases from 0.05 in early rounds to 0.25 in the championship, making statistical advantages more decisive in the highest-value games (Final Four + Championship = 50% of total bracket value) where proven teams should dominate. This targets the pattern of multiple +0.0 results by ensuring meaningful performance score differences actually translate to probability changes that cross the decision boundary.
