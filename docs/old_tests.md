@@ -1945,3 +1945,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -5.7). Teams with elite ball security (turnover rate < 16%) represent a critical tournament advantage that may have been undervalued in previous experiments. Tournament play emphasizes ball security exponentially more than regular season games because every possession matters in elimination scenarios, and costly turnovers often eliminate higher-seeded teams in high-pressure situations. The turnover protection bonus system targets teams that demonstrate the discipline and execution necessary for deep tournament runs.
+
+
+## Experiment #136 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 18:20
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a logistic sigmoid probability transformation to replace the linear scaling. This uses the mathematical formula `1 / (1 + exp(-k * score_diff))` which creates a smooth S-curve that makes moderate statistical differences (0.3-0.5 performance gap) translate to more decisive win probabilities (65-75%) compared to the current linear approach that barely moves probabilities away from 50%. This should finally allow the proven composite system to flip more outcomes where teams have meaningful statistical advantages.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The logistic sigmoid probability transformation may be more effective than linear scaling for converting performance score differences into decisive win probabilities. The formula `1 / (1 + exp(-k * score_diff))` creates a smooth S-curve where moderate statistical advantages (0.3-0.5 performance difference) translate to more decisive probabilities (65-75%) compared to linear scaling that barely moves probabilities away from 50%. This mathematical approach could be key to allowing statistical advantages to cross the 0.5 decision threshold and actually flip game outcomes.
