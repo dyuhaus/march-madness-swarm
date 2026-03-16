@@ -845,3 +845,17 @@ Format for each entry:
   - 2024: 1290 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The tanh sigmoid transformation provides a steeper probability curve than linear scaling, potentially allowing statistical differences to overcome the 0.5 decision threshold more effectively. The formula `0.5 + 0.4 * tanh(score_diff * 2.0)` maps performance score differences to probabilities more aggressively: a 0.5 performance advantage yields ~76% win probability, and a 1.0 advantage yields ~96%. This should help the proven composite system flip more game outcomes where statistics clearly favor one team over seed-based predictions.
+
+
+## Experiment #62 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 12:44
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a win percentage calculation and integration into the composite performance score. Many teams don't have direct win_loss_pct in their stats, but we can calculate it from wins/losses when available. This provides another strong performance indicator that should improve team strength assessment, especially for teams with exceptional or poor records relative to other metrics.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Adding calculated win percentage to the composite performance score provides another valuable team strength indicator. Win percentage is a fundamental measure of team success that combines all aspects of performance into a single metric. The 0.4 weight makes it the second most important factor after SRS (0.6), reflecting that teams with exceptional or poor records relative to other metrics often outperform or underperform expectations in tournament play.
