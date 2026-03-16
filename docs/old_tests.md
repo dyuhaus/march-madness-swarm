@@ -355,3 +355,17 @@ Format for each entry:
   - 2024: 1240 → 1220
   - 2025: 1120 → 1100
 - Analysis: Score did not improve (change: -20.0). The exponential seed advantage model for later rounds recognizes that seed differences become more meaningful as they increase. A 1-seed vs 4-seed matchup should have a much stronger probability advantage than a 5-seed vs 8-seed, but the previous linear model (3% per seed) treated them equally. The exponential formula `0.5 + 0.4 * (1 - (1.4 ** (-seed_diff)))` creates increasing advantages for larger seed gaps, better reflecting tournament dynamics where top seeds dominate when facing mid-to-lower seeds in later rounds.
+
+
+## Experiment #27 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 12:00
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing an upset-resistant championship strategy that reduces the seed decay factor specifically in the championship game from 0.55 to 0.75, making the algorithm more conservative about picking championship upsets. The championship game is worth 320 points (1/6 of total bracket), and historically higher seeds perform better in finals than our current decay suggests. This should improve championship prediction accuracy without affecting other rounds.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Championship game seed decay should be higher than Final Four decay to be more conservative about upsets in the single highest-value game. The championship (320 points) represents 1/6 of total bracket value, and historically higher seeds perform better in finals than mid-range decay factors suggest. A decay of 0.75 preserves more seed advantage than the previous 0.55, aligning better with championship game dynamics where teams that reach the final typically favor higher seeds more strongly.
