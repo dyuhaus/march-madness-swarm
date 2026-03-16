@@ -1545,3 +1545,20 @@ Format for each entry:
   - 2024: 1330 → 1150
   - 2025: 1180 → 920
 - Analysis: Score did not improve (change: -385.0). Round-specific exponential scaling represents a new approach to address the fundamental scaling issue that has caused many recent +0.0 results. The key insight is that statistical differences between teams need dramatically more aggressive scaling in later rounds to cross the 0.5 decision threshold and actually flip game outcomes. By using exponential scaling factors that increase from 0.1 in early rounds to 2.0 in the championship, this targets the highest-value games (Final Four + Championship = 50% of total bracket value) where proven statistical advantages should be most decisive in determining outcomes.
+
+
+## Experiment #112 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 18:04
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a conservative scaling adjustment by increasing the performance score scaling factor from 0.05 to 0.08 (60% increase). The recent pattern of successful improvements (+77.5 from composite system, +15.0 from balanced SRS/efg_pct weighting, +2.5 from stats-dominant weighting) followed by many +0.0 results suggests the scaling may be just slightly too conservative. This moderate increase should make statistical differences more decisive without the dramatic failures seen with extreme scaling factors (1.0+).
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The composite performance score system has achieved significant improvements (+77.5, then +15.0, then +2.5) but recent experiments consistently scored +0.0, indicating a scaling issue where statistical differences between teams aren't large enough to flip game outcomes past the 0.5 decision threshold. Previous attempts with very aggressive scaling factors (0.30-1.0+) either had no effect or caused dramatic score drops. The key insight is that there's likely a narrow optimal range for the performance score scaling factor where statistical advantages become decisive without causing system instability. Conservative increases (60% from 0.05 to 0.08) may be more effective than dramatic jumps.
