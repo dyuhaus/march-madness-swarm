@@ -691,3 +691,17 @@ Format for each entry:
   - 2024: 1290 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Elite defensive efficiency (def_rtg < 90) represents teams in roughly the top 10-15 nationally and historically correlates strongly with tournament success. Defense becomes increasingly important in high-pressure tournament situations where possessions are limited and every stop matters. The +2.0 performance bonus is substantial enough to meaningfully impact head-to-head comparisons and should help identify defensive powerhouses that can shut down higher-seeded but offensively-focused opponents, particularly valuable in later rounds where the 90% performance weighting makes this bonus highly influential.
+
+
+## Experiment #51 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 12:31
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm dramatically increasing the performance score scaling factor from 0.05 to 0.15 (3x increase) to make statistical differences more decisive in game predictions. The current scaling may be too conservative, preventing the superior composite performance scores from overriding seed-based predictions even when teams have significantly different statistical profiles.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The recent string of +0.0 results suggests that the composite performance score system may need more aggressive scaling to overcome seed-based predictions. The current 0.05 scaling factor appears too conservative - even when teams have meaningfully different statistical profiles, the performance probability may not deviate enough from 0.5 to change outcomes. Increasing the scaling factor should make statistical advantages more decisive while maintaining the proven 90/10 performance/seed weighting structure.
