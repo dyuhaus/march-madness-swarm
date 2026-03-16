@@ -285,3 +285,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Strategic threshold decision-making tested - instead of using a fixed 0.5 threshold for all rounds, implemented round-specific thresholds that become more aggressive in high-value later rounds (0.45 in Final Four, 0.40 in Championship). This allows the algorithm to make more upset picks when probabilities are close in games worth the most points, while remaining conservative in early rounds where individual games have lower point values.
+
+
+## Experiment #22 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 11:56
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing an aggressive late-round stats weighting system that dramatically increases stats influence in the Final Four (70%) and Championship (80%), while keeping early rounds seed-heavy. This targets the highest-value games where proven teams with superior regular season metrics should dominate over initial seeding decisions.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Teams that reach later rounds have proven themselves through elimination games, making their regular season statistics more predictive than initial seeding. The Final Four (480 points total) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing accuracy in these rounds through stats-heavy weighting could significantly improve overall bracket performance. This approach recognizes that by the Final Four, traditional seeding becomes less reliable as weaker teams have been eliminated and execution under pressure becomes paramount.
