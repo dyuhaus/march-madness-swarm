@@ -1630,3 +1630,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -4.3). Tournament success depends heavily on shot-making under pressure. Effective field goal percentage measures a team's ability to make efficient shots (accounting for 3-pointers), which becomes increasingly critical in high-pressure tournament situations where defenses tighten and shot quality decreases. Teams that can maintain shooting efficiency throughout a season demonstrate the mental toughness and skill execution necessary for deep tournament runs, potentially making it more predictive than overall regular season dominance (SRS) for determining tournament outcomes.
+
+
+## Experiment #117 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 18:07
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a more aggressive performance score scaling factor, increasing it from 0.05 to 0.18 (3.6x increase). The pattern of recent experiments shows that while the composite performance system achieved significant improvements (+77.5, +15.0, +2.5), many subsequent attempts scored +0.0, suggesting statistical differences between teams aren't large enough to flip game outcomes past the 0.5 decision threshold. This scaling increase should make meaningful statistical advantages more decisive in determining winners.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The composite performance score system has been highly successful, achieving improvements of +77.5, then +15.0, then +2.5 points. However, many subsequent experiments scored exactly +0.0, indicating that statistical differences between teams weren't large enough to flip game outcomes past the 0.5 decision threshold. This suggests that the performance score scaling factor (which converts statistical differences into probability changes) may be the critical bottleneck preventing further improvements. Previous attempts with scaling factors from 0.05 to 0.50 showed that there may be an optimal "Goldilocks zone" where statistical advantages become decisive without causing system instability. The key insight is that even when teams have meaningfully different composite performance scores, small scaling factors prevent those differences from translating into actual game prediction changes.
