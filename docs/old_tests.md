@@ -1167,3 +1167,17 @@ Format for each entry:
   - 2024: 1320 → 1350
   - 2025: 1180 → 920
 - Analysis: Score did not improve (change: -247.5). Experiment #65 proved that balanced statistical factor weighting is more effective than over-emphasizing any single metric. Reducing SRS from 0.6 to 0.4 while increasing effective field goal percentage from 0.3 to 0.5 improved scores by +15.0 points, demonstrating that shooting efficiency (efg_pct) may be underweighted relative to its tournament predictive power. Offensive rating measures points per 100 possessions and directly captures a team's ability to score efficiently, which is fundamental to winning games. Tournament play often features tighter defenses, making offensive efficiency even more critical for success.
+
+
+## Experiment #85 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 14:07
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a dramatically more aggressive sigmoid probability transformation using a steep logistic curve that converts performance score differences into much more decisive probabilities. This should finally allow meaningful statistical differences to overcome the 0.5 threshold and flip game outcomes, breaking the pattern of +0.0 results.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1150
+  - 2024: 1320 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The composite performance score system has been the most successful approach (+77.5 improvement), but recent experiments consistently scored +0.0, suggesting that statistical differences weren't large enough to flip game outcomes past the 0.5 decision threshold. The key insight is that probability transformation is critical - linear scaling with small multipliers (0.05-0.30) appears fundamentally too conservative. A steep logistic sigmoid transformation `1 / (1 + exp(-score_diff * 5))` makes even small statistical advantages (0.2 performance difference = ~73% win probability) much more decisive in changing game predictions.
