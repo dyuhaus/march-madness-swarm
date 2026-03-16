@@ -621,3 +621,17 @@ Format for each entry:
   - 2024: 1290 → 1250
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -142.5). The composite performance score system represents the most successful architectural change so far (+77.5 improvement). SRS has been consistently identified as the strongest single predictor across all experiments, and doubling its weight from 0.6 to 1.2 while proportionally reducing other factors should maximize its predictive power within the proven framework. This approach avoids the architectural failures of pure SRS models while pushing SRS influence to dominate the composite calculation.
+
+
+## Experiment #46 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 12:28
+- Baseline Score: 1052.5
+- New Score: 912.5 (-140.0)
+- Change: I'm implementing round-specific SRS weighting that dramatically increases SRS influence in later rounds while reducing other factors. Instead of fixed weights, SRS weight scales from 0.6 in early rounds to 2.0 in the championship game, while other factors scale down proportionally. This targets the high-value games where SRS (the strongest statistical predictor) should dominate team quality assessment.
+- Per-Year Breakdown:
+  - 2022: 620 → 580
+  - 2023: 1120 → 640
+  - 2024: 1290 → 1250
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -140.0). Round-specific SRS weighting represents a new approach that recognizes SRS becomes increasingly predictive in later rounds as weaker teams are eliminated. Teams reaching the Final Four and Championship have proven themselves through multiple elimination games, making their regular season dominance (measured by SRS) more predictive than in early rounds where upsets are more common. The scaling system (0.6 → 2.0) dramatically increases SRS influence in high-value games while proportionally reducing other factors to maintain balanced composite scores.
