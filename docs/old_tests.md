@@ -1391,3 +1391,17 @@ Format for each entry:
   - 2024: 1320 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -7.5). The multi-dimensional statistical excellence system creates larger performance score gaps by rewarding teams that achieve elite thresholds across multiple categories (SRS > 10, efg_pct > 0.55, def_rtg < 95, wins >= 30). This approach targets the fundamental scaling issue that has caused many +0.0 results by ensuring that truly dominant teams have meaningfully higher performance scores than average teams, making the composite system more likely to flip outcomes where statistical excellence should predict tournament success.
+
+
+## Experiment #101 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 14:19
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a championship-focused performance scoring system that dramatically increases the composite performance score weight specifically in the Final Four (95%) and Championship (98%) rounds. Since these two rounds alone represent 50% of the total bracket value (960 points), maximizing statistical accuracy where proven teams have advanced through multiple eliminations should significantly improve overall scoring.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four (rounds 4-5) have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making round-specific statistical weighting a critical optimization strategy. This approach recognizes that by later rounds, traditional seeding becomes less reliable as weaker teams have been eliminated and proven statistical excellence should dominate prediction logic.
