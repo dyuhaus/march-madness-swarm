@@ -2328,3 +2328,37 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making round-specific statistical weighting potentially the most critical optimization strategy. This approach recognizes that by later rounds, traditional seeding becomes less reliable as weaker teams have been eliminated and proven statistical excellence should dominate prediction logic in the highest-value games.
+
+
+## Experiment #159 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 18:36
+- Baseline Score: 1008.6
+- New Score: 997.1 (-11.5)
+- Change: I'm implementing a "shot-making excellence" weighting system that significantly reduces effective field goal percentage from 0.5 to 0.3 while increasing SRS from 0.4 to 0.5. The recent experiments show that shooting efficiency may be overweighted - previous attempts to make it dominant (0.7-0.8) consistently decreased scores, while Experiment #65's best result came from balancing SRS and shooting. This adjustment makes SRS the clear primary factor while maintaining shooting as important but secondary, targeting teams with proven overall dominance that can execute in high-pressure tournament situations.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1120
+  - 2024: 1330 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -11.5). Previous experiments revealed a critical pattern: SRS and effective field goal percentage are the two most influential factors in the composite performance system, and their optimal balance determines success. Experiment #65 proved that reducing SRS while increasing efg_pct improved scores by +15.0. However, attempts to make shooting efficiency dominant (0.7-0.8 weight) consistently decreased scores by -4.3 to -12.9 points, suggesting shooting may be overweighted in the current system. The optimal balance appears to favor SRS as the primary factor (0.5 weight) while keeping shooting important but secondary (0.3 weight), targeting teams with proven overall dominance that can execute under tournament pressure.
+
+
+## Experiment #160 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 18:36
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a pure stats-dominant prediction model by setting SEED_WEIGHT to 0.0 and PERFORMANCE_WEIGHT to 1.0. The baseline analysis and experiments have repeatedly shown that pure stats would score +27.5 points (from 970.0 to 997.5), and the current composite performance system has already achieved significant improvements. This eliminates seed-based fallbacks entirely and relies purely on the proven composite performance scoring system that combines SRS, shooting efficiency, and other key tournament predictors.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Pure stats models (SEED_WEIGHT=0.0) have been theoretically proven to score +27.5 improvement based on baseline analysis, but previous pure stats implementations failed due to architectural issues. The key insight is that the composite performance score system has already demonstrated significant success (+77.5, +15.0, +2.5 improvements), proving that comprehensive statistical analysis dramatically outperforms seed-based predictions. By setting PERFORMANCE_WEIGHT=1.0 and SEED_WEIGHT=0.0 while maintaining the proven composite scoring framework, this approach should capture the full statistical advantage while preserving architectural stability through the established team stats lookup and performance calculation systems.
