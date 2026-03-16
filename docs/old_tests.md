@@ -90,3 +90,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Seed probability calibration tested - adjusting the 5-12 and 6-11 upset probabilities to be more conservative (0.65→0.72 and 0.63→0.70) to reduce over-prediction of these common upset picks. The algorithm may have been picking too many 12-over-5 and 11-over-6 upsets, and a more conservative approach could improve first-round accuracy without completely eliminating upset detection in these historically upset-prone matchups.
+
+
+## Experiment #7 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 11:47
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm increasing the stats weight from 30% to 50% to give team performance statistics more influence in predictions. The current 70/30 seed/stats split may be too conservative - teams with significantly better regular season stats (like high SRS, good offensive efficiency, strong records) should have more influence on predictions, especially since stats capture actual team quality beyond just seeding committee decisions.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 570
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1130
+- Analysis: Score did not improve (change: +0.0). Tested increasing stats weight from 30% to 50% (making it equal to seed weight) to allow team performance statistics more influence on predictions. This targets the hypothesis that regular season performance metrics like SRS, offensive efficiency, and win-loss records may be underutilized in the current heavily seed-biased approach and could help identify teams that are seeded poorly relative to their actual strength.
