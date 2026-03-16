@@ -62,3 +62,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Championship game seed decay should be higher (more conservative) than Final Four decay. The championship is the single highest-value game (320 points) and historically favors higher seeds more than our previous setting suggested. A decay of 0.75 vs 0.55 means seed advantages are preserved more in the final, which should align better with historical championship patterns where 1-2 seeds win about 70% of the time.
+
+
+## Experiment #5 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 11:46
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm reducing the decay factor for early rounds (Round of 64 and Round of 32) from 1.0/0.90 to 0.95/0.85 to make the algorithm slightly more willing to pick upsets in the first two rounds. This should help capture some of the 12-over-5 and 11-over-6 upsets that happen frequently (~35-37%) while maintaining seed advantages in later rounds where they matter more for scoring.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Early round decay adjustment tested - reducing Round of 64 decay from 1.0 to 0.95 and Round of 32 decay from 0.90 to 0.85 makes the algorithm more willing to pick upsets in the first two rounds where common upset patterns (12-over-5, 11-over-6) occur frequently. This targets the historical ~35-37% upset rates in these matchups while preserving seed advantages in later rounds where they're more important for scoring.
