@@ -229,3 +229,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: -10.0). Added a new elite seed protection system that recognizes two key patterns: (1) 1-2 seeds almost never lose to 10+ seeds in early rounds (R64/R32), which prevents over-aggressive upset picks, and (2) 1-2 seeds have strong advantages over 3+ seeds in later rounds (Sweet 16+), which maximizes high-value game accuracy. This system overrides normal probability calculations when these protection rules apply, creating a tiered approach that balances conservative early-round picks with aggressive late-round favoritism toward top seeds.
+
+
+## Experiment #18 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 11:54
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing a round-specific, high-stakes championship strategy that significantly increases 1-seed win probability specifically in the championship game when facing 2+ seeds. The championship alone is worth 320 points (1/6 of total), and historically 1-seeds win about 50% of championships but have much higher win rates against lower seeds in finals. This targets the single highest-value game with a data-driven approach.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Championship game strategy tested - implementing a targeted rule that always picks 1-seeds over 2+ seeds specifically in the championship game (round 5) only. This differs from previous attempts that applied blanket 1-seed favoritism across multiple rounds. The championship game represents the single highest-value decision (320 points = 1/6 of total bracket), and historically 1-seeds have very strong performance against 2+ seeds in finals, even if their overall championship win rate is ~50%. This surgical approach maximizes the probability of getting the most valuable game correct while preserving normal prediction logic for all other games.
