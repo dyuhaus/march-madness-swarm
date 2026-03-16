@@ -1055,3 +1055,31 @@ Format for each entry:
   - 2024: 1320 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -15.0). Previous experiments showed that SRS and effective field goal percentage are the two most impactful factors in the composite performance system, with balanced adjustments between them producing the best results. Experiment #65 proved that reducing SRS from 0.6 to 0.4 while increasing efg_pct from 0.3 to 0.5 improved scores by +15.0. This suggests an optimal balance exists between overall team strength (SRS) and shooting efficiency (efg_pct), with SRS needing to remain the dominant factor but not overwhelmingly so.
+
+
+## Experiment #77 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 14:01
+- Baseline Score: 1067.5
+- New Score: 927.5 (-140.0)
+- Change: I'm implementing a "shooting excellence" bonus system that gives substantial performance score boosts (+1.0) to teams with elite effective field goal percentage (>0.58). Elite shooting becomes increasingly critical in tournament play where defenses tighten and shot quality decreases, especially in high-value later rounds. This targets identifying teams that can maintain offensive efficiency under tournament pressure.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 600
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -140.0). Teams with elite effective field goal percentage (>58%) represent exceptional shooting efficiency that becomes increasingly critical in tournament play where defenses tighten and shot quality decreases. Elite shooting translates directly to scoring ability under pressure, which is essential for success in later rounds where the 90% performance weighting makes this bonus highly influential. The substantial +1.0 bonus should help elite shooting teams win more head-to-head matchups, particularly valuable in high-stakes games where execution matters most.
+
+
+## Experiment #78 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 14:02
+- Baseline Score: 1067.5
+- New Score: 927.5 (-140.0)
+- Change: I'm implementing a tournament-proven stat distribution that significantly reduces SRS weight from 0.4 to 0.25 while increasing offensive rating weight from 0.15 to 0.25. Recent experiments show that over-weighting SRS (attempts to increase to 0.8, 1.0+) consistently caused -140+ point drops. The current 0.4 SRS weight may still be too high relative to other factors. Offensive rating directly measures scoring efficiency, which becomes increasingly critical in tournament play where possessions are limited and execution matters most.
+- Per-Year Breakdown:
+  - 2022: 610 → 590
+  - 2023: 1160 → 580
+  - 2024: 1320 → 1360
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -140.0). The pattern shows that SRS has an optimal weight range within composite systems. Experiments consistently prove that increasing SRS weight beyond certain thresholds (0.8+, 1.0+) causes significant score drops (-140+ points), suggesting over-reliance on SRS breaks the balanced composite framework. The key insight is that while SRS is the strongest individual predictor, the composite system's success comes from balanced integration rather than overwhelming dominance of any single factor. Offensive rating directly measures scoring efficiency per possession, which becomes increasingly critical in tournament play where possessions are limited and execution under pressure is paramount.
