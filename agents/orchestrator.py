@@ -44,6 +44,7 @@ RUN_TEST = os.path.join(PROJECT_DIR, "scripts", "run_test.py")
 AGENTS_PER_ROUND = 5
 MODEL = "claude-sonnet-4-20250514"
 MAX_TOKENS = 4096
+DASHBOARD_STATE = os.path.join(PROJECT_DIR, "dashboard_state.json")
 
 # Determine python executable
 if sys.platform == "win32":
@@ -53,6 +54,25 @@ else:
 
 if not os.path.exists(VENV_PYTHON):
     VENV_PYTHON = sys.executable  # Fallback to current Python
+
+
+def write_dashboard_state(current_score, per_year, round_num, agent_num,
+                          total_attempts, total_improvements, last_exp=None):
+    """Write dashboard state for the Streamlit UI to pick up."""
+    state = {
+        "timestamp": datetime.now().isoformat(),
+        "current_score": current_score,
+        "round_num": round_num,
+        "agent_num": agent_num,
+        "total_attempts": total_attempts,
+        "total_improvements": total_improvements,
+        "per_year": per_year,
+        "last_experiment": last_exp,
+    }
+    tmp = DASHBOARD_STATE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2)
+    os.replace(tmp, DASHBOARD_STATE)
 
 
 def read_file(path):
@@ -412,22 +432,22 @@ def run_agent(agent_num, round_num, baseline_score, baseline_details, dry_run=Fa
         
         git_commit(f"Experiment #{exp_num}: {change_desc[:50]} (score: {baseline_score} -> {new_score})")
         git_push()
-        
+
         return True, new_score
     else:
         # No improvement, revert
         print(f"  ✗ No improvement ({new_score} <= {baseline_score}). Reverting.")
-        
+
         write_file(PREDICT_PY, backup)
-        
+
         log_experiment(exp_num, agent_num, False, change_desc,
                       baseline_score, new_score, baseline_details, new_details,
                       problem_update)
-        
+
         # Still commit the log update
         git_commit(f"Log experiment #{exp_num}: {change_desc[:50]} [FAILED]")
         git_push()
-        
+
         return False, None
 
 
@@ -465,7 +485,9 @@ def main():
     for year, yr_result in sorted(baseline_details.items()):
         if isinstance(yr_result, dict):
             print(f"  {year}: {yr_result.get('total_score', '?')}")
-    
+
+    write_dashboard_state(baseline_score, baseline_details, 0, 0, 0, 0)
+
     # Main loop
     round_num = 0
     total_improvements = 0
@@ -493,6 +515,13 @@ def main():
                     dry_run=args.dry_run
                 )
                 
+                last_exp = {
+                    "exp_num": get_experiment_count(),
+                    "passed": passed,
+                    "old_score": baseline_score,
+                    "new_score": new_score,
+                }
+
                 if passed and new_score is not None:
                     total_improvements += 1
                     baseline_score = new_score
@@ -500,7 +529,12 @@ def main():
                     fresh = get_current_score()
                     if fresh and not fresh.get("error"):
                         baseline_details = fresh.get("per_year", {})
-                
+
+                write_dashboard_state(
+                    baseline_score, baseline_details, round_num, agent_num,
+                    total_attempts, total_improvements, last_exp
+                )
+
                 # Brief pause between agents to avoid API rate limits
                 if not args.dry_run:
                     time.sleep(2)
