@@ -2056,3 +2056,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making round-specific statistical weighting the most critical optimization strategy. By implementing extreme stats weighting (99-99.5%) in the two highest-value rounds while preserving the proven 95% weighting for earlier rounds, this targets the fundamental insight that proven teams with superior statistics should almost completely override seeding considerations in games worth the most points.
+
+
+## Experiment #143 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 18:25
+- Baseline Score: 1008.6
+- New Score: 907.1 (-101.5)
+- Change: I'm implementing a major architectural shift by using pure SRS differential for the performance probability calculation instead of the complex composite score system. The baseline showed that pure stats would score +27.5, and SRS is consistently the strongest predictor. I'm replacing the weighted composite scoring with a direct SRS comparison using optimized sigmoid scaling, which should capture the proven statistical advantage while avoiding the architectural complexity that caused previous pure stats implementations to fail.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 850
+  - 2021: 770 → 770
+  - 2022: 620 → 540
+  - 2023: 1160 → 640
+  - 2024: 1330 → 1250
+  - 2025: 1180 → 1160
+- Analysis: Score did not improve (change: -101.5). Pure SRS differential represents a simplified but potentially more effective approach than complex composite scoring. Previous experiments showed that SRS is consistently the strongest single predictor, with pure stats models theoretically scoring +27.5 improvement. The key insight is using an optimized sigmoid transformation (exponential with 0.3 scaling factor) to convert SRS differences into decisive win probabilities, where a 5-point SRS advantage translates to ~80% win probability. This avoids the architectural complexity and scaling issues that plagued composite systems while maximizing the proven predictive power of SRS.
