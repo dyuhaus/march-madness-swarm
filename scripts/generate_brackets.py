@@ -389,8 +389,8 @@ def make_2025():
         g(59, 3, "Florida", 1, "Texas Tech", 3, "Florida"),
 
         # === Final Four (games 60-61) ===
-        g(60, 4, "Duke", 1, "Florida", 1, "Florida"),
-        g(61, 4, "Houston", 1, "Auburn", 1, "Houston"),
+        g(60, 4, "Florida", 1, "Auburn", 1, "Florida"),
+        g(61, 4, "Houston", 1, "Duke", 1, "Houston"),
 
         # === Championship (game 62) ===
         g(62, 5, "Florida", 1, "Houston", 1, "Florida"),

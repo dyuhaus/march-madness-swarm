@@ -846,11 +846,11 @@
       "round_num": 4,
       "round": "Final Four",
       "team1": {
-        "name": "Duke",
+        "name": "Florida",
         "seed": 1
       },
       "team2": {
-        "name": "Florida",
+        "name": "Auburn",
         "seed": 1
       },
       "winner": "Florida"
@@ -864,7 +864,7 @@
         "seed": 1
       },
       "team2": {
-        "name": "Auburn",
+        "name": "Duke",
         "seed": 1
       },
       "winner": "Houston"
