@@ -243,3 +243,45 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Championship game strategy tested - implementing a targeted rule that always picks 1-seeds over 2+ seeds specifically in the championship game (round 5) only. This differs from previous attempts that applied blanket 1-seed favoritism across multiple rounds. The championship game represents the single highest-value decision (320 points = 1/6 of total bracket), and historically 1-seeds have very strong performance against 2+ seeds in finals, even if their overall championship win rate is ~50%. This surgical approach maximizes the probability of getting the most valuable game correct while preserving normal prediction logic for all other games.
+
+
+## Experiment #19 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 11:55
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing a "proven team" bonus system that gives significant stat boosts to teams that reach later rounds, recognizing that advancing teams have demonstrated tournament-level performance that makes their regular season stats more predictive. This targets the high-value later rounds where teams have proven themselves by surviving elimination games.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Teams that advance to later rounds have proven their tournament capability by surviving elimination games. Their regular season statistics become more predictive because they've demonstrated they can execute under tournament pressure. Applying a multiplier to stats adjustments in later rounds (1.5x in Sweet 16, up to 3.0x in Championship) allows proven teams with strong underlying metrics to have more influence in the highest-value games where traditional seeding may be less reliable.
+
+
+## Experiment #20 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 11:55
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing a "championship pedigree" system that gives significant probability boosts to teams with historically strong tournament performance patterns. Teams with very high SRS (>15) get substantial boosts in later rounds, recognizing that elite regular season teams often perform better in high-pressure tournament situations. This targets the high-value later rounds where identifying truly elite teams becomes crucial.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Teams with exceptionally high SRS (>15) represent truly elite programs that often outperform their seeds in tournament play. These teams have demonstrated dominance throughout the regular season and typically have the talent and coaching to excel in high-pressure tournament situations. The championship pedigree system recognizes that elite regular season performance becomes more predictive in later rounds where inferior teams have been eliminated and execution under pressure becomes paramount.
+
+
+## Experiment #21 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 11:56
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: Unspecified change
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Strategic threshold decision-making tested - instead of using a fixed 0.5 threshold for all rounds, implemented round-specific thresholds that become more aggressive in high-value later rounds (0.45 in Final Four, 0.40 in Championship). This allows the algorithm to make more upset picks when probabilities are close in games worth the most points, while remaining conservative in early rounds where individual games have lower point values.
