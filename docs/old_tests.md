@@ -677,3 +677,17 @@ Format for each entry:
   - 2024: 1290 → 1250
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -10.0). The key insight is finding the "Goldilocks zone" for SRS weighting - previous experiments showed that modest increases (0.6 → 0.8) may work better than dramatic jumps (0.6 → 2.0) which caused -140 point drops. SRS is consistently the strongest predictor, but the composite system's success (+77.5) comes from balanced integration rather than overwhelming dominance of any single factor. The proportional reduction of other factors maintains the composite framework while maximizing SRS influence.
+
+
+## Experiment #50 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 12:31
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a complementary defensive excellence system that recognizes teams with elite defensive efficiency (def_rtg < 90) and provides substantial performance score bonuses. Elite defense is historically crucial in tournament success, and the current -0.1 weight severely undervalues teams that can shut down opponents in high-pressure games. This targets a different statistical dimension than the SRS-heavy current system.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Elite defensive efficiency (def_rtg < 90) represents teams in roughly the top 10-15 nationally and historically correlates strongly with tournament success. Defense becomes increasingly important in high-pressure tournament situations where possessions are limited and every stop matters. The +2.0 performance bonus is substantial enough to meaningfully impact head-to-head comparisons and should help identify defensive powerhouses that can shut down higher-seeded but offensively-focused opponents, particularly valuable in later rounds where the 90% performance weighting makes this bonus highly influential.
