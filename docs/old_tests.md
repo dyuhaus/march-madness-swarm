@@ -1894,3 +1894,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The pattern of many consecutive +0.0 results suggests that the fundamental issue may be performance score scaling rather than weighting. Even when teams have meaningfully different composite performance scores, small scaling factors (0.05-0.12) may be too conservative to create probability differences large enough to cross the 0.5 decision threshold and actually flip game outcomes. The scaling factor directly controls how much statistical advantage translates into predictive probability changes - this may be the critical bottleneck preventing the proven composite system from reaching its full potential.
+
+
+## Experiment #133 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 18:18
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a weighted turnover penalty system that dramatically increases the penalty for teams with poor ball security (tov_pct > 0.20) by adding an additional -0.3 penalty. Ball security becomes exponentially more critical in tournament play where possessions are precious and turnovers can be devastating in close elimination games. This should help identify teams that execute well under pressure versus those that crumble.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams with poor ball security (turnover rate >20%) may be significantly undervalued by basic turnover penalties. Tournament play emphasizes ball security exponentially more than regular season games because every possession matters in elimination scenarios. Teams that turn the ball over frequently under pressure often suffer devastating collapses in high-stakes tournament games, making additional penalties for poor ball security a critical factor in identifying teams likely to underperform their seeding.
