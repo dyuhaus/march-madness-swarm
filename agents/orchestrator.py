@@ -356,10 +356,10 @@ def run_agent(agent_num, round_num, baseline_score, baseline_details, dry_run=Fa
     """
     exp_num = get_experiment_count() + 1
     
-    print(f"\n{'─'*60}")
+    print(f"\n{'-'*60}")
     print(f"  Round {round_num}, Agent {agent_num} (Experiment #{exp_num})")
     print(f"  Baseline: {baseline_score} / 1920")
-    print(f"{'─'*60}")
+    print(f"{'-'*60}")
     
     # Step 1: Build prompt
     print("  [1/5] Building prompt...")
@@ -423,7 +423,7 @@ def run_agent(agent_num, round_num, baseline_score, baseline_details, dry_run=Fa
     
     if new_score > baseline_score:
         # IMPROVEMENT! Commit it.
-        print(f"  ✓ IMPROVEMENT: +{new_score - baseline_score:.1f} points!")
+        print(f"  IMPROVEMENT: +{new_score - baseline_score:.1f} points!")
         
         log_experiment(exp_num, agent_num, True, change_desc,
                       baseline_score, new_score, baseline_details, new_details,
@@ -436,7 +436,7 @@ def run_agent(agent_num, round_num, baseline_score, baseline_details, dry_run=Fa
         return True, new_score
     else:
         # No improvement, revert
-        print(f"  ✗ No improvement ({new_score} <= {baseline_score}). Reverting.")
+        print(f"  No improvement ({new_score} <= {baseline_score}). Reverting.")
 
         write_file(PREDICT_PY, backup)
 

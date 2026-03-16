@@ -34,3 +34,17 @@ Format for each entry:
   - 2024: 1240 (42/63 correct, 64.6%)
   - 2025: 1120 (50/63 correct, 58.3%)
 - Analysis: R64 accuracy 69-81%. Cascading errors hurt later rounds significantly. 2023 worst year (upset-heavy: 16-seed FDU beat 1-seed Purdue, 4-seed UConn won it all). 2024 best (1-seed UConn repeated). Key areas to improve: upset detection, stat-based adjustments, late-round weighting.
+
+
+## Experiment #3 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 11:45
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm increasing the seed decay more aggressively in later rounds to make upset predictions more likely in the Final Four and Championship games. The current decay only reduces seed advantage to 60% and 55% in the final rounds, but historically, lower seeds have better chances in later rounds when they've already proven themselves by advancing. This should help capture more upsets in high-value rounds.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Tested aggressive seed decay in Final Four (0.60→0.40) and Championship (0.55→0.30) rounds to increase upset likelihood in the highest-value games. This makes the algorithm more willing to pick lower seeds that have proven themselves by advancing deep into the tournament, which could capture historical patterns where teams like UConn (4-seed in 2023) or other lower seeds win championships.
