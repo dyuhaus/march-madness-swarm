@@ -929,3 +929,17 @@ Format for each entry:
   - 2024: 1320 → 1300
   - 2025: 1180 → 1130
 - Analysis: Score did not improve (change: -20.0). Previous attempts at championship-caliber team bonuses with very high thresholds (SRS > 12, efg_pct > 0.55) consistently failed or had no effect, suggesting these criteria were too restrictive and applied to very few teams. More inclusive thresholds (SRS > 8 AND efg_pct > 0.52) should identify a broader set of strong teams that combine good overall performance with solid shooting efficiency, which are key predictors of tournament success. The bonus system targets teams that have both statistical strength and the shooting ability to perform under tournament pressure.
+
+
+## Experiment #68 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 13:54
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing an exponential scaling transformation that dramatically increases the impact of performance score differences. Instead of linear scaling (0.05), I'm using an exponential function that makes even small statistical advantages much more decisive in flipping game outcomes. This should allow the proven composite performance system to actually change more predictions where teams have meaningful statistical differences.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1150
+  - 2024: 1320 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The exponential scaling transformation `0.5 + 0.4 * (1 - exp(-|score_diff| * 2.0))` makes small statistical differences much more decisive than linear scaling. A score difference of 0.25 now yields ~63% win probability (vs ~51% with linear), and a difference of 0.5 yields ~75% (vs ~53% linear). This should finally allow the composite performance system to flip game outcomes where teams have meaningful statistical differences, breaking the pattern of +0.0 results from insufficient scaling.
