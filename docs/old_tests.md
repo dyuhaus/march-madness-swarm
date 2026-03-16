@@ -943,3 +943,17 @@ Format for each entry:
   - 2024: 1320 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The exponential scaling transformation `0.5 + 0.4 * (1 - exp(-|score_diff| * 2.0))` makes small statistical differences much more decisive than linear scaling. A score difference of 0.25 now yields ~63% win probability (vs ~51% with linear), and a difference of 0.5 yields ~75% (vs ~53% linear). This should finally allow the composite performance system to flip game outcomes where teams have meaningful statistical differences, breaking the pattern of +0.0 results from insufficient scaling.
+
+
+## Experiment #69 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 13:55
+- Baseline Score: 1067.5
+- New Score: 1065.0 (-2.5)
+- Change: I'm implementing a dynamic round-specific performance weighting system that dramatically increases the composite performance score influence in the highest-value games. Instead of fixed 90% performance weighting, this scales from 85% in early rounds to 95% in Final Four and 98% in Championship. This targets the 800 highest-value points (42% of total bracket) where teams have proven themselves and statistical excellence should almost completely override seeding decisions.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1310
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -2.5). Previous round-specific weighting experiments consistently failed or had no effect, but this represents a more targeted approach. Instead of dramatic 70%→99% jumps that may be too extreme, this implements gradual scaling (85%→98%) that recognizes teams reaching later rounds have proven themselves through elimination games. The Final Four (480 points) + Championship (320 points) = 800 points (42% of total bracket), making statistical accuracy in these rounds extremely valuable. The key insight is that by the championship game, teams have survived 5 rounds of elimination, making their regular season statistical performance almost completely predictive compared to initial seeding decisions.
