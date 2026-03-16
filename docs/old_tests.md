@@ -118,3 +118,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Teams that advance to later rounds (Sweet 16+) have already proven they can win tournament games, which suggests that seed-based probabilities should be different in later rounds than in early rounds. The traditional upset rates from the first two rounds may not apply well to teams that have already survived multiple elimination games. This round-specific probability adjustment could better capture the tournament's changing dynamics as weaker teams are eliminated and the remaining field becomes more competitive.
+
+
+## Experiment #9 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 11:48
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing a round-specific stats weighting system where team statistics become more influential in later rounds. Early rounds stay seed-heavy (70/30) but later rounds gradually shift to equal weighting (50/50) by the championship. This targets the high-value games where proven teams matter more than initial seeding.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Round-specific weighting tested - gradually shifting from seed-heavy (70/30) in early rounds to equal weighting (50/50) in the championship game. This approach recognizes that teams reaching later rounds have proven themselves through actual tournament performance, making their regular season statistics more predictive than initial seeding. The championship game gets equal weight between seeds and stats since it's the highest-value game (320 points) and teams that reach it have demonstrated tournament-level capability.
