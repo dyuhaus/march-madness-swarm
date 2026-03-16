@@ -2107,3 +2107,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams with elite SRS ratings (>10) represent historically dominant programs that often outperform their tournament seeding. The championship excellence bonus system recognizes that truly elite teams with SRS values significantly above average (10+ represents roughly top 15-20 nationally) have shown consistent ability to win high-pressure tournament games regardless of matchup or round. This approach targets identifying championship-caliber teams early and giving them appropriate advantages in the performance-weighted system, especially valuable in later rounds where the 95% performance weighting makes statistical excellence more decisive.
+
+
+## Experiment #146 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 18:26
+- Baseline Score: 1008.6
+- New Score: 997.1 (-11.5)
+- Change: I'm implementing a strategic turnover penalty multiplier system that dramatically increases the turnover penalty from -0.15 to -0.30 while slightly reducing other factors to maintain balance. Ball security becomes exponentially more critical in tournament play where possessions are precious and turnovers can be devastating in close elimination games. This targets identifying teams that execute well under pressure versus those that crumble in high-stakes situations.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1120
+  - 2024: 1330 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -11.5). Tournament games are decided by ball security more than regular season games. Teams with poor turnover rates (>20%) often suffer devastating collapses in elimination games where every possession is precious. Doubling the turnover penalty from -0.15 to -0.30 while proportionally reducing other factors maintains balance but emphasizes teams that can execute under pressure. This targets a fundamental tournament skill that may be undervalued by seed-based predictions, especially valuable in later rounds where mental toughness separates advancing teams from those that crumble.
