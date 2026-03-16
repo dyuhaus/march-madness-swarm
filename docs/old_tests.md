@@ -817,3 +817,17 @@ Format for each entry:
   - 2024: 1290 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The recent pattern of multiple +0.0 results with the composite performance score system suggests that statistical differences between teams may not be translating into actual game outcome changes due to insufficient scaling. When teams have meaningfully different performance scores, the probability calculation needs to deviate enough from 0.5 to cross the decision threshold. The scaling factor directly controls how much statistical advantage is required to flip a game outcome, making it a critical parameter for allowing the proven statistical superiority to actually improve predictions.
+
+
+## Experiment #60 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 12:42
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a performance score boost for teams with exceptional composite scores (>1.0), giving them +0.5 additional performance advantage. Teams that significantly outperform the baseline across multiple statistical categories represent truly elite programs that often exceed their seeding expectations. This targets the high-value later rounds where exceptional teams should dominate and helps identify championship-caliber teams that may be underseeded.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams with composite performance scores above 1.0 represent historically dominant programs that combine multiple statistical advantages (high SRS, elite offensive efficiency, strong rebounding, low turnovers, etc.). These teams often outperform their tournament seeding and have the comprehensive skillset necessary for sustained tournament success. The elite performance bonus system recognizes that truly exceptional teams should have meaningful advantages in head-to-head matchups, particularly valuable in later rounds where the 90% performance weighting makes this bonus highly influential.
