@@ -1013,3 +1013,17 @@ Format for each entry:
   - 2024: 1320 → 1320
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistics increasingly predictive compared to initial seeding decisions. The Final Four (320 points per game × 2 = 640 points) and Championship (320 points) represent 960 of 1,920 total points (50% of total bracket value). Round-specific performance weighting that dramatically increases stats influence in these highest-value rounds (95% for Final Four, 98% for Championship) should maximize statistical accuracy where it matters most for overall bracket scoring.
+
+
+## Experiment #74 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 13:59
+- Baseline Score: 1067.5
+- New Score: 905.0 (-162.5)
+- Change: I'm implementing an aggressive SRS-focused weighting adjustment by increasing the SRS weight from 0.4 to 0.8 while proportionally reducing other factors. Previous experiments consistently showed SRS is the strongest single predictor, and the successful composite system provides a stable framework to maximize SRS influence. Unlike the failed experiments that increased SRS to 1.0+, this keeps it below the critical threshold that caused -140 point drops.
+- Per-Year Breakdown:
+  - 2022: 610 → 580
+  - 2023: 1160 → 610
+  - 2024: 1320 → 1250
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -162.5). SRS appears to have an optimal weight range within composite systems. Previous experiments showed that dramatically increasing SRS to 1.0+ caused -140 point drops, but moderate increases within the 0.4-0.8 range may capture more of its predictive power without triggering the architectural failures. The key insight is finding the balance where SRS dominates but doesn't overwhelm other complementary factors that provide stability to the composite framework.
