@@ -201,3 +201,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Championship-focused strategy tested - always picking 1-seeds over non-1-seeds in Final Four and Championship games. This approach recognizes that the championship game alone is worth 320 points (1/6 of total bracket value) and 1-seeds historically win about 50% of championships. By guaranteeing 1-seeds advance to the championship when they reach the Final Four, this strategy maximizes the probability of getting the highest-value games correct. The Final Four games (160 points each) and Championship (320 points) represent 640 points total, so correctly predicting 1-seed success in these rounds could significantly improve overall bracket scores.
+
+
+## Experiment #16 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 11:53
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm implementing a significant bias towards 1-seeds in the championship game by giving them a massive probability boost (0.85 base probability) when they face any non-1-seed. Since the championship game alone is worth 320 points (1/6 of total bracket value) and 1-seeds have historically won about 50% of championships, this aggressive strategy maximizes our chance of getting the single highest-value game correct.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Championship game strategy tested - implementing a hard rule that always picks 1-seeds over non-1-seeds in the championship game (round 5). This bypasses all other probability calculations and stats adjustments for this specific scenario. The logic is that the championship game is worth 320 points (1/6 of total bracket value) and represents the single highest-leverage decision in the entire bracket. Since 1-seeds have historically won about 50% of championships and are the most likely to reach the final game, this aggressive strategy maximizes our probability of getting the highest-value game correct, even if it means sacrificing some nuance in prediction.
