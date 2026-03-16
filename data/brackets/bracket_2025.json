@@ -1,7 +1,888 @@
 {
   "year": 2025,
-  "games": [],
-  "total_games": 63,
-  "source": "fallback_data",
-  "note": "Scraping failed or returned incomplete data. Run scrape_data.py again or manually populate."
+  "games": [
+    {
+      "game_id": 0,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Duke",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Mount St. Mary's",
+        "seed": 16
+      },
+      "winner": "Duke"
+    },
+    {
+      "game_id": 1,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Mississippi State",
+        "seed": 8
+      },
+      "team2": {
+        "name": "Baylor",
+        "seed": 9
+      },
+      "winner": "Baylor"
+    },
+    {
+      "game_id": 2,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Oregon",
+        "seed": 5
+      },
+      "team2": {
+        "name": "Liberty",
+        "seed": 12
+      },
+      "winner": "Oregon"
+    },
+    {
+      "game_id": 3,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Arizona",
+        "seed": 4
+      },
+      "team2": {
+        "name": "Akron",
+        "seed": 13
+      },
+      "winner": "Arizona"
+    },
+    {
+      "game_id": 4,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "BYU",
+        "seed": 6
+      },
+      "team2": {
+        "name": "VCU",
+        "seed": 11
+      },
+      "winner": "BYU"
+    },
+    {
+      "game_id": 5,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Wisconsin",
+        "seed": 3
+      },
+      "team2": {
+        "name": "Montana",
+        "seed": 14
+      },
+      "winner": "Wisconsin"
+    },
+    {
+      "game_id": 6,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Saint Mary's",
+        "seed": 7
+      },
+      "team2": {
+        "name": "Vanderbilt",
+        "seed": 10
+      },
+      "winner": "Saint Mary's"
+    },
+    {
+      "game_id": 7,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Alabama",
+        "seed": 2
+      },
+      "team2": {
+        "name": "Robert Morris",
+        "seed": 15
+      },
+      "winner": "Alabama"
+    },
+    {
+      "game_id": 8,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Houston",
+        "seed": 1
+      },
+      "team2": {
+        "name": "SIU Edwardsville",
+        "seed": 16
+      },
+      "winner": "Houston"
+    },
+    {
+      "game_id": 9,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Gonzaga",
+        "seed": 8
+      },
+      "team2": {
+        "name": "Georgia",
+        "seed": 9
+      },
+      "winner": "Gonzaga"
+    },
+    {
+      "game_id": 10,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Clemson",
+        "seed": 5
+      },
+      "team2": {
+        "name": "McNeese State",
+        "seed": 12
+      },
+      "winner": "McNeese State"
+    },
+    {
+      "game_id": 11,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Purdue",
+        "seed": 4
+      },
+      "team2": {
+        "name": "High Point",
+        "seed": 13
+      },
+      "winner": "Purdue"
+    },
+    {
+      "game_id": 12,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Illinois",
+        "seed": 6
+      },
+      "team2": {
+        "name": "Xavier",
+        "seed": 11
+      },
+      "winner": "Illinois"
+    },
+    {
+      "game_id": 13,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Kentucky",
+        "seed": 3
+      },
+      "team2": {
+        "name": "Troy",
+        "seed": 14
+      },
+      "winner": "Kentucky"
+    },
+    {
+      "game_id": 14,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "UCLA",
+        "seed": 7
+      },
+      "team2": {
+        "name": "Utah State",
+        "seed": 10
+      },
+      "winner": "UCLA"
+    },
+    {
+      "game_id": 15,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Tennessee",
+        "seed": 2
+      },
+      "team2": {
+        "name": "Wofford",
+        "seed": 15
+      },
+      "winner": "Tennessee"
+    },
+    {
+      "game_id": 16,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Auburn",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Alabama State",
+        "seed": 16
+      },
+      "winner": "Auburn"
+    },
+    {
+      "game_id": 17,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Louisville",
+        "seed": 8
+      },
+      "team2": {
+        "name": "Creighton",
+        "seed": 9
+      },
+      "winner": "Creighton"
+    },
+    {
+      "game_id": 18,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Michigan",
+        "seed": 5
+      },
+      "team2": {
+        "name": "UC San Diego",
+        "seed": 12
+      },
+      "winner": "Michigan"
+    },
+    {
+      "game_id": 19,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Texas A&M",
+        "seed": 4
+      },
+      "team2": {
+        "name": "Yale",
+        "seed": 13
+      },
+      "winner": "Texas A&M"
+    },
+    {
+      "game_id": 20,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Ole Miss",
+        "seed": 6
+      },
+      "team2": {
+        "name": "North Carolina",
+        "seed": 11
+      },
+      "winner": "Ole Miss"
+    },
+    {
+      "game_id": 21,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Iowa State",
+        "seed": 3
+      },
+      "team2": {
+        "name": "Lipscomb",
+        "seed": 14
+      },
+      "winner": "Iowa State"
+    },
+    {
+      "game_id": 22,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Marquette",
+        "seed": 7
+      },
+      "team2": {
+        "name": "New Mexico",
+        "seed": 10
+      },
+      "winner": "New Mexico"
+    },
+    {
+      "game_id": 23,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Michigan State",
+        "seed": 2
+      },
+      "team2": {
+        "name": "Bryant",
+        "seed": 15
+      },
+      "winner": "Michigan State"
+    },
+    {
+      "game_id": 24,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Florida",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Norfolk State",
+        "seed": 16
+      },
+      "winner": "Florida"
+    },
+    {
+      "game_id": 25,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Connecticut",
+        "seed": 8
+      },
+      "team2": {
+        "name": "Oklahoma",
+        "seed": 9
+      },
+      "winner": "Connecticut"
+    },
+    {
+      "game_id": 26,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Memphis",
+        "seed": 5
+      },
+      "team2": {
+        "name": "Colorado State",
+        "seed": 12
+      },
+      "winner": "Colorado State"
+    },
+    {
+      "game_id": 27,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Maryland",
+        "seed": 4
+      },
+      "team2": {
+        "name": "Grand Canyon",
+        "seed": 13
+      },
+      "winner": "Maryland"
+    },
+    {
+      "game_id": 28,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Missouri",
+        "seed": 6
+      },
+      "team2": {
+        "name": "Drake",
+        "seed": 11
+      },
+      "winner": "Drake"
+    },
+    {
+      "game_id": 29,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Texas Tech",
+        "seed": 3
+      },
+      "team2": {
+        "name": "UNC Wilmington",
+        "seed": 14
+      },
+      "winner": "Texas Tech"
+    },
+    {
+      "game_id": 30,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "Kansas",
+        "seed": 7
+      },
+      "team2": {
+        "name": "Arkansas",
+        "seed": 10
+      },
+      "winner": "Arkansas"
+    },
+    {
+      "game_id": 31,
+      "round_num": 0,
+      "round": "Round of 64",
+      "team1": {
+        "name": "St. John's (NY)",
+        "seed": 2
+      },
+      "team2": {
+        "name": "Omaha",
+        "seed": 15
+      },
+      "winner": "St. John's (NY)"
+    },
+    {
+      "game_id": 32,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Duke",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Baylor",
+        "seed": 9
+      },
+      "winner": "Duke"
+    },
+    {
+      "game_id": 33,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Oregon",
+        "seed": 5
+      },
+      "team2": {
+        "name": "Arizona",
+        "seed": 4
+      },
+      "winner": "Arizona"
+    },
+    {
+      "game_id": 34,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "BYU",
+        "seed": 6
+      },
+      "team2": {
+        "name": "Wisconsin",
+        "seed": 3
+      },
+      "winner": "BYU"
+    },
+    {
+      "game_id": 35,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Saint Mary's",
+        "seed": 7
+      },
+      "team2": {
+        "name": "Alabama",
+        "seed": 2
+      },
+      "winner": "Alabama"
+    },
+    {
+      "game_id": 36,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Houston",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Gonzaga",
+        "seed": 8
+      },
+      "winner": "Houston"
+    },
+    {
+      "game_id": 37,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "McNeese State",
+        "seed": 12
+      },
+      "team2": {
+        "name": "Purdue",
+        "seed": 4
+      },
+      "winner": "Purdue"
+    },
+    {
+      "game_id": 38,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Illinois",
+        "seed": 6
+      },
+      "team2": {
+        "name": "Kentucky",
+        "seed": 3
+      },
+      "winner": "Kentucky"
+    },
+    {
+      "game_id": 39,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "UCLA",
+        "seed": 7
+      },
+      "team2": {
+        "name": "Tennessee",
+        "seed": 2
+      },
+      "winner": "Tennessee"
+    },
+    {
+      "game_id": 40,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Auburn",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Creighton",
+        "seed": 9
+      },
+      "winner": "Auburn"
+    },
+    {
+      "game_id": 41,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Michigan",
+        "seed": 5
+      },
+      "team2": {
+        "name": "Texas A&M",
+        "seed": 4
+      },
+      "winner": "Michigan"
+    },
+    {
+      "game_id": 42,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Ole Miss",
+        "seed": 6
+      },
+      "team2": {
+        "name": "Iowa State",
+        "seed": 3
+      },
+      "winner": "Ole Miss"
+    },
+    {
+      "game_id": 43,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "New Mexico",
+        "seed": 10
+      },
+      "team2": {
+        "name": "Michigan State",
+        "seed": 2
+      },
+      "winner": "Michigan State"
+    },
+    {
+      "game_id": 44,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Florida",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Connecticut",
+        "seed": 8
+      },
+      "winner": "Florida"
+    },
+    {
+      "game_id": 45,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Colorado State",
+        "seed": 12
+      },
+      "team2": {
+        "name": "Maryland",
+        "seed": 4
+      },
+      "winner": "Maryland"
+    },
+    {
+      "game_id": 46,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Drake",
+        "seed": 11
+      },
+      "team2": {
+        "name": "Texas Tech",
+        "seed": 3
+      },
+      "winner": "Texas Tech"
+    },
+    {
+      "game_id": 47,
+      "round_num": 1,
+      "round": "Round of 32",
+      "team1": {
+        "name": "Arkansas",
+        "seed": 10
+      },
+      "team2": {
+        "name": "St. John's (NY)",
+        "seed": 2
+      },
+      "winner": "Arkansas"
+    },
+    {
+      "game_id": 48,
+      "round_num": 2,
+      "round": "Sweet 16",
+      "team1": {
+        "name": "Duke",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Arizona",
+        "seed": 4
+      },
+      "winner": "Duke"
+    },
+    {
+      "game_id": 49,
+      "round_num": 2,
+      "round": "Sweet 16",
+      "team1": {
+        "name": "BYU",
+        "seed": 6
+      },
+      "team2": {
+        "name": "Alabama",
+        "seed": 2
+      },
+      "winner": "Alabama"
+    },
+    {
+      "game_id": 50,
+      "round_num": 2,
+      "round": "Sweet 16",
+      "team1": {
+        "name": "Houston",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Purdue",
+        "seed": 4
+      },
+      "winner": "Houston"
+    },
+    {
+      "game_id": 51,
+      "round_num": 2,
+      "round": "Sweet 16",
+      "team1": {
+        "name": "Kentucky",
+        "seed": 3
+      },
+      "team2": {
+        "name": "Tennessee",
+        "seed": 2
+      },
+      "winner": "Tennessee"
+    },
+    {
+      "game_id": 52,
+      "round_num": 2,
+      "round": "Sweet 16",
+      "team1": {
+        "name": "Auburn",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Michigan",
+        "seed": 5
+      },
+      "winner": "Auburn"
+    },
+    {
+      "game_id": 53,
+      "round_num": 2,
+      "round": "Sweet 16",
+      "team1": {
+        "name": "Ole Miss",
+        "seed": 6
+      },
+      "team2": {
+        "name": "Michigan State",
+        "seed": 2
+      },
+      "winner": "Michigan State"
+    },
+    {
+      "game_id": 54,
+      "round_num": 2,
+      "round": "Sweet 16",
+      "team1": {
+        "name": "Florida",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Maryland",
+        "seed": 4
+      },
+      "winner": "Florida"
+    },
+    {
+      "game_id": 55,
+      "round_num": 2,
+      "round": "Sweet 16",
+      "team1": {
+        "name": "Texas Tech",
+        "seed": 3
+      },
+      "team2": {
+        "name": "Arkansas",
+        "seed": 10
+      },
+      "winner": "Texas Tech"
+    },
+    {
+      "game_id": 56,
+      "round_num": 3,
+      "round": "Elite 8",
+      "team1": {
+        "name": "Duke",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Alabama",
+        "seed": 2
+      },
+      "winner": "Duke"
+    },
+    {
+      "game_id": 57,
+      "round_num": 3,
+      "round": "Elite 8",
+      "team1": {
+        "name": "Houston",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Tennessee",
+        "seed": 2
+      },
+      "winner": "Houston"
+    },
+    {
+      "game_id": 58,
+      "round_num": 3,
+      "round": "Elite 8",
+      "team1": {
+        "name": "Auburn",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Michigan State",
+        "seed": 2
+      },
+      "winner": "Auburn"
+    },
+    {
+      "game_id": 59,
+      "round_num": 3,
+      "round": "Elite 8",
+      "team1": {
+        "name": "Florida",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Texas Tech",
+        "seed": 3
+      },
+      "winner": "Florida"
+    },
+    {
+      "game_id": 60,
+      "round_num": 4,
+      "round": "Final Four",
+      "team1": {
+        "name": "Duke",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Florida",
+        "seed": 1
+      },
+      "winner": "Florida"
+    },
+    {
+      "game_id": 61,
+      "round_num": 4,
+      "round": "Final Four",
+      "team1": {
+        "name": "Houston",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Auburn",
+        "seed": 1
+      },
+      "winner": "Houston"
+    },
+    {
+      "game_id": 62,
+      "round_num": 5,
+      "round": "Championship",
+      "team1": {
+        "name": "Florida",
+        "seed": 1
+      },
+      "team2": {
+        "name": "Houston",
+        "seed": 1
+      },
+      "winner": "Florida"
+    }
+  ],
+  "total_games": 63
 }

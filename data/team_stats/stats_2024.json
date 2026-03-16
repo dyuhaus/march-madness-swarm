@@ -46,7 +46,8 @@
     "efg_pct": 0.479,
     "tov_pct": 15.6,
     "orb_pct": 26.6,
-    "ft_rate": 0.277
+    "ft_rate": 0.277,
+    "sos_all": -1.12
   },
   "Air Force": {
     "name": "Air Force",
@@ -95,7 +96,8 @@
     "efg_pct": 0.538,
     "tov_pct": 16.9,
     "orb_pct": 23.8,
-    "ft_rate": 0.202
+    "ft_rate": 0.202,
+    "sos_all": 1.43
   },
   "Akron": {
     "name": "Akron",
@@ -144,7 +146,8 @@
     "efg_pct": 0.523,
     "tov_pct": 14.5,
     "orb_pct": 30.6,
-    "ft_rate": 0.231
+    "ft_rate": 0.231,
+    "sos_all": -2.08
   },
   "Alabama": {
     "name": "Alabama",
@@ -193,7 +196,8 @@
     "efg_pct": 0.563,
     "tov_pct": 13.6,
     "orb_pct": 35.0,
-    "ft_rate": 0.273
+    "ft_rate": 0.273,
+    "sos_all": 11.8
   },
   "Alabama A&M": {
     "name": "Alabama A&M",
@@ -242,7 +246,8 @@
     "efg_pct": 0.459,
     "tov_pct": 19.4,
     "orb_pct": 31.9,
-    "ft_rate": 0.341
+    "ft_rate": 0.341,
+    "sos_all": -7.52
   },
   "Alabama State": {
     "name": "Alabama State",
@@ -291,7 +296,8 @@
     "efg_pct": 0.423,
     "tov_pct": 13.2,
     "orb_pct": 32.4,
-    "ft_rate": 0.205
+    "ft_rate": 0.205,
+    "sos_all": -6.87
   },
   "Albany (NY)": {
     "name": "Albany (NY)",
@@ -340,7 +346,8 @@
     "efg_pct": 0.507,
     "tov_pct": 15.4,
     "orb_pct": 30.5,
-    "ft_rate": 0.209
+    "ft_rate": 0.209,
+    "sos_all": -5.22
   },
   "Alcorn State": {
     "name": "Alcorn State",
@@ -389,7 +396,8 @@
     "efg_pct": 0.487,
     "tov_pct": 14.5,
     "orb_pct": 33.6,
-    "ft_rate": 0.269
+    "ft_rate": 0.269,
+    "sos_all": -5.61
   },
   "American": {
     "name": "American",
@@ -438,7 +446,8 @@
     "efg_pct": 0.53,
     "tov_pct": 15.0,
     "orb_pct": 28.4,
-    "ft_rate": 0.204
+    "ft_rate": 0.204,
+    "sos_all": -8.79
   },
   "Appalachian State": {
     "name": "Appalachian State",
@@ -487,7 +496,8 @@
     "efg_pct": 0.528,
     "tov_pct": 13.1,
     "orb_pct": 30.7,
-    "ft_rate": 0.213
+    "ft_rate": 0.213,
+    "sos_all": -2.34
   },
   "Arizona": {
     "name": "Arizona",
@@ -536,7 +546,8 @@
     "efg_pct": 0.545,
     "tov_pct": 13.6,
     "orb_pct": 35.6,
-    "ft_rate": 0.261
+    "ft_rate": 0.261,
+    "sos_all": 9.45
   },
   "Arizona State": {
     "name": "Arizona State",
@@ -585,7 +596,8 @@
     "efg_pct": 0.473,
     "tov_pct": 13.2,
     "orb_pct": 21.9,
-    "ft_rate": 0.217
+    "ft_rate": 0.217,
+    "sos_all": 9.55
   },
   "Arkansas": {
     "name": "Arkansas",
@@ -634,7 +646,8 @@
     "efg_pct": 0.505,
     "tov_pct": 14.6,
     "orb_pct": 25.2,
-    "ft_rate": 0.342
+    "ft_rate": 0.342,
+    "sos_all": 8.15
   },
   "Arkansas State": {
     "name": "Arkansas State",
@@ -683,7 +696,8 @@
     "efg_pct": 0.515,
     "tov_pct": 13.4,
     "orb_pct": 34.5,
-    "ft_rate": 0.231
+    "ft_rate": 0.231,
+    "sos_all": -1.53
   },
   "Arkansas-Pine Bluff": {
     "name": "Arkansas-Pine Bluff",
@@ -732,7 +746,8 @@
     "efg_pct": 0.539,
     "tov_pct": 16.1,
     "orb_pct": 24.3,
-    "ft_rate": 0.286
+    "ft_rate": 0.286,
+    "sos_all": -7.6
   },
   "Army": {
     "name": "Army",
@@ -781,7 +796,8 @@
     "efg_pct": 0.477,
     "tov_pct": 16.6,
     "orb_pct": 27.3,
-    "ft_rate": 0.151
+    "ft_rate": 0.151,
+    "sos_all": -8.93
   },
   "Auburn": {
     "name": "Auburn",
@@ -830,7 +846,8 @@
     "efg_pct": 0.542,
     "tov_pct": 13.0,
     "orb_pct": 32.9,
-    "ft_rate": 0.287
+    "ft_rate": 0.287,
+    "sos_all": 7.66
   },
   "Austin Peay": {
     "name": "Austin Peay",
@@ -879,7 +896,8 @@
     "efg_pct": 0.513,
     "tov_pct": 11.3,
     "orb_pct": 30.0,
-    "ft_rate": 0.219
+    "ft_rate": 0.219,
+    "sos_all": -4.85
   },
   "Ball State": {
     "name": "Ball State",
@@ -928,7 +946,8 @@
     "efg_pct": 0.513,
     "tov_pct": 15.5,
     "orb_pct": 28.3,
-    "ft_rate": 0.295
+    "ft_rate": 0.295,
+    "sos_all": -5.93
   },
   "Baylor": {
     "name": "Baylor",
@@ -977,7 +996,8 @@
     "efg_pct": 0.558,
     "tov_pct": 15.0,
     "orb_pct": 35.8,
-    "ft_rate": 0.289
+    "ft_rate": 0.289,
+    "sos_all": 10.71
   },
   "Bellarmine": {
     "name": "Bellarmine",
@@ -1026,7 +1046,8 @@
     "efg_pct": 0.499,
     "tov_pct": 12.7,
     "orb_pct": 22.6,
-    "ft_rate": 0.175
+    "ft_rate": 0.175,
+    "sos_all": -2.47
   },
   "Belmont": {
     "name": "Belmont",
@@ -1075,7 +1096,8 @@
     "efg_pct": 0.553,
     "tov_pct": 15.3,
     "orb_pct": 21.7,
-    "ft_rate": 0.219
+    "ft_rate": 0.219,
+    "sos_all": 1.44
   },
   "Bethune-Cookman": {
     "name": "Bethune-Cookman",
@@ -1124,7 +1146,8 @@
     "efg_pct": 0.481,
     "tov_pct": 16.7,
     "orb_pct": 29.9,
-    "ft_rate": 0.281
+    "ft_rate": 0.281,
+    "sos_all": -8.87
   },
   "Binghamton": {
     "name": "Binghamton",
@@ -1173,7 +1196,8 @@
     "efg_pct": 0.508,
     "tov_pct": 15.3,
     "orb_pct": 30.2,
-    "ft_rate": 0.228
+    "ft_rate": 0.228,
+    "sos_all": -5.21
   },
   "Boise State": {
     "name": "Boise State",
@@ -1222,7 +1246,8 @@
     "efg_pct": 0.516,
     "tov_pct": 14.1,
     "orb_pct": 34.1,
-    "ft_rate": 0.264
+    "ft_rate": 0.264,
+    "sos_all": 7.35
   },
   "Boston College": {
     "name": "Boston College",
@@ -1271,7 +1296,8 @@
     "efg_pct": 0.525,
     "tov_pct": 13.5,
     "orb_pct": 27.3,
-    "ft_rate": 0.187
+    "ft_rate": 0.187,
+    "sos_all": 7.25
   },
   "Boston University": {
     "name": "Boston University",
@@ -1320,7 +1346,8 @@
     "efg_pct": 0.482,
     "tov_pct": 15.3,
     "orb_pct": 26.8,
-    "ft_rate": 0.217
+    "ft_rate": 0.217,
+    "sos_all": -8.49
   },
   "Bowling Green": {
     "name": "Bowling Green",
@@ -1369,7 +1396,8 @@
     "efg_pct": 0.484,
     "tov_pct": 14.1,
     "orb_pct": 30.5,
-    "ft_rate": 0.255
+    "ft_rate": 0.255,
+    "sos_all": -5.52
   },
   "Bradley": {
     "name": "Bradley",
@@ -1418,7 +1446,8 @@
     "efg_pct": 0.548,
     "tov_pct": 15.8,
     "orb_pct": 28.5,
-    "ft_rate": 0.2
+    "ft_rate": 0.2,
+    "sos_all": 2.96
   },
   "Brigham Young": {
     "name": "Brigham Young",
@@ -1467,7 +1496,8 @@
     "efg_pct": 0.548,
     "tov_pct": 13.1,
     "orb_pct": 32.8,
-    "ft_rate": 0.188
+    "ft_rate": 0.188,
+    "sos_all": 7.86
   },
   "Brown": {
     "name": "Brown",
@@ -1516,7 +1546,8 @@
     "efg_pct": 0.5,
     "tov_pct": 15.5,
     "orb_pct": 31.9,
-    "ft_rate": 0.217
+    "ft_rate": 0.217,
+    "sos_all": -1.73
   },
   "Bryant": {
     "name": "Bryant",
@@ -1565,7 +1596,8 @@
     "efg_pct": 0.523,
     "tov_pct": 14.2,
     "orb_pct": 21.0,
-    "ft_rate": 0.2
+    "ft_rate": 0.2,
+    "sos_all": -3.54
   },
   "Bucknell": {
     "name": "Bucknell",
@@ -1614,7 +1646,8 @@
     "efg_pct": 0.504,
     "tov_pct": 16.7,
     "orb_pct": 25.8,
-    "ft_rate": 0.208
+    "ft_rate": 0.208,
+    "sos_all": -6.39
   },
   "Buffalo": {
     "name": "Buffalo",
@@ -1663,7 +1696,8 @@
     "efg_pct": 0.477,
     "tov_pct": 17.9,
     "orb_pct": 28.5,
-    "ft_rate": 0.197
+    "ft_rate": 0.197,
+    "sos_all": -2.82
   },
   "Butler": {
     "name": "Butler",
@@ -1712,7 +1746,8 @@
     "efg_pct": 0.521,
     "tov_pct": 13.6,
     "orb_pct": 26.9,
-    "ft_rate": 0.208
+    "ft_rate": 0.208,
+    "sos_all": 9.49
   },
   "Cal Poly": {
     "name": "Cal Poly",
@@ -1761,7 +1796,8 @@
     "efg_pct": 0.46,
     "tov_pct": 16.5,
     "orb_pct": 24.5,
-    "ft_rate": 0.226
+    "ft_rate": 0.226,
+    "sos_all": -2.28
   },
   "Cal State Bakersfield": {
     "name": "Cal State Bakersfield",
@@ -1810,7 +1846,8 @@
     "efg_pct": 0.474,
     "tov_pct": 15.3,
     "orb_pct": 33.9,
-    "ft_rate": 0.234
+    "ft_rate": 0.234,
+    "sos_all": -2.17
   },
   "Cal State Fullerton": {
     "name": "Cal State Fullerton",
@@ -1859,7 +1896,8 @@
     "efg_pct": 0.491,
     "tov_pct": 16.1,
     "orb_pct": 24.8,
-    "ft_rate": 0.282
+    "ft_rate": 0.282,
+    "sos_all": -1.15
   },
   "Cal State Northridge": {
     "name": "Cal State Northridge",
@@ -1908,7 +1946,8 @@
     "efg_pct": 0.495,
     "tov_pct": 16.6,
     "orb_pct": 32.3,
-    "ft_rate": 0.245
+    "ft_rate": 0.245,
+    "sos_all": -4.13
   },
   "California": {
     "name": "California",
@@ -1957,7 +1996,8 @@
     "efg_pct": 0.492,
     "tov_pct": 14.1,
     "orb_pct": 28.6,
-    "ft_rate": 0.212
+    "ft_rate": 0.212,
+    "sos_all": 8.0
   },
   "California Baptist": {
     "name": "California Baptist",
@@ -2006,7 +2046,8 @@
     "efg_pct": 0.47,
     "tov_pct": 15.2,
     "orb_pct": 32.9,
-    "ft_rate": 0.257
+    "ft_rate": 0.257,
+    "sos_all": -2.26
   },
   "Campbell": {
     "name": "Campbell",
@@ -2055,7 +2096,8 @@
     "efg_pct": 0.53,
     "tov_pct": 15.9,
     "orb_pct": 24.4,
-    "ft_rate": 0.246
+    "ft_rate": 0.246,
+    "sos_all": -5.66
   },
   "Canisius": {
     "name": "Canisius",
@@ -2104,7 +2146,8 @@
     "efg_pct": 0.501,
     "tov_pct": 16.6,
     "orb_pct": 33.5,
-    "ft_rate": 0.177
+    "ft_rate": 0.177,
+    "sos_all": -4.89
   },
   "Central Arkansas": {
     "name": "Central Arkansas",
@@ -2153,7 +2196,8 @@
     "efg_pct": 0.481,
     "tov_pct": 15.4,
     "orb_pct": 29.7,
-    "ft_rate": 0.213
+    "ft_rate": 0.213,
+    "sos_all": -5.64
   },
   "Central Connecticut State": {
     "name": "Central Connecticut State",
@@ -2202,7 +2246,8 @@
     "efg_pct": 0.508,
     "tov_pct": 14.4,
     "orb_pct": 28.5,
-    "ft_rate": 0.227
+    "ft_rate": 0.227,
+    "sos_all": -10.15
   },
   "Central Michigan": {
     "name": "Central Michigan",
@@ -2251,7 +2296,8 @@
     "efg_pct": 0.473,
     "tov_pct": 15.3,
     "orb_pct": 28.8,
-    "ft_rate": 0.185
+    "ft_rate": 0.185,
+    "sos_all": -3.59
   },
   "Charleston Southern": {
     "name": "Charleston Southern",
@@ -2300,7 +2346,8 @@
     "efg_pct": 0.474,
     "tov_pct": 15.6,
     "orb_pct": 27.9,
-    "ft_rate": 0.226
+    "ft_rate": 0.226,
+    "sos_all": -1.59
   },
   "Charlotte": {
     "name": "Charlotte",
@@ -2349,7 +2396,8 @@
     "efg_pct": 0.513,
     "tov_pct": 13.5,
     "orb_pct": 26.7,
-    "ft_rate": 0.262
+    "ft_rate": 0.262,
+    "sos_all": 2.42
   },
   "Chattanooga": {
     "name": "Chattanooga",
@@ -2398,7 +2446,8 @@
     "efg_pct": 0.557,
     "tov_pct": 15.2,
     "orb_pct": 28.2,
-    "ft_rate": 0.234
+    "ft_rate": 0.234,
+    "sos_all": -3.85
   },
   "Chicago State": {
     "name": "Chicago State",
@@ -2445,7 +2494,8 @@
     "efg_pct": 0.48,
     "tov_pct": 16.5,
     "orb_pct": 34.2,
-    "ft_rate": 0.265
+    "ft_rate": 0.265,
+    "sos_all": -3.03
   },
   "Cincinnati": {
     "name": "Cincinnati",
@@ -2494,7 +2544,8 @@
     "efg_pct": 0.503,
     "tov_pct": 14.6,
     "orb_pct": 36.3,
-    "ft_rate": 0.19
+    "ft_rate": 0.19,
+    "sos_all": 8.49
   },
   "Clemson": {
     "name": "Clemson",
@@ -2543,7 +2594,8 @@
     "efg_pct": 0.539,
     "tov_pct": 13.0,
     "orb_pct": 27.2,
-    "ft_rate": 0.24
+    "ft_rate": 0.24,
+    "sos_all": 10.04
   },
   "Cleveland State": {
     "name": "Cleveland State",
@@ -2592,7 +2644,8 @@
     "efg_pct": 0.499,
     "tov_pct": 12.5,
     "orb_pct": 33.7,
-    "ft_rate": 0.211
+    "ft_rate": 0.211,
+    "sos_all": -4.44
   },
   "Coastal Carolina": {
     "name": "Coastal Carolina",
@@ -2641,7 +2694,8 @@
     "efg_pct": 0.498,
     "tov_pct": 16.2,
     "orb_pct": 30.9,
-    "ft_rate": 0.218
+    "ft_rate": 0.218,
+    "sos_all": -2.88
   },
   "Colgate": {
     "name": "Colgate",
@@ -2690,7 +2744,8 @@
     "efg_pct": 0.538,
     "tov_pct": 14.1,
     "orb_pct": 25.3,
-    "ft_rate": 0.186
+    "ft_rate": 0.186,
+    "sos_all": -5.55
   },
   "College of Charleston": {
     "name": "College of Charleston",
@@ -2739,7 +2794,8 @@
     "efg_pct": 0.522,
     "tov_pct": 11.9,
     "orb_pct": 33.6,
-    "ft_rate": 0.198
+    "ft_rate": 0.198,
+    "sos_all": -2.38
   },
   "Colorado": {
     "name": "Colorado",
@@ -2788,7 +2844,8 @@
     "efg_pct": 0.554,
     "tov_pct": 15.9,
     "orb_pct": 31.9,
-    "ft_rate": 0.275
+    "ft_rate": 0.275,
+    "sos_all": 8.36
   },
   "Colorado State": {
     "name": "Colorado State",
@@ -2837,7 +2894,8 @@
     "efg_pct": 0.549,
     "tov_pct": 13.9,
     "orb_pct": 25.0,
-    "ft_rate": 0.239
+    "ft_rate": 0.239,
+    "sos_all": 7.28
   },
   "Columbia": {
     "name": "Columbia",
@@ -2886,7 +2944,8 @@
     "efg_pct": 0.541,
     "tov_pct": 15.3,
     "orb_pct": 29.5,
-    "ft_rate": 0.219
+    "ft_rate": 0.219,
+    "sos_all": -3.72
   },
   "Connecticut": {
     "name": "Connecticut",
@@ -2935,7 +2994,8 @@
     "efg_pct": 0.569,
     "tov_pct": 12.3,
     "orb_pct": 36.7,
-    "ft_rate": 0.237
+    "ft_rate": 0.237,
+    "sos_all": 8.7
   },
   "Coppin State": {
     "name": "Coppin State",
@@ -2984,7 +3044,8 @@
     "efg_pct": 0.421,
     "tov_pct": 20.1,
     "orb_pct": 27.0,
-    "ft_rate": 0.226
+    "ft_rate": 0.226,
+    "sos_all": -6.49
   },
   "Cornell": {
     "name": "Cornell",
@@ -3033,7 +3094,8 @@
     "efg_pct": 0.572,
     "tov_pct": 15.0,
     "orb_pct": 28.4,
-    "ft_rate": 0.198
+    "ft_rate": 0.198,
+    "sos_all": -1.59
   },
   "Creighton": {
     "name": "Creighton",
@@ -3082,7 +3144,8 @@
     "efg_pct": 0.573,
     "tov_pct": 13.7,
     "orb_pct": 26.1,
-    "ft_rate": 0.194
+    "ft_rate": 0.194,
+    "sos_all": 9.53
   },
   "Dartmouth": {
     "name": "Dartmouth",
@@ -3131,7 +3194,8 @@
     "efg_pct": 0.477,
     "tov_pct": 17.3,
     "orb_pct": 21.8,
-    "ft_rate": 0.201
+    "ft_rate": 0.201,
+    "sos_all": -1.31
   },
   "Davidson": {
     "name": "Davidson",
@@ -3180,7 +3244,8 @@
     "efg_pct": 0.496,
     "tov_pct": 13.9,
     "orb_pct": 26.5,
-    "ft_rate": 0.243
+    "ft_rate": 0.243,
+    "sos_all": 3.3
   },
   "Dayton": {
     "name": "Dayton",
@@ -3229,7 +3294,8 @@
     "efg_pct": 0.563,
     "tov_pct": 14.3,
     "orb_pct": 26.3,
-    "ft_rate": 0.272
+    "ft_rate": 0.272,
+    "sos_all": 5.73
   },
   "Delaware": {
     "name": "Delaware",
@@ -3278,7 +3344,8 @@
     "efg_pct": 0.524,
     "tov_pct": 14.0,
     "orb_pct": 27.6,
-    "ft_rate": 0.212
+    "ft_rate": 0.212,
+    "sos_all": -4.3
   },
   "Delaware State": {
     "name": "Delaware State",
@@ -3327,7 +3394,8 @@
     "efg_pct": 0.474,
     "tov_pct": 17.8,
     "orb_pct": 33.6,
-    "ft_rate": 0.276
+    "ft_rate": 0.276,
+    "sos_all": -7.58
   },
   "Denver": {
     "name": "Denver",
@@ -3376,7 +3444,8 @@
     "efg_pct": 0.52,
     "tov_pct": 12.1,
     "orb_pct": 27.8,
-    "ft_rate": 0.271
+    "ft_rate": 0.271,
+    "sos_all": -4.82
   },
   "DePaul": {
     "name": "DePaul",
@@ -3425,7 +3494,8 @@
     "efg_pct": 0.481,
     "tov_pct": 18.0,
     "orb_pct": 22.0,
-    "ft_rate": 0.246
+    "ft_rate": 0.246,
+    "sos_all": 10.8
   },
   "Detroit Mercy": {
     "name": "Detroit Mercy",
@@ -3474,7 +3544,8 @@
     "efg_pct": 0.473,
     "tov_pct": 17.1,
     "orb_pct": 26.1,
-    "ft_rate": 0.223
+    "ft_rate": 0.223,
+    "sos_all": -2.62
   },
   "Drake": {
     "name": "Drake",
@@ -3523,7 +3594,8 @@
     "efg_pct": 0.549,
     "tov_pct": 12.3,
     "orb_pct": 24.2,
-    "ft_rate": 0.247
+    "ft_rate": 0.247,
+    "sos_all": 1.84
   },
   "Drexel": {
     "name": "Drexel",
@@ -3572,7 +3644,8 @@
     "efg_pct": 0.514,
     "tov_pct": 13.8,
     "orb_pct": 33.9,
-    "ft_rate": 0.216
+    "ft_rate": 0.216,
+    "sos_all": -3.64
   },
   "Duke": {
     "name": "Duke",
@@ -3621,7 +3694,8 @@
     "efg_pct": 0.546,
     "tov_pct": 12.4,
     "orb_pct": 32.1,
-    "ft_rate": 0.248
+    "ft_rate": 0.248,
+    "sos_all": 8.36
   },
   "Duquesne": {
     "name": "Duquesne",
@@ -3670,7 +3744,8 @@
     "efg_pct": 0.503,
     "tov_pct": 15.1,
     "orb_pct": 30.5,
-    "ft_rate": 0.232
+    "ft_rate": 0.232,
+    "sos_all": 4.68
   },
   "East Carolina": {
     "name": "East Carolina",
@@ -3719,7 +3794,8 @@
     "efg_pct": 0.479,
     "tov_pct": 13.9,
     "orb_pct": 32.9,
-    "ft_rate": 0.243
+    "ft_rate": 0.243,
+    "sos_all": 1.32
   },
   "East Tennessee State": {
     "name": "East Tennessee State",
@@ -3768,7 +3844,8 @@
     "efg_pct": 0.47,
     "tov_pct": 14.9,
     "orb_pct": 35.1,
-    "ft_rate": 0.234
+    "ft_rate": 0.234,
+    "sos_all": -2.74
   },
   "East Texas A&M": {
     "name": "East Texas A&M",
@@ -3817,7 +3894,8 @@
     "efg_pct": 0.487,
     "tov_pct": 14.5,
     "orb_pct": 25.6,
-    "ft_rate": 0.208
+    "ft_rate": 0.208,
+    "sos_all": -5.19
   },
   "Eastern Illinois": {
     "name": "Eastern Illinois",
@@ -3866,7 +3944,8 @@
     "efg_pct": 0.467,
     "tov_pct": 13.1,
     "orb_pct": 29.0,
-    "ft_rate": 0.195
+    "ft_rate": 0.195,
+    "sos_all": -6.5
   },
   "Eastern Kentucky": {
     "name": "Eastern Kentucky",
@@ -3915,7 +3994,8 @@
     "efg_pct": 0.521,
     "tov_pct": 13.4,
     "orb_pct": 34.9,
-    "ft_rate": 0.214
+    "ft_rate": 0.214,
+    "sos_all": -4.49
   },
   "Eastern Michigan": {
     "name": "Eastern Michigan",
@@ -3964,7 +4044,8 @@
     "efg_pct": 0.478,
     "tov_pct": 15.0,
     "orb_pct": 28.7,
-    "ft_rate": 0.166
+    "ft_rate": 0.166,
+    "sos_all": -5.07
   },
   "Eastern Washington": {
     "name": "Eastern Washington",
@@ -4013,7 +4094,8 @@
     "efg_pct": 0.578,
     "tov_pct": 16.7,
     "orb_pct": 26.8,
-    "ft_rate": 0.294
+    "ft_rate": 0.294,
+    "sos_all": -2.99
   },
   "Elon": {
     "name": "Elon",
@@ -4062,7 +4144,8 @@
     "efg_pct": 0.52,
     "tov_pct": 15.1,
     "orb_pct": 30.2,
-    "ft_rate": 0.225
+    "ft_rate": 0.225,
+    "sos_all": -5.46
   },
   "Evansville": {
     "name": "Evansville",
@@ -4111,7 +4194,8 @@
     "efg_pct": 0.506,
     "tov_pct": 14.9,
     "orb_pct": 22.5,
-    "ft_rate": 0.203
+    "ft_rate": 0.203,
+    "sos_all": 0.75
   },
   "Fairfield": {
     "name": "Fairfield",
@@ -4160,7 +4244,8 @@
     "efg_pct": 0.523,
     "tov_pct": 13.5,
     "orb_pct": 28.5,
-    "ft_rate": 0.212
+    "ft_rate": 0.212,
+    "sos_all": -6.53
   },
   "FDU": {
     "name": "FDU",
@@ -4209,7 +4294,8 @@
     "efg_pct": 0.486,
     "tov_pct": 14.9,
     "orb_pct": 28.5,
-    "ft_rate": 0.237
+    "ft_rate": 0.237,
+    "sos_all": -9.27
   },
   "Florida": {
     "name": "Florida",
@@ -4258,7 +4344,8 @@
     "efg_pct": 0.518,
     "tov_pct": 13.1,
     "orb_pct": 37.3,
-    "ft_rate": 0.275
+    "ft_rate": 0.275,
+    "sos_all": 8.81
   },
   "Florida A&M": {
     "name": "Florida A&M",
@@ -4307,7 +4394,8 @@
     "efg_pct": 0.484,
     "tov_pct": 18.9,
     "orb_pct": 27.6,
-    "ft_rate": 0.194
+    "ft_rate": 0.194,
+    "sos_all": -4.19
   },
   "Florida Atlantic": {
     "name": "Florida Atlantic",
@@ -4356,7 +4444,8 @@
     "efg_pct": 0.547,
     "tov_pct": 13.8,
     "orb_pct": 33.4,
-    "ft_rate": 0.251
+    "ft_rate": 0.251,
+    "sos_all": 4.61
   },
   "Florida Gulf Coast": {
     "name": "Florida Gulf Coast",
@@ -4405,7 +4494,8 @@
     "efg_pct": 0.524,
     "tov_pct": 15.0,
     "orb_pct": 30.0,
-    "ft_rate": 0.192
+    "ft_rate": 0.192,
+    "sos_all": -3.94
   },
   "Florida International": {
     "name": "Florida International",
@@ -4454,7 +4544,8 @@
     "efg_pct": 0.507,
     "tov_pct": 16.5,
     "orb_pct": 27.9,
-    "ft_rate": 0.189
+    "ft_rate": 0.189,
+    "sos_all": -2.17
   },
   "Florida State": {
     "name": "Florida State",
@@ -4503,7 +4594,8 @@
     "efg_pct": 0.503,
     "tov_pct": 14.3,
     "orb_pct": 28.5,
-    "ft_rate": 0.261
+    "ft_rate": 0.261,
+    "sos_all": 9.27
   },
   "Fordham": {
     "name": "Fordham",
@@ -4552,7 +4644,8 @@
     "efg_pct": 0.467,
     "tov_pct": 15.5,
     "orb_pct": 32.6,
-    "ft_rate": 0.233
+    "ft_rate": 0.233,
+    "sos_all": 1.48
   },
   "Fresno State": {
     "name": "Fresno State",
@@ -4601,7 +4694,8 @@
     "efg_pct": 0.516,
     "tov_pct": 16.8,
     "orb_pct": 24.3,
-    "ft_rate": 0.212
+    "ft_rate": 0.212,
+    "sos_all": 3.5
   },
   "Furman": {
     "name": "Furman",
@@ -4650,7 +4744,8 @@
     "efg_pct": 0.521,
     "tov_pct": 14.2,
     "orb_pct": 29.9,
-    "ft_rate": 0.234
+    "ft_rate": 0.234,
+    "sos_all": -1.93
   },
   "Gardner-Webb": {
     "name": "Gardner-Webb",
@@ -4699,7 +4794,8 @@
     "efg_pct": 0.498,
     "tov_pct": 14.2,
     "orb_pct": 29.4,
-    "ft_rate": 0.222
+    "ft_rate": 0.222,
+    "sos_all": -1.73
   },
   "George Mason": {
     "name": "George Mason",
@@ -4748,7 +4844,8 @@
     "efg_pct": 0.523,
     "tov_pct": 15.7,
     "orb_pct": 31.7,
-    "ft_rate": 0.275
+    "ft_rate": 0.275,
+    "sos_all": 1.85
   },
   "George Washington": {
     "name": "George Washington",
@@ -4797,7 +4894,8 @@
     "efg_pct": 0.518,
     "tov_pct": 15.2,
     "orb_pct": 25.9,
-    "ft_rate": 0.257
+    "ft_rate": 0.257,
+    "sos_all": -0.06
   },
   "Georgetown": {
     "name": "Georgetown",
@@ -4846,7 +4944,8 @@
     "efg_pct": 0.486,
     "tov_pct": 15.2,
     "orb_pct": 33.4,
-    "ft_rate": 0.242
+    "ft_rate": 0.242,
+    "sos_all": 7.72
   },
   "Georgia": {
     "name": "Georgia",
@@ -4895,7 +4994,8 @@
     "efg_pct": 0.498,
     "tov_pct": 14.0,
     "orb_pct": 27.1,
-    "ft_rate": 0.263
+    "ft_rate": 0.263,
+    "sos_all": 8.63
   },
   "Georgia Southern": {
     "name": "Georgia Southern",
@@ -4944,7 +5044,8 @@
     "efg_pct": 0.508,
     "tov_pct": 16.3,
     "orb_pct": 28.8,
-    "ft_rate": 0.212
+    "ft_rate": 0.212,
+    "sos_all": -2.53
   },
   "Georgia State": {
     "name": "Georgia State",
@@ -4993,7 +5094,8 @@
     "efg_pct": 0.495,
     "tov_pct": 11.9,
     "orb_pct": 27.8,
-    "ft_rate": 0.216
+    "ft_rate": 0.216,
+    "sos_all": -2.59
   },
   "Georgia Tech": {
     "name": "Georgia Tech",
@@ -5042,7 +5144,8 @@
     "efg_pct": 0.487,
     "tov_pct": 15.2,
     "orb_pct": 31.6,
-    "ft_rate": 0.207
+    "ft_rate": 0.207,
+    "sos_all": 8.82
   },
   "Gonzaga": {
     "name": "Gonzaga",
@@ -5091,7 +5194,8 @@
     "efg_pct": 0.574,
     "tov_pct": 12.1,
     "orb_pct": 33.9,
-    "ft_rate": 0.22
+    "ft_rate": 0.22,
+    "sos_all": 4.02
   },
   "Grambling": {
     "name": "Grambling",
@@ -5140,7 +5244,8 @@
     "efg_pct": 0.487,
     "tov_pct": 17.0,
     "orb_pct": 29.8,
-    "ft_rate": 0.272
+    "ft_rate": 0.272,
+    "sos_all": -5.48
   },
   "Grand Canyon": {
     "name": "Grand Canyon",
@@ -5189,7 +5294,8 @@
     "efg_pct": 0.521,
     "tov_pct": 15.0,
     "orb_pct": 34.4,
-    "ft_rate": 0.337
+    "ft_rate": 0.337,
+    "sos_all": -0.52
   },
   "Green Bay": {
     "name": "Green Bay",
@@ -5238,7 +5344,8 @@
     "efg_pct": 0.53,
     "tov_pct": 16.2,
     "orb_pct": 27.7,
-    "ft_rate": 0.209
+    "ft_rate": 0.209,
+    "sos_all": -4.07
   },
   "Hampton": {
     "name": "Hampton",
@@ -5287,7 +5394,8 @@
     "efg_pct": 0.484,
     "tov_pct": 15.2,
     "orb_pct": 30.1,
-    "ft_rate": 0.21
+    "ft_rate": 0.21,
+    "sos_all": -5.29
   },
   "Harvard": {
     "name": "Harvard",
@@ -5336,7 +5444,8 @@
     "efg_pct": 0.505,
     "tov_pct": 15.7,
     "orb_pct": 26.8,
-    "ft_rate": 0.244
+    "ft_rate": 0.244,
+    "sos_all": -2.08
   },
   "Hawaii": {
     "name": "Hawaii",
@@ -5385,7 +5494,8 @@
     "efg_pct": 0.53,
     "tov_pct": 16.3,
     "orb_pct": 26.4,
-    "ft_rate": 0.275
+    "ft_rate": 0.275,
+    "sos_all": -2.57
   },
   "High Point": {
     "name": "High Point",
@@ -5434,7 +5544,8 @@
     "efg_pct": 0.531,
     "tov_pct": 13.3,
     "orb_pct": 37.4,
-    "ft_rate": 0.334
+    "ft_rate": 0.334,
+    "sos_all": -4.83
   },
   "Hofstra": {
     "name": "Hofstra",
@@ -5483,7 +5594,8 @@
     "efg_pct": 0.557,
     "tov_pct": 14.0,
     "orb_pct": 23.6,
-    "ft_rate": 0.162
+    "ft_rate": 0.162,
+    "sos_all": -1.98
   },
   "Holy Cross": {
     "name": "Holy Cross",
@@ -5532,7 +5644,8 @@
     "efg_pct": 0.506,
     "tov_pct": 14.9,
     "orb_pct": 24.1,
-    "ft_rate": 0.17
+    "ft_rate": 0.17,
+    "sos_all": -7.87
   },
   "Houston": {
     "name": "Houston",
@@ -5581,7 +5694,8 @@
     "efg_pct": 0.503,
     "tov_pct": 11.4,
     "orb_pct": 36.8,
-    "ft_rate": 0.211
+    "ft_rate": 0.211,
+    "sos_all": 9.8
   },
   "Houston Christian": {
     "name": "Houston Christian",
@@ -5630,7 +5744,8 @@
     "efg_pct": 0.475,
     "tov_pct": 17.8,
     "orb_pct": 31.2,
-    "ft_rate": 0.234
+    "ft_rate": 0.234,
+    "sos_all": -3.89
   },
   "Howard": {
     "name": "Howard",
@@ -5679,7 +5794,8 @@
     "efg_pct": 0.522,
     "tov_pct": 18.9,
     "orb_pct": 34.4,
-    "ft_rate": 0.314
+    "ft_rate": 0.314,
+    "sos_all": -8.02
   },
   "Idaho": {
     "name": "Idaho",
@@ -5728,7 +5844,8 @@
     "efg_pct": 0.51,
     "tov_pct": 15.4,
     "orb_pct": 24.1,
-    "ft_rate": 0.201
+    "ft_rate": 0.201,
+    "sos_all": -4.69
   },
   "Idaho State": {
     "name": "Idaho State",
@@ -5777,7 +5894,8 @@
     "efg_pct": 0.517,
     "tov_pct": 14.5,
     "orb_pct": 30.4,
-    "ft_rate": 0.226
+    "ft_rate": 0.226,
+    "sos_all": -5.11
   },
   "Illinois": {
     "name": "Illinois",
@@ -5826,7 +5944,8 @@
     "efg_pct": 0.536,
     "tov_pct": 12.6,
     "orb_pct": 35.6,
-    "ft_rate": 0.273
+    "ft_rate": 0.273,
+    "sos_all": 9.54
   },
   "Illinois State": {
     "name": "Illinois State",
@@ -5875,7 +5994,8 @@
     "efg_pct": 0.479,
     "tov_pct": 14.9,
     "orb_pct": 29.0,
-    "ft_rate": 0.256
+    "ft_rate": 0.256,
+    "sos_all": 0.43
   },
   "Illinois-Chicago": {
     "name": "Illinois-Chicago",
@@ -5924,7 +6044,8 @@
     "efg_pct": 0.512,
     "tov_pct": 15.9,
     "orb_pct": 23.4,
-    "ft_rate": 0.179
+    "ft_rate": 0.179,
+    "sos_all": 1.3
   },
   "Incarnate Word": {
     "name": "Incarnate Word",
@@ -5973,7 +6094,8 @@
     "efg_pct": 0.494,
     "tov_pct": 19.1,
     "orb_pct": 30.3,
-    "ft_rate": 0.261
+    "ft_rate": 0.261,
+    "sos_all": -7.92
   },
   "Indiana": {
     "name": "Indiana",
@@ -6022,7 +6144,8 @@
     "efg_pct": 0.521,
     "tov_pct": 15.5,
     "orb_pct": 27.0,
-    "ft_rate": 0.25
+    "ft_rate": 0.25,
+    "sos_all": 9.74
   },
   "Indiana State": {
     "name": "Indiana State",
@@ -6071,7 +6194,8 @@
     "efg_pct": 0.6,
     "tov_pct": 14.7,
     "orb_pct": 23.5,
-    "ft_rate": 0.266
+    "ft_rate": 0.266,
+    "sos_all": 2.26
   },
   "Iona": {
     "name": "Iona",
@@ -6120,7 +6244,8 @@
     "efg_pct": 0.5,
     "tov_pct": 13.0,
     "orb_pct": 28.3,
-    "ft_rate": 0.186
+    "ft_rate": 0.186,
+    "sos_all": -5.95
   },
   "Iowa": {
     "name": "Iowa",
@@ -6169,7 +6294,8 @@
     "efg_pct": 0.528,
     "tov_pct": 11.6,
     "orb_pct": 27.4,
-    "ft_rate": 0.256
+    "ft_rate": 0.256,
+    "sos_all": 9.26
   },
   "Iowa State": {
     "name": "Iowa State",
@@ -6218,7 +6344,8 @@
     "efg_pct": 0.52,
     "tov_pct": 13.3,
     "orb_pct": 31.1,
-    "ft_rate": 0.248
+    "ft_rate": 0.248,
+    "sos_all": 8.51
   },
   "IU Indy": {
     "name": "IU Indy",
@@ -6267,7 +6394,8 @@
     "efg_pct": 0.469,
     "tov_pct": 18.5,
     "orb_pct": 30.3,
-    "ft_rate": 0.253
+    "ft_rate": 0.253,
+    "sos_all": -4.62
   },
   "Jackson State": {
     "name": "Jackson State",
@@ -6316,7 +6444,8 @@
     "efg_pct": 0.47,
     "tov_pct": 16.0,
     "orb_pct": 34.9,
-    "ft_rate": 0.244
+    "ft_rate": 0.244,
+    "sos_all": -7.15
   },
   "Jacksonville": {
     "name": "Jacksonville",
@@ -6365,7 +6494,8 @@
     "efg_pct": 0.491,
     "tov_pct": 16.1,
     "orb_pct": 36.3,
-    "ft_rate": 0.253
+    "ft_rate": 0.253,
+    "sos_all": -4.87
   },
   "Jacksonville State": {
     "name": "Jacksonville State",
@@ -6414,7 +6544,8 @@
     "efg_pct": 0.499,
     "tov_pct": 17.1,
     "orb_pct": 33.9,
-    "ft_rate": 0.261
+    "ft_rate": 0.261,
+    "sos_all": -3.14
   },
   "James Madison": {
     "name": "James Madison",
@@ -6463,7 +6594,8 @@
     "efg_pct": 0.544,
     "tov_pct": 13.0,
     "orb_pct": 32.5,
-    "ft_rate": 0.24
+    "ft_rate": 0.24,
+    "sos_all": -3.75
   },
   "Kansas": {
     "name": "Kansas",
@@ -6512,7 +6644,8 @@
     "efg_pct": 0.538,
     "tov_pct": 14.9,
     "orb_pct": 25.7,
-    "ft_rate": 0.231
+    "ft_rate": 0.231,
+    "sos_all": 11.32
   },
   "Kansas City": {
     "name": "Kansas City",
@@ -6561,7 +6694,8 @@
     "efg_pct": 0.498,
     "tov_pct": 15.1,
     "orb_pct": 32.6,
-    "ft_rate": 0.213
+    "ft_rate": 0.213,
+    "sos_all": -4.5
   },
   "Kansas State": {
     "name": "Kansas State",
@@ -6610,7 +6744,8 @@
     "efg_pct": 0.502,
     "tov_pct": 18.2,
     "orb_pct": 32.4,
-    "ft_rate": 0.276
+    "ft_rate": 0.276,
+    "sos_all": 9.97
   },
   "Kennesaw State": {
     "name": "Kennesaw State",
@@ -6659,7 +6794,8 @@
     "efg_pct": 0.518,
     "tov_pct": 13.7,
     "orb_pct": 30.7,
-    "ft_rate": 0.226
+    "ft_rate": 0.226,
+    "sos_all": -5.84
   },
   "Kent State": {
     "name": "Kent State",
@@ -6708,7 +6844,8 @@
     "efg_pct": 0.511,
     "tov_pct": 14.8,
     "orb_pct": 31.8,
-    "ft_rate": 0.239
+    "ft_rate": 0.239,
+    "sos_all": -2.54
   },
   "Kentucky": {
     "name": "Kentucky",
@@ -6757,7 +6894,8 @@
     "efg_pct": 0.572,
     "tov_pct": 12.6,
     "orb_pct": 28.9,
-    "ft_rate": 0.235
+    "ft_rate": 0.235,
+    "sos_all": 7.46
   },
   "La Salle": {
     "name": "La Salle",
@@ -6806,7 +6944,8 @@
     "efg_pct": 0.499,
     "tov_pct": 12.2,
     "orb_pct": 27.5,
-    "ft_rate": 0.178
+    "ft_rate": 0.178,
+    "sos_all": 0.85
   },
   "Lafayette": {
     "name": "Lafayette",
@@ -6855,7 +6994,8 @@
     "efg_pct": 0.47,
     "tov_pct": 15.5,
     "orb_pct": 24.5,
-    "ft_rate": 0.162
+    "ft_rate": 0.162,
+    "sos_all": -6.01
   },
   "Lamar": {
     "name": "Lamar",
@@ -6904,7 +7044,8 @@
     "efg_pct": 0.512,
     "tov_pct": 15.4,
     "orb_pct": 34.4,
-    "ft_rate": 0.245
+    "ft_rate": 0.245,
+    "sos_all": -8.28
   },
   "Le Moyne": {
     "name": "Le Moyne",
@@ -6953,7 +7094,8 @@
     "efg_pct": 0.514,
     "tov_pct": 14.7,
     "orb_pct": 23.7,
-    "ft_rate": 0.187
+    "ft_rate": 0.187,
+    "sos_all": -9.55
   },
   "Lehigh": {
     "name": "Lehigh",
@@ -7002,7 +7144,8 @@
     "efg_pct": 0.5,
     "tov_pct": 15.1,
     "orb_pct": 22.8,
-    "ft_rate": 0.232
+    "ft_rate": 0.232,
+    "sos_all": -6.6
   },
   "Liberty": {
     "name": "Liberty",
@@ -7051,7 +7194,8 @@
     "efg_pct": 0.555,
     "tov_pct": 13.9,
     "orb_pct": 26.1,
-    "ft_rate": 0.169
+    "ft_rate": 0.169,
+    "sos_all": -1.56
   },
   "Lindenwood": {
     "name": "Lindenwood",
@@ -7100,7 +7244,8 @@
     "efg_pct": 0.446,
     "tov_pct": 15.5,
     "orb_pct": 24.5,
-    "ft_rate": 0.277
+    "ft_rate": 0.277,
+    "sos_all": -7.23
   },
   "Lipscomb": {
     "name": "Lipscomb",
@@ -7149,7 +7294,8 @@
     "efg_pct": 0.57,
     "tov_pct": 12.7,
     "orb_pct": 23.6,
-    "ft_rate": 0.21
+    "ft_rate": 0.21,
+    "sos_all": -5.04
   },
   "Little Rock": {
     "name": "Little Rock",
@@ -7198,7 +7344,8 @@
     "efg_pct": 0.526,
     "tov_pct": 15.1,
     "orb_pct": 31.9,
-    "ft_rate": 0.246
+    "ft_rate": 0.246,
+    "sos_all": -8.24
   },
   "Long Beach State": {
     "name": "Long Beach State",
@@ -7247,7 +7394,8 @@
     "efg_pct": 0.487,
     "tov_pct": 14.7,
     "orb_pct": 33.3,
-    "ft_rate": 0.271
+    "ft_rate": 0.271,
+    "sos_all": -1.19
   },
   "Long Island University": {
     "name": "Long Island University",
@@ -7296,7 +7444,8 @@
     "efg_pct": 0.464,
     "tov_pct": 17.8,
     "orb_pct": 25.4,
-    "ft_rate": 0.213
+    "ft_rate": 0.213,
+    "sos_all": -7.58
   },
   "Longwood": {
     "name": "Longwood",
@@ -7345,7 +7494,8 @@
     "efg_pct": 0.502,
     "tov_pct": 15.4,
     "orb_pct": 38.3,
-    "ft_rate": 0.269
+    "ft_rate": 0.269,
+    "sos_all": -4.76
   },
   "Louisiana": {
     "name": "Louisiana",
@@ -7394,7 +7544,8 @@
     "efg_pct": 0.516,
     "tov_pct": 14.5,
     "orb_pct": 31.5,
-    "ft_rate": 0.205
+    "ft_rate": 0.205,
+    "sos_all": -2.67
   },
   "Louisiana State": {
     "name": "Louisiana State",
@@ -7443,7 +7594,8 @@
     "efg_pct": 0.522,
     "tov_pct": 16.1,
     "orb_pct": 30.7,
-    "ft_rate": 0.277
+    "ft_rate": 0.277,
+    "sos_all": 6.75
   },
   "Louisiana Tech": {
     "name": "Louisiana Tech",
@@ -7492,7 +7644,8 @@
     "efg_pct": 0.52,
     "tov_pct": 15.6,
     "orb_pct": 34.5,
-    "ft_rate": 0.287
+    "ft_rate": 0.287,
+    "sos_all": -1.69
   },
   "Louisiana-Monroe": {
     "name": "Louisiana-Monroe",
@@ -7541,7 +7694,8 @@
     "efg_pct": 0.463,
     "tov_pct": 15.1,
     "orb_pct": 34.8,
-    "ft_rate": 0.247
+    "ft_rate": 0.247,
+    "sos_all": -2.44
   },
   "Louisville": {
     "name": "Louisville",
@@ -7590,7 +7744,8 @@
     "efg_pct": 0.484,
     "tov_pct": 15.9,
     "orb_pct": 28.1,
-    "ft_rate": 0.29
+    "ft_rate": 0.29,
+    "sos_all": 7.51
   },
   "Loyola (IL)": {
     "name": "Loyola (IL)",
@@ -7639,7 +7794,8 @@
     "efg_pct": 0.522,
     "tov_pct": 16.1,
     "orb_pct": 28.1,
-    "ft_rate": 0.225
+    "ft_rate": 0.225,
+    "sos_all": 2.42
   },
   "Loyola (MD)": {
     "name": "Loyola (MD)",
@@ -7688,7 +7844,8 @@
     "efg_pct": 0.482,
     "tov_pct": 17.7,
     "orb_pct": 29.5,
-    "ft_rate": 0.195
+    "ft_rate": 0.195,
+    "sos_all": -6.94
   },
   "Loyola Marymount": {
     "name": "Loyola Marymount",
@@ -7737,7 +7894,8 @@
     "efg_pct": 0.521,
     "tov_pct": 14.0,
     "orb_pct": 29.7,
-    "ft_rate": 0.212
+    "ft_rate": 0.212,
+    "sos_all": 0.31
   },
   "Maine": {
     "name": "Maine",
@@ -7786,7 +7944,8 @@
     "efg_pct": 0.485,
     "tov_pct": 14.9,
     "orb_pct": 23.4,
-    "ft_rate": 0.212
+    "ft_rate": 0.212,
+    "sos_all": -4.87
   },
   "Manhattan": {
     "name": "Manhattan",
@@ -7835,7 +7994,8 @@
     "efg_pct": 0.474,
     "tov_pct": 16.9,
     "orb_pct": 25.0,
-    "ft_rate": 0.16
+    "ft_rate": 0.16,
+    "sos_all": -4.86
   },
   "Marist": {
     "name": "Marist",
@@ -7884,7 +8044,8 @@
     "efg_pct": 0.508,
     "tov_pct": 16.8,
     "orb_pct": 23.0,
-    "ft_rate": 0.208
+    "ft_rate": 0.208,
+    "sos_all": -8.09
   },
   "Marquette": {
     "name": "Marquette",
@@ -7933,7 +8094,8 @@
     "efg_pct": 0.55,
     "tov_pct": 12.7,
     "orb_pct": 25.7,
-    "ft_rate": 0.18
+    "ft_rate": 0.18,
+    "sos_all": 11.02
   },
   "Marshall": {
     "name": "Marshall",
@@ -7982,7 +8144,8 @@
     "efg_pct": 0.472,
     "tov_pct": 14.0,
     "orb_pct": 30.1,
-    "ft_rate": 0.206
+    "ft_rate": 0.206,
+    "sos_all": -1.39
   },
   "Maryland": {
     "name": "Maryland",
@@ -8031,7 +8194,8 @@
     "efg_pct": 0.467,
     "tov_pct": 14.9,
     "orb_pct": 31.7,
-    "ft_rate": 0.294
+    "ft_rate": 0.294,
+    "sos_all": 7.44
   },
   "Maryland-Baltimore County": {
     "name": "Maryland-Baltimore County",
@@ -8080,7 +8244,8 @@
     "efg_pct": 0.528,
     "tov_pct": 15.4,
     "orb_pct": 25.8,
-    "ft_rate": 0.172
+    "ft_rate": 0.172,
+    "sos_all": -5.93
   },
   "Maryland-Eastern Shore": {
     "name": "Maryland-Eastern Shore",
@@ -8129,7 +8294,8 @@
     "efg_pct": 0.452,
     "tov_pct": 17.2,
     "orb_pct": 29.4,
-    "ft_rate": 0.232
+    "ft_rate": 0.232,
+    "sos_all": -6.33
   },
   "Massachusetts": {
     "name": "Massachusetts",
@@ -8178,7 +8344,8 @@
     "efg_pct": 0.506,
     "tov_pct": 13.4,
     "orb_pct": 36.6,
-    "ft_rate": 0.25
+    "ft_rate": 0.25,
+    "sos_all": 0.88
   },
   "Massachusetts-Lowell": {
     "name": "Massachusetts-Lowell",
@@ -8227,7 +8394,8 @@
     "efg_pct": 0.523,
     "tov_pct": 15.7,
     "orb_pct": 33.4,
-    "ft_rate": 0.285
+    "ft_rate": 0.285,
+    "sos_all": -6.07
   },
   "McNeese State": {
     "name": "McNeese State",
@@ -8276,7 +8444,8 @@
     "efg_pct": 0.552,
     "tov_pct": 12.3,
     "orb_pct": 33.5,
-    "ft_rate": 0.258
+    "ft_rate": 0.258,
+    "sos_all": -6.81
   },
   "Memphis": {
     "name": "Memphis",
@@ -8325,7 +8494,8 @@
     "efg_pct": 0.528,
     "tov_pct": 15.5,
     "orb_pct": 33.4,
-    "ft_rate": 0.263
+    "ft_rate": 0.263,
+    "sos_all": 4.25
   },
   "Mercer": {
     "name": "Mercer",
@@ -8374,7 +8544,8 @@
     "efg_pct": 0.502,
     "tov_pct": 14.1,
     "orb_pct": 31.2,
-    "ft_rate": 0.193
+    "ft_rate": 0.193,
+    "sos_all": -2.55
   },
   "Merrimack": {
     "name": "Merrimack",
@@ -8423,7 +8594,8 @@
     "efg_pct": 0.505,
     "tov_pct": 17.1,
     "orb_pct": 23.5,
-    "ft_rate": 0.249
+    "ft_rate": 0.249,
+    "sos_all": -8.43
   },
   "Miami (FL)": {
     "name": "Miami (FL)",
@@ -8472,7 +8644,8 @@
     "efg_pct": 0.527,
     "tov_pct": 15.0,
     "orb_pct": 28.7,
-    "ft_rate": 0.184
+    "ft_rate": 0.184,
+    "sos_all": 7.46
   },
   "Miami (OH)": {
     "name": "Miami (OH)",
@@ -8521,7 +8694,8 @@
     "efg_pct": 0.515,
     "tov_pct": 15.3,
     "orb_pct": 23.7,
-    "ft_rate": 0.224
+    "ft_rate": 0.224,
+    "sos_all": -4.08
   },
   "Michigan": {
     "name": "Michigan",
@@ -8570,7 +8744,8 @@
     "efg_pct": 0.512,
     "tov_pct": 16.1,
     "orb_pct": 30.6,
-    "ft_rate": 0.225
+    "ft_rate": 0.225,
+    "sos_all": 11.34
   },
   "Michigan State": {
     "name": "Michigan State",
@@ -8619,7 +8794,8 @@
     "efg_pct": 0.516,
     "tov_pct": 13.0,
     "orb_pct": 29.8,
-    "ft_rate": 0.207
+    "ft_rate": 0.207,
+    "sos_all": 10.89
   },
   "Middle Tennessee": {
     "name": "Middle Tennessee",
@@ -8668,7 +8844,8 @@
     "efg_pct": 0.467,
     "tov_pct": 17.7,
     "orb_pct": 29.1,
-    "ft_rate": 0.241
+    "ft_rate": 0.241,
+    "sos_all": -0.52
   },
   "Milwaukee": {
     "name": "Milwaukee",
@@ -8717,7 +8894,8 @@
     "efg_pct": 0.509,
     "tov_pct": 14.7,
     "orb_pct": 35.9,
-    "ft_rate": 0.248
+    "ft_rate": 0.248,
+    "sos_all": -4.47
   },
   "Minnesota": {
     "name": "Minnesota",
@@ -8766,7 +8944,8 @@
     "efg_pct": 0.541,
     "tov_pct": 15.4,
     "orb_pct": 30.7,
-    "ft_rate": 0.239
+    "ft_rate": 0.239,
+    "sos_all": 6.4
   },
   "Mississippi": {
     "name": "Mississippi",
@@ -8815,7 +8994,8 @@
     "efg_pct": 0.511,
     "tov_pct": 13.6,
     "orb_pct": 30.3,
-    "ft_rate": 0.255
+    "ft_rate": 0.255,
+    "sos_all": 7.27
   },
   "Mississippi State": {
     "name": "Mississippi State",
@@ -8864,7 +9044,8 @@
     "efg_pct": 0.514,
     "tov_pct": 16.0,
     "orb_pct": 35.4,
-    "ft_rate": 0.251
+    "ft_rate": 0.251,
+    "sos_all": 9.16
   },
   "Mississippi Valley State": {
     "name": "Mississippi Valley State",
@@ -8913,7 +9094,8 @@
     "efg_pct": 0.425,
     "tov_pct": 21.0,
     "orb_pct": 27.9,
-    "ft_rate": 0.217
+    "ft_rate": 0.217,
+    "sos_all": -3.91
   },
   "Missouri": {
     "name": "Missouri",
@@ -8962,7 +9144,8 @@
     "efg_pct": 0.502,
     "tov_pct": 14.9,
     "orb_pct": 26.8,
-    "ft_rate": 0.251
+    "ft_rate": 0.251,
+    "sos_all": 7.3
   },
   "Missouri State": {
     "name": "Missouri State",
@@ -9011,7 +9194,8 @@
     "efg_pct": 0.497,
     "tov_pct": 15.2,
     "orb_pct": 29.1,
-    "ft_rate": 0.224
+    "ft_rate": 0.224,
+    "sos_all": 1.01
   },
   "Monmouth": {
     "name": "Monmouth",
@@ -9060,7 +9244,8 @@
     "efg_pct": 0.493,
     "tov_pct": 13.2,
     "orb_pct": 30.6,
-    "ft_rate": 0.209
+    "ft_rate": 0.209,
+    "sos_all": -2.98
   },
   "Montana": {
     "name": "Montana",
@@ -9109,7 +9294,8 @@
     "efg_pct": 0.552,
     "tov_pct": 13.6,
     "orb_pct": 26.2,
-    "ft_rate": 0.23
+    "ft_rate": 0.23,
+    "sos_all": -4.11
   },
   "Montana State": {
     "name": "Montana State",
@@ -9158,7 +9344,8 @@
     "efg_pct": 0.547,
     "tov_pct": 15.1,
     "orb_pct": 20.8,
-    "ft_rate": 0.216
+    "ft_rate": 0.216,
+    "sos_all": -4.46
   },
   "Morehead State": {
     "name": "Morehead State",
@@ -9207,7 +9394,8 @@
     "efg_pct": 0.548,
     "tov_pct": 15.2,
     "orb_pct": 35.3,
-    "ft_rate": 0.207
+    "ft_rate": 0.207,
+    "sos_all": -5.52
   },
   "Morgan State": {
     "name": "Morgan State",
@@ -9256,7 +9444,8 @@
     "efg_pct": 0.491,
     "tov_pct": 17.5,
     "orb_pct": 31.2,
-    "ft_rate": 0.228
+    "ft_rate": 0.228,
+    "sos_all": -5.9
   },
   "Mount St. Mary's": {
     "name": "Mount St. Mary's",
@@ -9305,7 +9494,8 @@
     "efg_pct": 0.532,
     "tov_pct": 18.2,
     "orb_pct": 30.2,
-    "ft_rate": 0.193
+    "ft_rate": 0.193,
+    "sos_all": -7.45
   },
   "Murray State": {
     "name": "Murray State",
@@ -9354,7 +9544,8 @@
     "efg_pct": 0.503,
     "tov_pct": 12.6,
     "orb_pct": 27.0,
-    "ft_rate": 0.207
+    "ft_rate": 0.207,
+    "sos_all": 1.59
   },
   "Navy": {
     "name": "Navy",
@@ -9403,7 +9594,8 @@
     "efg_pct": 0.446,
     "tov_pct": 13.1,
     "orb_pct": 32.4,
-    "ft_rate": 0.247
+    "ft_rate": 0.247,
+    "sos_all": -9.54
   },
   "NC State": {
     "name": "NC State",
@@ -9452,7 +9644,8 @@
     "efg_pct": 0.507,
     "tov_pct": 12.1,
     "orb_pct": 28.1,
-    "ft_rate": 0.234
+    "ft_rate": 0.234,
+    "sos_all": 8.93
   },
   "Nebraska": {
     "name": "Nebraska",
@@ -9501,7 +9694,8 @@
     "efg_pct": 0.531,
     "tov_pct": 13.9,
     "orb_pct": 27.6,
-    "ft_rate": 0.248
+    "ft_rate": 0.248,
+    "sos_all": 7.53
   },
   "Nevada": {
     "name": "Nevada",
@@ -9550,7 +9744,8 @@
     "efg_pct": 0.535,
     "tov_pct": 13.2,
     "orb_pct": 27.6,
-    "ft_rate": 0.319
+    "ft_rate": 0.319,
+    "sos_all": 4.58
   },
   "Nevada-Las Vegas": {
     "name": "Nevada-Las Vegas",
@@ -9599,7 +9794,8 @@
     "efg_pct": 0.521,
     "tov_pct": 14.3,
     "orb_pct": 30.8,
-    "ft_rate": 0.234
+    "ft_rate": 0.234,
+    "sos_all": 6.25
   },
   "New Hampshire": {
     "name": "New Hampshire",
@@ -9648,7 +9844,8 @@
     "efg_pct": 0.485,
     "tov_pct": 14.5,
     "orb_pct": 23.7,
-    "ft_rate": 0.218
+    "ft_rate": 0.218,
+    "sos_all": -3.61
   },
   "New Mexico": {
     "name": "New Mexico",
@@ -9697,7 +9894,8 @@
     "efg_pct": 0.505,
     "tov_pct": 11.7,
     "orb_pct": 33.4,
-    "ft_rate": 0.234
+    "ft_rate": 0.234,
+    "sos_all": 5.38
   },
   "New Mexico State": {
     "name": "New Mexico State",
@@ -9746,7 +9944,8 @@
     "efg_pct": 0.48,
     "tov_pct": 15.3,
     "orb_pct": 26.0,
-    "ft_rate": 0.229
+    "ft_rate": 0.229,
+    "sos_all": 0.74
   },
   "New Orleans": {
     "name": "New Orleans",
@@ -9795,7 +9994,8 @@
     "efg_pct": 0.462,
     "tov_pct": 14.6,
     "orb_pct": 29.3,
-    "ft_rate": 0.275
+    "ft_rate": 0.275,
+    "sos_all": -5.9
   },
   "Niagara": {
     "name": "Niagara",
@@ -9844,7 +10044,8 @@
     "efg_pct": 0.527,
     "tov_pct": 15.6,
     "orb_pct": 24.0,
-    "ft_rate": 0.272
+    "ft_rate": 0.272,
+    "sos_all": -7.21
   },
   "Nicholls State": {
     "name": "Nicholls State",
@@ -9893,7 +10094,8 @@
     "efg_pct": 0.519,
     "tov_pct": 16.6,
     "orb_pct": 27.7,
-    "ft_rate": 0.278
+    "ft_rate": 0.278,
+    "sos_all": -5.37
   },
   "NJIT": {
     "name": "NJIT",
@@ -9942,7 +10144,8 @@
     "efg_pct": 0.454,
     "tov_pct": 13.9,
     "orb_pct": 29.9,
-    "ft_rate": 0.223
+    "ft_rate": 0.223,
+    "sos_all": -4.46
   },
   "Norfolk State": {
     "name": "Norfolk State",
@@ -9991,7 +10194,8 @@
     "efg_pct": 0.515,
     "tov_pct": 15.3,
     "orb_pct": 32.6,
-    "ft_rate": 0.288
+    "ft_rate": 0.288,
+    "sos_all": -7.76
   },
   "North Alabama": {
     "name": "North Alabama",
@@ -10040,7 +10244,8 @@
     "efg_pct": 0.508,
     "tov_pct": 12.7,
     "orb_pct": 27.8,
-    "ft_rate": 0.252
+    "ft_rate": 0.252,
+    "sos_all": -5.0
   },
   "North Carolina": {
     "name": "North Carolina",
@@ -10089,7 +10294,8 @@
     "efg_pct": 0.515,
     "tov_pct": 12.0,
     "orb_pct": 33.0,
-    "ft_rate": 0.275
+    "ft_rate": 0.275,
+    "sos_all": 9.9
   },
   "North Carolina A&T": {
     "name": "North Carolina A&T",
@@ -10138,7 +10344,8 @@
     "efg_pct": 0.439,
     "tov_pct": 12.1,
     "orb_pct": 24.3,
-    "ft_rate": 0.242
+    "ft_rate": 0.242,
+    "sos_all": -3.94
   },
   "North Carolina Central": {
     "name": "North Carolina Central",
@@ -10187,7 +10394,8 @@
     "efg_pct": 0.518,
     "tov_pct": 14.7,
     "orb_pct": 32.2,
-    "ft_rate": 0.274
+    "ft_rate": 0.274,
+    "sos_all": -8.84
   },
   "North Dakota": {
     "name": "North Dakota",
@@ -10236,7 +10444,8 @@
     "efg_pct": 0.512,
     "tov_pct": 12.7,
     "orb_pct": 31.4,
-    "ft_rate": 0.221
+    "ft_rate": 0.221,
+    "sos_all": -6.1
   },
   "North Dakota State": {
     "name": "North Dakota State",
@@ -10285,7 +10494,8 @@
     "efg_pct": 0.545,
     "tov_pct": 14.5,
     "orb_pct": 26.0,
-    "ft_rate": 0.213
+    "ft_rate": 0.213,
+    "sos_all": -3.15
   },
   "North Florida": {
     "name": "North Florida",
@@ -10334,7 +10544,8 @@
     "efg_pct": 0.543,
     "tov_pct": 14.3,
     "orb_pct": 25.5,
-    "ft_rate": 0.216
+    "ft_rate": 0.216,
+    "sos_all": -4.84
   },
   "North Texas": {
     "name": "North Texas",
@@ -10383,7 +10594,8 @@
     "efg_pct": 0.508,
     "tov_pct": 14.8,
     "orb_pct": 34.1,
-    "ft_rate": 0.219
+    "ft_rate": 0.219,
+    "sos_all": 4.28
   },
   "Northeastern": {
     "name": "Northeastern",
@@ -10432,7 +10644,8 @@
     "efg_pct": 0.512,
     "tov_pct": 16.4,
     "orb_pct": 31.8,
-    "ft_rate": 0.223
+    "ft_rate": 0.223,
+    "sos_all": -3.15
   },
   "Northern Arizona": {
     "name": "Northern Arizona",
@@ -10481,7 +10694,8 @@
     "efg_pct": 0.493,
     "tov_pct": 16.1,
     "orb_pct": 24.1,
-    "ft_rate": 0.217
+    "ft_rate": 0.217,
+    "sos_all": -4.17
   },
   "Northern Colorado": {
     "name": "Northern Colorado",
@@ -10530,7 +10744,8 @@
     "efg_pct": 0.549,
     "tov_pct": 13.9,
     "orb_pct": 24.4,
-    "ft_rate": 0.213
+    "ft_rate": 0.213,
+    "sos_all": -5.25
   },
   "Northern Illinois": {
     "name": "Northern Illinois",
@@ -10579,7 +10794,8 @@
     "efg_pct": 0.507,
     "tov_pct": 15.7,
     "orb_pct": 29.0,
-    "ft_rate": 0.245
+    "ft_rate": 0.245,
+    "sos_all": -1.37
   },
   "Northern Iowa": {
     "name": "Northern Iowa",
@@ -10628,7 +10844,8 @@
     "efg_pct": 0.52,
     "tov_pct": 13.5,
     "orb_pct": 23.9,
-    "ft_rate": 0.267
+    "ft_rate": 0.267,
+    "sos_all": 2.86
   },
   "Northern Kentucky": {
     "name": "Northern Kentucky",
@@ -10677,7 +10894,8 @@
     "efg_pct": 0.51,
     "tov_pct": 15.2,
     "orb_pct": 29.9,
-    "ft_rate": 0.257
+    "ft_rate": 0.257,
+    "sos_all": -3.73
   },
   "Northwestern": {
     "name": "Northwestern",
@@ -10726,7 +10944,8 @@
     "efg_pct": 0.526,
     "tov_pct": 11.8,
     "orb_pct": 25.7,
-    "ft_rate": 0.22
+    "ft_rate": 0.22,
+    "sos_all": 8.5
   },
   "Northwestern State": {
     "name": "Northwestern State",
@@ -10775,7 +10994,8 @@
     "efg_pct": 0.486,
     "tov_pct": 16.3,
     "orb_pct": 30.7,
-    "ft_rate": 0.233
+    "ft_rate": 0.233,
+    "sos_all": -6.32
   },
   "Notre Dame": {
     "name": "Notre Dame",
@@ -10824,7 +11044,8 @@
     "efg_pct": 0.476,
     "tov_pct": 16.7,
     "orb_pct": 28.4,
-    "ft_rate": 0.207
+    "ft_rate": 0.207,
+    "sos_all": 8.06
   },
   "Oakland": {
     "name": "Oakland",
@@ -10873,7 +11094,8 @@
     "efg_pct": 0.519,
     "tov_pct": 13.8,
     "orb_pct": 30.4,
-    "ft_rate": 0.231
+    "ft_rate": 0.231,
+    "sos_all": -1.24
   },
   "Ohio": {
     "name": "Ohio",
@@ -10922,7 +11144,8 @@
     "efg_pct": 0.527,
     "tov_pct": 12.3,
     "orb_pct": 28.8,
-    "ft_rate": 0.229
+    "ft_rate": 0.229,
+    "sos_all": -4.58
   },
   "Ohio State": {
     "name": "Ohio State",
@@ -10971,7 +11194,8 @@
     "efg_pct": 0.51,
     "tov_pct": 13.4,
     "orb_pct": 31.4,
-    "ft_rate": 0.259
+    "ft_rate": 0.259,
+    "sos_all": 8.37
   },
   "Oklahoma": {
     "name": "Oklahoma",
@@ -11020,7 +11244,8 @@
     "efg_pct": 0.531,
     "tov_pct": 15.8,
     "orb_pct": 30.1,
-    "ft_rate": 0.28
+    "ft_rate": 0.28,
+    "sos_all": 8.07
   },
   "Oklahoma State": {
     "name": "Oklahoma State",
@@ -11069,7 +11294,8 @@
     "efg_pct": 0.513,
     "tov_pct": 16.5,
     "orb_pct": 27.5,
-    "ft_rate": 0.237
+    "ft_rate": 0.237,
+    "sos_all": 7.97
   },
   "Old Dominion": {
     "name": "Old Dominion",
@@ -11118,7 +11344,8 @@
     "efg_pct": 0.476,
     "tov_pct": 13.4,
     "orb_pct": 25.5,
-    "ft_rate": 0.182
+    "ft_rate": 0.182,
+    "sos_all": -1.58
   },
   "Omaha": {
     "name": "Omaha",
@@ -11167,7 +11394,8 @@
     "efg_pct": 0.506,
     "tov_pct": 12.8,
     "orb_pct": 25.0,
-    "ft_rate": 0.291
+    "ft_rate": 0.291,
+    "sos_all": -5.07
   },
   "Oral Roberts": {
     "name": "Oral Roberts",
@@ -11216,7 +11444,8 @@
     "efg_pct": 0.517,
     "tov_pct": 12.6,
     "orb_pct": 21.8,
-    "ft_rate": 0.198
+    "ft_rate": 0.198,
+    "sos_all": -2.6
   },
   "Oregon": {
     "name": "Oregon",
@@ -11265,7 +11494,8 @@
     "efg_pct": 0.519,
     "tov_pct": 12.9,
     "orb_pct": 28.6,
-    "ft_rate": 0.23
+    "ft_rate": 0.23,
+    "sos_all": 8.91
   },
   "Oregon State": {
     "name": "Oregon State",
@@ -11314,7 +11544,8 @@
     "efg_pct": 0.499,
     "tov_pct": 16.2,
     "orb_pct": 26.8,
-    "ft_rate": 0.266
+    "ft_rate": 0.266,
+    "sos_all": 8.38
   },
   "Pacific": {
     "name": "Pacific",
@@ -11363,7 +11594,8 @@
     "efg_pct": 0.469,
     "tov_pct": 15.4,
     "orb_pct": 19.0,
-    "ft_rate": 0.237
+    "ft_rate": 0.237,
+    "sos_all": -0.15
   },
   "Penn State": {
     "name": "Penn State",
@@ -11412,7 +11644,8 @@
     "efg_pct": 0.503,
     "tov_pct": 13.8,
     "orb_pct": 26.8,
-    "ft_rate": 0.264
+    "ft_rate": 0.264,
+    "sos_all": 7.52
   },
   "Pennsylvania": {
     "name": "Pennsylvania",
@@ -11461,7 +11694,8 @@
     "efg_pct": 0.534,
     "tov_pct": 14.3,
     "orb_pct": 30.0,
-    "ft_rate": 0.187
+    "ft_rate": 0.187,
+    "sos_all": 0.26
   },
   "Pepperdine": {
     "name": "Pepperdine",
@@ -11510,7 +11744,8 @@
     "efg_pct": 0.51,
     "tov_pct": 14.3,
     "orb_pct": 29.1,
-    "ft_rate": 0.23
+    "ft_rate": 0.23,
+    "sos_all": 0.7
   },
   "Pittsburgh": {
     "name": "Pittsburgh",
@@ -11559,7 +11794,8 @@
     "efg_pct": 0.516,
     "tov_pct": 11.5,
     "orb_pct": 31.0,
-    "ft_rate": 0.216
+    "ft_rate": 0.216,
+    "sos_all": 6.92
   },
   "Portland": {
     "name": "Portland",
@@ -11608,7 +11844,8 @@
     "efg_pct": 0.514,
     "tov_pct": 15.4,
     "orb_pct": 24.1,
-    "ft_rate": 0.22
+    "ft_rate": 0.22,
+    "sos_all": 1.54
   },
   "Portland State": {
     "name": "Portland State",
@@ -11657,7 +11894,8 @@
     "efg_pct": 0.476,
     "tov_pct": 13.8,
     "orb_pct": 30.2,
-    "ft_rate": 0.229
+    "ft_rate": 0.229,
+    "sos_all": -4.94
   },
   "Prairie View": {
     "name": "Prairie View",
@@ -11706,7 +11944,8 @@
     "efg_pct": 0.461,
     "tov_pct": 15.5,
     "orb_pct": 26.9,
-    "ft_rate": 0.266
+    "ft_rate": 0.266,
+    "sos_all": -6.92
   },
   "Presbyterian": {
     "name": "Presbyterian",
@@ -11755,7 +11994,8 @@
     "efg_pct": 0.527,
     "tov_pct": 14.4,
     "orb_pct": 27.6,
-    "ft_rate": 0.245
+    "ft_rate": 0.245,
+    "sos_all": -5.57
   },
   "Princeton": {
     "name": "Princeton",
@@ -11804,7 +12044,8 @@
     "efg_pct": 0.548,
     "tov_pct": 11.0,
     "orb_pct": 25.7,
-    "ft_rate": 0.222
+    "ft_rate": 0.222,
+    "sos_all": -1.6
   },
   "Providence": {
     "name": "Providence",
@@ -11853,7 +12094,8 @@
     "efg_pct": 0.515,
     "tov_pct": 15.5,
     "orb_pct": 27.0,
-    "ft_rate": 0.23
+    "ft_rate": 0.23,
+    "sos_all": 8.93
   },
   "Purdue": {
     "name": "Purdue",
@@ -11902,7 +12144,8 @@
     "efg_pct": 0.558,
     "tov_pct": 14.0,
     "orb_pct": 37.7,
-    "ft_rate": 0.297
+    "ft_rate": 0.297,
+    "sos_all": 11.6
   },
   "Purdue Fort Wayne": {
     "name": "Purdue Fort Wayne",
@@ -11951,7 +12194,8 @@
     "efg_pct": 0.544,
     "tov_pct": 12.9,
     "orb_pct": 23.6,
-    "ft_rate": 0.206
+    "ft_rate": 0.206,
+    "sos_all": -6.09
   },
   "Queens (NC)": {
     "name": "Queens (NC)",
@@ -12000,7 +12244,8 @@
     "efg_pct": 0.513,
     "tov_pct": 13.5,
     "orb_pct": 29.2,
-    "ft_rate": 0.235
+    "ft_rate": 0.235,
+    "sos_all": -3.49
   },
   "Quinnipiac": {
     "name": "Quinnipiac",
@@ -12049,7 +12294,8 @@
     "efg_pct": 0.51,
     "tov_pct": 15.0,
     "orb_pct": 31.6,
-    "ft_rate": 0.239
+    "ft_rate": 0.239,
+    "sos_all": -7.32
   },
   "Radford": {
     "name": "Radford",
@@ -12098,7 +12344,8 @@
     "efg_pct": 0.519,
     "tov_pct": 14.2,
     "orb_pct": 30.9,
-    "ft_rate": 0.208
+    "ft_rate": 0.208,
+    "sos_all": -3.47
   },
   "Rhode Island": {
     "name": "Rhode Island",
@@ -12147,7 +12394,8 @@
     "efg_pct": 0.517,
     "tov_pct": 15.9,
     "orb_pct": 30.0,
-    "ft_rate": 0.256
+    "ft_rate": 0.256,
+    "sos_all": 2.87
   },
   "Rice": {
     "name": "Rice",
@@ -12196,7 +12444,8 @@
     "efg_pct": 0.51,
     "tov_pct": 14.8,
     "orb_pct": 29.1,
-    "ft_rate": 0.206
+    "ft_rate": 0.206,
+    "sos_all": 1.97
   },
   "Richmond": {
     "name": "Richmond",
@@ -12245,7 +12494,8 @@
     "efg_pct": 0.527,
     "tov_pct": 11.8,
     "orb_pct": 17.3,
-    "ft_rate": 0.202
+    "ft_rate": 0.202,
+    "sos_all": 2.09
   },
   "Rider": {
     "name": "Rider",
@@ -12294,7 +12544,8 @@
     "efg_pct": 0.483,
     "tov_pct": 15.3,
     "orb_pct": 31.9,
-    "ft_rate": 0.237
+    "ft_rate": 0.237,
+    "sos_all": -4.28
   },
   "Robert Morris": {
     "name": "Robert Morris",
@@ -12343,7 +12594,8 @@
     "efg_pct": 0.503,
     "tov_pct": 16.9,
     "orb_pct": 33.8,
-    "ft_rate": 0.201
+    "ft_rate": 0.201,
+    "sos_all": -4.31
   },
   "Rutgers": {
     "name": "Rutgers",
@@ -12392,7 +12644,8 @@
     "efg_pct": 0.435,
     "tov_pct": 14.1,
     "orb_pct": 30.2,
-    "ft_rate": 0.216
+    "ft_rate": 0.216,
+    "sos_all": 8.57
   },
   "Sacramento State": {
     "name": "Sacramento State",
@@ -12441,7 +12694,8 @@
     "efg_pct": 0.5,
     "tov_pct": 18.8,
     "orb_pct": 35.4,
-    "ft_rate": 0.231
+    "ft_rate": 0.231,
+    "sos_all": -3.71
   },
   "Sacred Heart": {
     "name": "Sacred Heart",
@@ -12490,7 +12744,8 @@
     "efg_pct": 0.518,
     "tov_pct": 14.6,
     "orb_pct": 27.1,
-    "ft_rate": 0.214
+    "ft_rate": 0.214,
+    "sos_all": -9.45
   },
   "Saint Francis (PA)": {
     "name": "Saint Francis (PA)",
@@ -12539,7 +12794,8 @@
     "efg_pct": 0.481,
     "tov_pct": 17.5,
     "orb_pct": 33.3,
-    "ft_rate": 0.2
+    "ft_rate": 0.2,
+    "sos_all": -8.14
   },
   "Saint Joseph's": {
     "name": "Saint Joseph's",
@@ -12588,7 +12844,8 @@
     "efg_pct": 0.53,
     "tov_pct": 14.5,
     "orb_pct": 29.1,
-    "ft_rate": 0.208
+    "ft_rate": 0.208,
+    "sos_all": 1.67
   },
   "Saint Louis": {
     "name": "Saint Louis",
@@ -12637,7 +12894,8 @@
     "efg_pct": 0.52,
     "tov_pct": 15.0,
     "orb_pct": 25.9,
-    "ft_rate": 0.28
+    "ft_rate": 0.28,
+    "sos_all": 4.15
   },
   "Saint Mary's (CA)": {
     "name": "Saint Mary's (CA)",
@@ -12686,7 +12944,8 @@
     "efg_pct": 0.531,
     "tov_pct": 13.2,
     "orb_pct": 39.4,
-    "ft_rate": 0.192
+    "ft_rate": 0.192,
+    "sos_all": 3.46
   },
   "Saint Peter's": {
     "name": "Saint Peter's",
@@ -12735,7 +12994,8 @@
     "efg_pct": 0.446,
     "tov_pct": 16.0,
     "orb_pct": 34.5,
-    "ft_rate": 0.278
+    "ft_rate": 0.278,
+    "sos_all": -5.33
   },
   "Sam Houston": {
     "name": "Sam Houston",
@@ -12784,7 +13044,8 @@
     "efg_pct": 0.488,
     "tov_pct": 16.1,
     "orb_pct": 32.5,
-    "ft_rate": 0.246
+    "ft_rate": 0.246,
+    "sos_all": -1.72
   },
   "Samford": {
     "name": "Samford",
@@ -12833,7 +13094,8 @@
     "efg_pct": 0.571,
     "tov_pct": 15.3,
     "orb_pct": 30.6,
-    "ft_rate": 0.257
+    "ft_rate": 0.257,
+    "sos_all": -3.23
   },
   "San Diego": {
     "name": "San Diego",
@@ -12882,7 +13144,8 @@
     "efg_pct": 0.488,
     "tov_pct": 16.1,
     "orb_pct": 27.5,
-    "ft_rate": 0.233
+    "ft_rate": 0.233,
+    "sos_all": 0.33
   },
   "San Diego State": {
     "name": "San Diego State",
@@ -12931,7 +13194,8 @@
     "efg_pct": 0.5,
     "tov_pct": 14.0,
     "orb_pct": 33.2,
-    "ft_rate": 0.265
+    "ft_rate": 0.265,
+    "sos_all": 8.37
   },
   "San Francisco": {
     "name": "San Francisco",
@@ -12980,7 +13244,8 @@
     "efg_pct": 0.558,
     "tov_pct": 14.7,
     "orb_pct": 29.5,
-    "ft_rate": 0.176
+    "ft_rate": 0.176,
+    "sos_all": 0.23
   },
   "San Jose State": {
     "name": "San Jose State",
@@ -13029,7 +13294,8 @@
     "efg_pct": 0.52,
     "tov_pct": 14.0,
     "orb_pct": 23.1,
-    "ft_rate": 0.16
+    "ft_rate": 0.16,
+    "sos_all": 3.28
   },
   "Santa Clara": {
     "name": "Santa Clara",
@@ -13078,7 +13344,8 @@
     "efg_pct": 0.528,
     "tov_pct": 15.6,
     "orb_pct": 34.6,
-    "ft_rate": 0.223
+    "ft_rate": 0.223,
+    "sos_all": 1.73
   },
   "Seattle": {
     "name": "Seattle",
@@ -13127,7 +13394,8 @@
     "efg_pct": 0.512,
     "tov_pct": 15.9,
     "orb_pct": 29.8,
-    "ft_rate": 0.251
+    "ft_rate": 0.251,
+    "sos_all": -1.64
   },
   "Seton Hall": {
     "name": "Seton Hall",
@@ -13176,7 +13444,8 @@
     "efg_pct": 0.504,
     "tov_pct": 15.7,
     "orb_pct": 35.2,
-    "ft_rate": 0.241
+    "ft_rate": 0.241,
+    "sos_all": 8.8
   },
   "Siena": {
     "name": "Siena",
@@ -13225,7 +13494,8 @@
     "efg_pct": 0.447,
     "tov_pct": 20.0,
     "orb_pct": 33.2,
-    "ft_rate": 0.205
+    "ft_rate": 0.205,
+    "sos_all": -5.2
   },
   "South Alabama": {
     "name": "South Alabama",
@@ -13274,7 +13544,8 @@
     "efg_pct": 0.506,
     "tov_pct": 14.3,
     "orb_pct": 22.6,
-    "ft_rate": 0.243
+    "ft_rate": 0.243,
+    "sos_all": -3.37
   },
   "South Carolina": {
     "name": "South Carolina",
@@ -13323,7 +13594,8 @@
     "efg_pct": 0.509,
     "tov_pct": 13.2,
     "orb_pct": 32.8,
-    "ft_rate": 0.226
+    "ft_rate": 0.226,
+    "sos_all": 6.48
   },
   "South Carolina State": {
     "name": "South Carolina State",
@@ -13372,7 +13644,8 @@
     "efg_pct": 0.462,
     "tov_pct": 17.8,
     "orb_pct": 38.7,
-    "ft_rate": 0.249
+    "ft_rate": 0.249,
+    "sos_all": -6.18
   },
   "South Carolina Upstate": {
     "name": "South Carolina Upstate",
@@ -13421,7 +13694,8 @@
     "efg_pct": 0.511,
     "tov_pct": 14.7,
     "orb_pct": 24.6,
-    "ft_rate": 0.194
+    "ft_rate": 0.194,
+    "sos_all": -3.02
   },
   "South Dakota": {
     "name": "South Dakota",
@@ -13470,7 +13744,8 @@
     "efg_pct": 0.522,
     "tov_pct": 15.8,
     "orb_pct": 30.2,
-    "ft_rate": 0.226
+    "ft_rate": 0.226,
+    "sos_all": -5.41
   },
   "South Dakota State": {
     "name": "South Dakota State",
@@ -13519,7 +13794,8 @@
     "efg_pct": 0.555,
     "tov_pct": 14.6,
     "orb_pct": 25.1,
-    "ft_rate": 0.207
+    "ft_rate": 0.207,
+    "sos_all": -2.7
   },
   "South Florida": {
     "name": "South Florida",
@@ -13568,7 +13844,8 @@
     "efg_pct": 0.518,
     "tov_pct": 13.7,
     "orb_pct": 28.2,
-    "ft_rate": 0.279
+    "ft_rate": 0.279,
+    "sos_all": 0.97
   },
   "Southeast Missouri State": {
     "name": "Southeast Missouri State",
@@ -13617,7 +13894,8 @@
     "efg_pct": 0.465,
     "tov_pct": 15.1,
     "orb_pct": 24.8,
-    "ft_rate": 0.194
+    "ft_rate": 0.194,
+    "sos_all": -6.55
   },
   "Southeastern Louisiana": {
     "name": "Southeastern Louisiana",
@@ -13666,7 +13944,8 @@
     "efg_pct": 0.498,
     "tov_pct": 17.7,
     "orb_pct": 31.8,
-    "ft_rate": 0.252
+    "ft_rate": 0.252,
+    "sos_all": -6.14
   },
   "Southern": {
     "name": "Southern",
@@ -13715,7 +13994,8 @@
     "efg_pct": 0.502,
     "tov_pct": 17.6,
     "orb_pct": 28.8,
-    "ft_rate": 0.241
+    "ft_rate": 0.241,
+    "sos_all": -6.09
   },
   "Southern California": {
     "name": "Southern California",
@@ -13764,7 +14044,8 @@
     "efg_pct": 0.517,
     "tov_pct": 15.7,
     "orb_pct": 29.0,
-    "ft_rate": 0.233
+    "ft_rate": 0.233,
+    "sos_all": 9.54
   },
   "Southern Illinois": {
     "name": "Southern Illinois",
@@ -13813,7 +14094,8 @@
     "efg_pct": 0.529,
     "tov_pct": 14.8,
     "orb_pct": 26.3,
-    "ft_rate": 0.274
+    "ft_rate": 0.274,
+    "sos_all": 0.52
   },
   "SIU Edwardsville": {
     "name": "SIU Edwardsville",
@@ -13862,7 +14144,8 @@
     "efg_pct": 0.484,
     "tov_pct": 13.5,
     "orb_pct": 31.1,
-    "ft_rate": 0.233
+    "ft_rate": 0.233,
+    "sos_all": -7.54
   },
   "Southern Indiana": {
     "name": "Southern Indiana",
@@ -13911,7 +14194,8 @@
     "efg_pct": 0.466,
     "tov_pct": 16.5,
     "orb_pct": 27.6,
-    "ft_rate": 0.279
+    "ft_rate": 0.279,
+    "sos_all": -5.59
   },
   "Southern Methodist": {
     "name": "Southern Methodist",
@@ -13960,7 +14244,8 @@
     "efg_pct": 0.507,
     "tov_pct": 13.5,
     "orb_pct": 38.5,
-    "ft_rate": 0.199
+    "ft_rate": 0.199,
+    "sos_all": 2.56
   },
   "Southern Mississippi": {
     "name": "Southern Mississippi",
@@ -14009,7 +14294,8 @@
     "efg_pct": 0.479,
     "tov_pct": 16.0,
     "orb_pct": 29.4,
-    "ft_rate": 0.266
+    "ft_rate": 0.266,
+    "sos_all": -2.93
   },
   "Southern Utah": {
     "name": "Southern Utah",
@@ -14058,7 +14344,8 @@
     "efg_pct": 0.493,
     "tov_pct": 14.6,
     "orb_pct": 28.5,
-    "ft_rate": 0.264
+    "ft_rate": 0.264,
+    "sos_all": -1.17
   },
   "St. Bonaventure": {
     "name": "St. Bonaventure",
@@ -14107,7 +14394,8 @@
     "efg_pct": 0.523,
     "tov_pct": 14.2,
     "orb_pct": 29.7,
-    "ft_rate": 0.249
+    "ft_rate": 0.249,
+    "sos_all": 1.95
   },
   "St. John's (NY)": {
     "name": "St. John's (NY)",
@@ -14156,7 +14444,8 @@
     "efg_pct": 0.509,
     "tov_pct": 13.0,
     "orb_pct": 38.6,
-    "ft_rate": 0.199
+    "ft_rate": 0.199,
+    "sos_all": 9.58
   },
   "St. Thomas": {
     "name": "St. Thomas",
@@ -14205,7 +14494,8 @@
     "efg_pct": 0.553,
     "tov_pct": 12.7,
     "orb_pct": 24.9,
-    "ft_rate": 0.211
+    "ft_rate": 0.211,
+    "sos_all": -5.72
   },
   "Stanford": {
     "name": "Stanford",
@@ -14254,7 +14544,8 @@
     "efg_pct": 0.543,
     "tov_pct": 16.1,
     "orb_pct": 23.2,
-    "ft_rate": 0.208
+    "ft_rate": 0.208,
+    "sos_all": 7.48
   },
   "Stephen F. Austin": {
     "name": "Stephen F. Austin",
@@ -14303,7 +14594,8 @@
     "efg_pct": 0.503,
     "tov_pct": 18.9,
     "orb_pct": 34.4,
-    "ft_rate": 0.297
+    "ft_rate": 0.297,
+    "sos_all": -1.76
   },
   "Stetson": {
     "name": "Stetson",
@@ -14352,7 +14644,8 @@
     "efg_pct": 0.539,
     "tov_pct": 13.6,
     "orb_pct": 29.1,
-    "ft_rate": 0.231
+    "ft_rate": 0.231,
+    "sos_all": -3.24
   },
   "Stonehill": {
     "name": "Stonehill",
@@ -14401,7 +14694,8 @@
     "efg_pct": 0.47,
     "tov_pct": 17.5,
     "orb_pct": 22.9,
-    "ft_rate": 0.16
+    "ft_rate": 0.16,
+    "sos_all": -6.1
   },
   "Stony Brook": {
     "name": "Stony Brook",
@@ -14450,7 +14744,8 @@
     "efg_pct": 0.504,
     "tov_pct": 13.0,
     "orb_pct": 26.9,
-    "ft_rate": 0.216
+    "ft_rate": 0.216,
+    "sos_all": -2.62
   },
   "Syracuse": {
     "name": "Syracuse",
@@ -14499,7 +14794,8 @@
     "efg_pct": 0.518,
     "tov_pct": 14.1,
     "orb_pct": 24.7,
-    "ft_rate": 0.239
+    "ft_rate": 0.239,
+    "sos_all": 9.4
   },
   "Tarleton State": {
     "name": "Tarleton State",
@@ -14548,7 +14844,8 @@
     "efg_pct": 0.503,
     "tov_pct": 14.1,
     "orb_pct": 31.2,
-    "ft_rate": 0.233
+    "ft_rate": 0.233,
+    "sos_all": -0.97
   },
   "TCU": {
     "name": "TCU",
@@ -14597,7 +14894,8 @@
     "efg_pct": 0.515,
     "tov_pct": 15.2,
     "orb_pct": 35.9,
-    "ft_rate": 0.256
+    "ft_rate": 0.256,
+    "sos_all": 7.32
   },
   "Temple": {
     "name": "Temple",
@@ -14646,7 +14944,8 @@
     "efg_pct": 0.463,
     "tov_pct": 12.3,
     "orb_pct": 28.4,
-    "ft_rate": 0.227
+    "ft_rate": 0.227,
+    "sos_all": 1.68
   },
   "Tennessee": {
     "name": "Tennessee",
@@ -14695,7 +14994,8 @@
     "efg_pct": 0.511,
     "tov_pct": 12.5,
     "orb_pct": 32.2,
-    "ft_rate": 0.253
+    "ft_rate": 0.253,
+    "sos_all": 10.42
   },
   "Tennessee State": {
     "name": "Tennessee State",
@@ -14744,7 +15044,8 @@
     "efg_pct": 0.5,
     "tov_pct": 16.5,
     "orb_pct": 29.0,
-    "ft_rate": 0.276
+    "ft_rate": 0.276,
+    "sos_all": -7.64
   },
   "Tennessee Tech": {
     "name": "Tennessee Tech",
@@ -14793,7 +15094,8 @@
     "efg_pct": 0.508,
     "tov_pct": 16.0,
     "orb_pct": 18.8,
-    "ft_rate": 0.219
+    "ft_rate": 0.219,
+    "sos_all": -6.29
   },
   "Tennessee-Martin": {
     "name": "Tennessee-Martin",
@@ -14842,7 +15144,8 @@
     "efg_pct": 0.512,
     "tov_pct": 13.4,
     "orb_pct": 27.1,
-    "ft_rate": 0.251
+    "ft_rate": 0.251,
+    "sos_all": -7.25
   },
   "Texas": {
     "name": "Texas",
@@ -14891,7 +15194,8 @@
     "efg_pct": 0.53,
     "tov_pct": 14.7,
     "orb_pct": 29.9,
-    "ft_rate": 0.228
+    "ft_rate": 0.228,
+    "sos_all": 9.41
   },
   "Texas A&M": {
     "name": "Texas A&M",
@@ -14940,7 +15244,8 @@
     "efg_pct": 0.457,
     "tov_pct": 11.3,
     "orb_pct": 42.3,
-    "ft_rate": 0.273
+    "ft_rate": 0.273,
+    "sos_all": 9.32
   },
   "Texas A&M-Corpus Christi": {
     "name": "Texas A&M-Corpus Christi",
@@ -14989,7 +15294,8 @@
     "efg_pct": 0.479,
     "tov_pct": 14.3,
     "orb_pct": 34.6,
-    "ft_rate": 0.254
+    "ft_rate": 0.254,
+    "sos_all": -7.24
   },
   "Texas Southern": {
     "name": "Texas Southern",
@@ -15038,7 +15344,8 @@
     "efg_pct": 0.476,
     "tov_pct": 15.5,
     "orb_pct": 30.2,
-    "ft_rate": 0.218
+    "ft_rate": 0.218,
+    "sos_all": -7.03
   },
   "Texas State": {
     "name": "Texas State",
@@ -15087,7 +15394,8 @@
     "efg_pct": 0.484,
     "tov_pct": 16.7,
     "orb_pct": 31.9,
-    "ft_rate": 0.262
+    "ft_rate": 0.262,
+    "sos_all": -0.74
   },
   "Texas Tech": {
     "name": "Texas Tech",
@@ -15136,7 +15444,8 @@
     "efg_pct": 0.526,
     "tov_pct": 14.3,
     "orb_pct": 30.3,
-    "ft_rate": 0.267
+    "ft_rate": 0.267,
+    "sos_all": 9.28
   },
   "Texas-Rio Grande Valley": {
     "name": "Texas-Rio Grande Valley",
@@ -15185,7 +15494,8 @@
     "efg_pct": 0.463,
     "tov_pct": 16.8,
     "orb_pct": 24.9,
-    "ft_rate": 0.285
+    "ft_rate": 0.285,
+    "sos_all": -0.9
   },
   "The Citadel": {
     "name": "The Citadel",
@@ -15234,7 +15544,8 @@
     "efg_pct": 0.515,
     "tov_pct": 15.7,
     "orb_pct": 28.5,
-    "ft_rate": 0.238
+    "ft_rate": 0.238,
+    "sos_all": -2.91
   },
   "Toledo": {
     "name": "Toledo",
@@ -15283,7 +15594,8 @@
     "efg_pct": 0.531,
     "tov_pct": 13.2,
     "orb_pct": 29.3,
-    "ft_rate": 0.266
+    "ft_rate": 0.266,
+    "sos_all": -2.09
   },
   "Towson": {
     "name": "Towson",
@@ -15332,7 +15644,8 @@
     "efg_pct": 0.479,
     "tov_pct": 15.5,
     "orb_pct": 39.9,
-    "ft_rate": 0.23
+    "ft_rate": 0.23,
+    "sos_all": -2.27
   },
   "Troy": {
     "name": "Troy",
@@ -15381,7 +15694,8 @@
     "efg_pct": 0.511,
     "tov_pct": 16.0,
     "orb_pct": 36.0,
-    "ft_rate": 0.283
+    "ft_rate": 0.283,
+    "sos_all": -3.17
   },
   "Tulane": {
     "name": "Tulane",
@@ -15430,7 +15744,8 @@
     "efg_pct": 0.541,
     "tov_pct": 13.7,
     "orb_pct": 20.6,
-    "ft_rate": 0.331
+    "ft_rate": 0.331,
+    "sos_all": 2.68
   },
   "Tulsa": {
     "name": "Tulsa",
@@ -15479,7 +15794,8 @@
     "efg_pct": 0.506,
     "tov_pct": 16.0,
     "orb_pct": 24.8,
-    "ft_rate": 0.297
+    "ft_rate": 0.297,
+    "sos_all": -1.0
   },
   "UAB": {
     "name": "UAB",
@@ -15528,7 +15844,8 @@
     "efg_pct": 0.501,
     "tov_pct": 14.1,
     "orb_pct": 35.5,
-    "ft_rate": 0.298
+    "ft_rate": 0.298,
+    "sos_all": 3.73
   },
   "UC Davis": {
     "name": "UC Davis",
@@ -15577,7 +15894,8 @@
     "efg_pct": 0.506,
     "tov_pct": 17.2,
     "orb_pct": 29.6,
-    "ft_rate": 0.289
+    "ft_rate": 0.289,
+    "sos_all": -2.85
   },
   "UC Irvine": {
     "name": "UC Irvine",
@@ -15626,7 +15944,8 @@
     "efg_pct": 0.524,
     "tov_pct": 14.3,
     "orb_pct": 31.7,
-    "ft_rate": 0.25
+    "ft_rate": 0.25,
+    "sos_all": -0.93
   },
   "UC Riverside": {
     "name": "UC Riverside",
@@ -15675,7 +15994,8 @@
     "efg_pct": 0.464,
     "tov_pct": 11.9,
     "orb_pct": 31.1,
-    "ft_rate": 0.204
+    "ft_rate": 0.204,
+    "sos_all": -1.23
   },
   "UC San Diego": {
     "name": "UC San Diego",
@@ -15724,7 +16044,8 @@
     "efg_pct": 0.533,
     "tov_pct": 12.6,
     "orb_pct": 28.1,
-    "ft_rate": 0.243
+    "ft_rate": 0.243,
+    "sos_all": -2.8
   },
   "UC Santa Barbara": {
     "name": "UC Santa Barbara",
@@ -15773,7 +16094,8 @@
     "efg_pct": 0.546,
     "tov_pct": 16.8,
     "orb_pct": 26.4,
-    "ft_rate": 0.296
+    "ft_rate": 0.296,
+    "sos_all": -3.01
   },
   "UCF": {
     "name": "UCF",
@@ -15822,7 +16144,8 @@
     "efg_pct": 0.478,
     "tov_pct": 15.3,
     "orb_pct": 32.9,
-    "ft_rate": 0.261
+    "ft_rate": 0.261,
+    "sos_all": 8.17
   },
   "UCLA": {
     "name": "UCLA",
@@ -15871,7 +16194,8 @@
     "efg_pct": 0.469,
     "tov_pct": 14.4,
     "orb_pct": 30.4,
-    "ft_rate": 0.258
+    "ft_rate": 0.258,
+    "sos_all": 7.84
   },
   "UNC Asheville": {
     "name": "UNC Asheville",
@@ -15920,7 +16244,8 @@
     "efg_pct": 0.536,
     "tov_pct": 14.7,
     "orb_pct": 28.1,
-    "ft_rate": 0.304
+    "ft_rate": 0.304,
+    "sos_all": -2.99
   },
   "UNC Greensboro": {
     "name": "UNC Greensboro",
@@ -15969,7 +16294,8 @@
     "efg_pct": 0.546,
     "tov_pct": 14.1,
     "orb_pct": 29.8,
-    "ft_rate": 0.197
+    "ft_rate": 0.197,
+    "sos_all": -2.9
   },
   "UNC Wilmington": {
     "name": "UNC Wilmington",
@@ -16018,7 +16344,8 @@
     "efg_pct": 0.53,
     "tov_pct": 10.9,
     "orb_pct": 30.4,
-    "ft_rate": 0.255
+    "ft_rate": 0.255,
+    "sos_all": -2.9
   },
   "UT Arlington": {
     "name": "UT Arlington",
@@ -16067,7 +16394,8 @@
     "efg_pct": 0.521,
     "tov_pct": 18.4,
     "orb_pct": 34.0,
-    "ft_rate": 0.277
+    "ft_rate": 0.277,
+    "sos_all": 0.69
   },
   "Utah": {
     "name": "Utah",
@@ -16116,7 +16444,8 @@
     "efg_pct": 0.543,
     "tov_pct": 14.1,
     "orb_pct": 27.6,
-    "ft_rate": 0.176
+    "ft_rate": 0.176,
+    "sos_all": 9.41
   },
   "Utah State": {
     "name": "Utah State",
@@ -16165,7 +16494,8 @@
     "efg_pct": 0.546,
     "tov_pct": 13.8,
     "orb_pct": 28.6,
-    "ft_rate": 0.277
+    "ft_rate": 0.277,
+    "sos_all": 5.29
   },
   "Utah Tech": {
     "name": "Utah Tech",
@@ -16214,7 +16544,8 @@
     "efg_pct": 0.506,
     "tov_pct": 19.4,
     "orb_pct": 28.4,
-    "ft_rate": 0.262
+    "ft_rate": 0.262,
+    "sos_all": -1.18
   },
   "Utah Valley": {
     "name": "Utah Valley",
@@ -16263,7 +16594,8 @@
     "efg_pct": 0.474,
     "tov_pct": 15.4,
     "orb_pct": 28.5,
-    "ft_rate": 0.239
+    "ft_rate": 0.239,
+    "sos_all": -0.03
   },
   "UTEP": {
     "name": "UTEP",
@@ -16312,7 +16644,8 @@
     "efg_pct": 0.497,
     "tov_pct": 17.8,
     "orb_pct": 30.2,
-    "ft_rate": 0.29
+    "ft_rate": 0.29,
+    "sos_all": -1.3
   },
   "UTSA": {
     "name": "UTSA",
@@ -16361,7 +16694,8 @@
     "efg_pct": 0.487,
     "tov_pct": 13.2,
     "orb_pct": 32.4,
-    "ft_rate": 0.244
+    "ft_rate": 0.244,
+    "sos_all": -0.71
   },
   "Valparaiso": {
     "name": "Valparaiso",
@@ -16410,7 +16744,8 @@
     "efg_pct": 0.466,
     "tov_pct": 13.9,
     "orb_pct": 26.0,
-    "ft_rate": 0.172
+    "ft_rate": 0.172,
+    "sos_all": 1.17
   },
   "Vanderbilt": {
     "name": "Vanderbilt",
@@ -16459,7 +16794,8 @@
     "efg_pct": 0.454,
     "tov_pct": 13.2,
     "orb_pct": 28.2,
-    "ft_rate": 0.249
+    "ft_rate": 0.249,
+    "sos_all": 8.16
   },
   "Vermont": {
     "name": "Vermont",
@@ -16508,7 +16844,8 @@
     "efg_pct": 0.53,
     "tov_pct": 12.5,
     "orb_pct": 23.1,
-    "ft_rate": 0.205
+    "ft_rate": 0.205,
+    "sos_all": -3.31
   },
   "Villanova": {
     "name": "Villanova",
@@ -16557,7 +16894,8 @@
     "efg_pct": 0.506,
     "tov_pct": 13.0,
     "orb_pct": 24.9,
-    "ft_rate": 0.216
+    "ft_rate": 0.216,
+    "sos_all": 9.82
   },
   "Virginia": {
     "name": "Virginia",
@@ -16606,7 +16944,8 @@
     "efg_pct": 0.486,
     "tov_pct": 11.5,
     "orb_pct": 25.6,
-    "ft_rate": 0.161
+    "ft_rate": 0.161,
+    "sos_all": 7.31
   },
   "Virginia Commonwealth": {
     "name": "Virginia Commonwealth",
@@ -16655,7 +16994,8 @@
     "efg_pct": 0.518,
     "tov_pct": 16.1,
     "orb_pct": 27.8,
-    "ft_rate": 0.273
+    "ft_rate": 0.273,
+    "sos_all": 4.41
   },
   "VMI": {
     "name": "VMI",
@@ -16704,7 +17044,8 @@
     "efg_pct": 0.477,
     "tov_pct": 18.9,
     "orb_pct": 25.2,
-    "ft_rate": 0.185
+    "ft_rate": 0.185,
+    "sos_all": -2.44
   },
   "Virginia Tech": {
     "name": "Virginia Tech",
@@ -16753,7 +17094,8 @@
     "efg_pct": 0.538,
     "tov_pct": 14.6,
     "orb_pct": 25.0,
-    "ft_rate": 0.262
+    "ft_rate": 0.262,
+    "sos_all": 7.97
   },
   "Wagner": {
     "name": "Wagner",
@@ -16802,7 +17144,8 @@
     "efg_pct": 0.458,
     "tov_pct": 13.2,
     "orb_pct": 30.0,
-    "ft_rate": 0.182
+    "ft_rate": 0.182,
+    "sos_all": -8.58
   },
   "Wake Forest": {
     "name": "Wake Forest",
@@ -16851,7 +17194,8 @@
     "efg_pct": 0.542,
     "tov_pct": 13.8,
     "orb_pct": 26.4,
-    "ft_rate": 0.254
+    "ft_rate": 0.254,
+    "sos_all": 7.52
   },
   "Washington": {
     "name": "Washington",
@@ -16900,7 +17244,8 @@
     "efg_pct": 0.535,
     "tov_pct": 14.1,
     "orb_pct": 27.1,
-    "ft_rate": 0.232
+    "ft_rate": 0.232,
+    "sos_all": 8.38
   },
   "Washington State": {
     "name": "Washington State",
@@ -16949,7 +17294,8 @@
     "efg_pct": 0.518,
     "tov_pct": 14.0,
     "orb_pct": 32.9,
-    "ft_rate": 0.222
+    "ft_rate": 0.222,
+    "sos_all": 7.19
   },
   "Weber State": {
     "name": "Weber State",
@@ -16998,7 +17344,8 @@
     "efg_pct": 0.539,
     "tov_pct": 13.1,
     "orb_pct": 23.8,
-    "ft_rate": 0.265
+    "ft_rate": 0.265,
+    "sos_all": -4.15
   },
   "West Virginia": {
     "name": "West Virginia",
@@ -17047,7 +17394,8 @@
     "efg_pct": 0.495,
     "tov_pct": 16.2,
     "orb_pct": 26.7,
-    "ft_rate": 0.262
+    "ft_rate": 0.262,
+    "sos_all": 10.76
   },
   "Western Carolina": {
     "name": "Western Carolina",
@@ -17096,7 +17444,8 @@
     "efg_pct": 0.526,
     "tov_pct": 12.9,
     "orb_pct": 29.5,
-    "ft_rate": 0.201
+    "ft_rate": 0.201,
+    "sos_all": -3.35
   },
   "Western Illinois": {
     "name": "Western Illinois",
@@ -17145,7 +17494,8 @@
     "efg_pct": 0.477,
     "tov_pct": 16.1,
     "orb_pct": 38.3,
-    "ft_rate": 0.22
+    "ft_rate": 0.22,
+    "sos_all": -7.37
   },
   "Western Kentucky": {
     "name": "Western Kentucky",
@@ -17194,7 +17544,8 @@
     "efg_pct": 0.52,
     "tov_pct": 16.0,
     "orb_pct": 29.0,
-    "ft_rate": 0.235
+    "ft_rate": 0.235,
+    "sos_all": -2.91
   },
   "Western Michigan": {
     "name": "Western Michigan",
@@ -17243,7 +17594,8 @@
     "efg_pct": 0.499,
     "tov_pct": 16.3,
     "orb_pct": 33.8,
-    "ft_rate": 0.195
+    "ft_rate": 0.195,
+    "sos_all": -3.79
   },
   "Wichita State": {
     "name": "Wichita State",
@@ -17292,7 +17644,8 @@
     "efg_pct": 0.5,
     "tov_pct": 15.1,
     "orb_pct": 32.2,
-    "ft_rate": 0.184
+    "ft_rate": 0.184,
+    "sos_all": 3.2
   },
   "William & Mary": {
     "name": "William & Mary",
@@ -17341,7 +17694,8 @@
     "efg_pct": 0.49,
     "tov_pct": 13.9,
     "orb_pct": 28.1,
-    "ft_rate": 0.228
+    "ft_rate": 0.228,
+    "sos_all": -5.55
   },
   "Winthrop": {
     "name": "Winthrop",
@@ -17390,7 +17744,8 @@
     "efg_pct": 0.531,
     "tov_pct": 16.1,
     "orb_pct": 31.8,
-    "ft_rate": 0.341
+    "ft_rate": 0.341,
+    "sos_all": -3.42
   },
   "Wisconsin": {
     "name": "Wisconsin",
@@ -17439,7 +17794,8 @@
     "efg_pct": 0.522,
     "tov_pct": 13.0,
     "orb_pct": 30.2,
-    "ft_rate": 0.255
+    "ft_rate": 0.255,
+    "sos_all": 11.35
   },
   "Wofford": {
     "name": "Wofford",
@@ -17488,7 +17844,8 @@
     "efg_pct": 0.539,
     "tov_pct": 14.7,
     "orb_pct": 30.2,
-    "ft_rate": 0.173
+    "ft_rate": 0.173,
+    "sos_all": -1.6
   },
   "Wright State": {
     "name": "Wright State",
@@ -17537,7 +17894,8 @@
     "efg_pct": 0.586,
     "tov_pct": 14.4,
     "orb_pct": 28.6,
-    "ft_rate": 0.248
+    "ft_rate": 0.248,
+    "sos_all": -3.62
   },
   "Wyoming": {
     "name": "Wyoming",
@@ -17586,7 +17944,8 @@
     "efg_pct": 0.519,
     "tov_pct": 16.4,
     "orb_pct": 29.1,
-    "ft_rate": 0.289
+    "ft_rate": 0.289,
+    "sos_all": 4.57
   },
   "Xavier": {
     "name": "Xavier",
@@ -17635,7 +17994,8 @@
     "efg_pct": 0.491,
     "tov_pct": 14.0,
     "orb_pct": 31.9,
-    "ft_rate": 0.237
+    "ft_rate": 0.237,
+    "sos_all": 11.03
   },
   "Yale": {
     "name": "Yale",
@@ -17684,7 +18044,8 @@
     "efg_pct": 0.528,
     "tov_pct": 12.4,
     "orb_pct": 28.9,
-    "ft_rate": 0.196
+    "ft_rate": 0.196,
+    "sos_all": 0.41
   },
   "Youngstown State": {
     "name": "Youngstown State",
@@ -17733,6 +18094,7 @@
     "efg_pct": 0.519,
     "tov_pct": 13.1,
     "orb_pct": 35.0,
-    "ft_rate": 0.22
+    "ft_rate": 0.22,
+    "sos_all": -5.11
   }
 }
