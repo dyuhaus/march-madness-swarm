@@ -453,3 +453,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1170 → 1130
 - Analysis: Score did not improve (change: -5.0). Round-specific weighting approach tested - teams that advance to later rounds have proven themselves through elimination games, making their regular season statistics more predictive than initial seeding. The Final Four (480 points total) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing accuracy in these rounds through progressive stats weighting could significantly improve overall bracket performance. This approach starts with equal seed/stats weighting (50/50) in early rounds and gradually shifts to stats-dominant (90/10) in the championship, recognizing that by the Final Four, traditional seeding becomes less reliable as weaker teams have been eliminated.
+
+
+## Experiment #34 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 12:21
+- Baseline Score: 975.0
+- New Score: 920.0 (-55.0)
+- Change: I'm dramatically increasing the SRS weight from 0.03 to 0.15 (5x increase) while keeping the proven hybrid structure (SEED_WEIGHT=0.2, STATS_WEIGHT=0.8). SRS is consistently identified as the strongest predictor of tournament success, but it's severely underweighted in the current system. This should capture more of the statistical advantage without the architectural failures of pure SRS models.
+- Per-Year Breakdown:
+  - 2022: 920 → 600
+  - 2023: 570 → 650
+  - 2024: 1240 → 1250
+  - 2025: 1170 → 1180
+- Analysis: Score did not improve (change: -55.0). SRS weight has been dramatically increased from 0.03 to 0.15 (5x increase) within the proven hybrid structure. Previous experiments established that SRS is the strongest single predictor and that pure stats models score +27.5 but fail architecturally. The hybrid approach with SEED_WEIGHT=0.2, STATS_WEIGHT=0.8 successfully improved scores to 975.0. This change targets maximizing SRS influence while maintaining the proven hybrid framework that avoids architectural failures.
