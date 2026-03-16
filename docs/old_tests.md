@@ -1613,3 +1613,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams with both strong SRS ratings (>8) AND solid defensive efficiency (def_rtg < 108) represent a combination that should be highly predictive of tournament success. Defense becomes increasingly important in tournament play where possessions are limited and games are often decided by stops. The dual criteria identify teams that have both demonstrated overall statistical strength throughout the season and possess the defensive capability to limit opponents, which is essential for advancing deep in tournament play. The +0.4 performance bonus is substantial enough to create meaningful score gaps and should help these well-rounded teams win more head-to-head matchups, particularly valuable in later rounds where the 95% performance weighting makes this bonus highly influential.
+
+
+## Experiment #116 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 18:07
+- Baseline Score: 1008.6
+- New Score: 1004.3 (-4.3)
+- Change: I'm implementing a shooting-dominant composite performance score by dramatically increasing effective field goal percentage weight from 0.5 to 0.7 while reducing SRS from 0.4 to 0.3. Tournament success often depends more on executing shots under pressure than regular season dominance, and this makes shooting efficiency the clear primary factor in team evaluation.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1120
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -4.3). Tournament success depends heavily on shot-making under pressure. Effective field goal percentage measures a team's ability to make efficient shots (accounting for 3-pointers), which becomes increasingly critical in high-pressure tournament situations where defenses tighten and shot quality decreases. Teams that can maintain shooting efficiency throughout a season demonstrate the mental toughness and skill execution necessary for deep tournament runs, potentially making it more predictive than overall regular season dominance (SRS) for determining tournament outcomes.
