@@ -184,6 +184,12 @@ def _predict_game(name1, seed1, name2, seed2, round_num, team_stats):
     if perf_score1 is not None and perf_score2 is not None:
         # Convert performance score difference to probability
         score_diff = perf_score1 - perf_score2
+        # SOS tiebreaker: when performance scores are close, strength
+        # of schedule differentiates battle-tested teams
+        sos1 = _get_sos(name1, team_stats)
+        sos2 = _get_sos(name2, team_stats)
+        if abs(score_diff) < 2.0 and sos1 is not None and sos2 is not None:
+            score_diff += (sos1 - sos2) * 0.05
         # Scale the difference to a probability (sigmoid-like)
         perf_prob = 0.5 + (score_diff * 0.05)  # Adjust scaling as needed
         perf_prob = max(0.01, min(0.99, perf_prob))
@@ -279,6 +285,14 @@ def _seed_probability(seed1, seed2, round_num):
         return adjusted_prob
     else:
         return 1.0 - adjusted_prob
+
+
+def _get_sos(team_name, all_stats):
+    """Look up a team's strength of schedule."""
+    stats = _get_team_stats(team_name, all_stats)
+    if stats:
+        return stats.get("sos", stats.get("sos_all", None))
+    return None
 
 
 def _get_team_stats(team_name, all_stats):
