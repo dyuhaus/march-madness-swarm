@@ -859,3 +859,17 @@ Format for each entry:
   - 2024: 1290 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Adding calculated win percentage to the composite performance score provides another valuable team strength indicator. Win percentage is a fundamental measure of team success that combines all aspects of performance into a single metric. The 0.4 weight makes it the second most important factor after SRS (0.6), reflecting that teams with exceptional or poor records relative to other metrics often outperform or underperform expectations in tournament play.
+
+
+## Experiment #63 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 13:36
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a different scaling approach by quadrupling the performance score scaling factor from 0.05 to 0.20. The current scaling is too conservative - many experiments scored +0.0 because statistical differences weren't large enough to flip game outcomes past the 0.5 threshold. This more aggressive scaling should allow the proven composite performance system to actually change more game predictions where stats clearly favor one team over seed-based predictions.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The pattern of multiple consecutive +0.0 results suggests that the composite performance score system may have a fundamental scaling issue. Even when teams have meaningfully different statistical profiles, the performance probability may not deviate enough from 0.5 to change game outcomes due to insufficient scaling in the probability transformation. The scaling factor directly controls how much statistical advantage is required to flip a game outcome, making it critical for translating statistical superiority into actual prediction changes.
