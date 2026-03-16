@@ -593,3 +593,17 @@ Format for each entry:
   - 2024: 1290 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The composite performance score system has proven highly successful (+77.5 improvement), demonstrating that comprehensive statistical analysis significantly outperforms seed-based predictions. The key insight is that SRS combined with offensive efficiency, rebounding, and turnover metrics creates a more accurate team strength assessment than seeding committee decisions. Further optimization should focus on maximizing the performance weight while maintaining architectural stability, as pure statistical models fail due to implementation issues despite their theoretical superiority.
+
+
+## Experiment #44 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 12:27
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a championship-focused performance weighting system that dramatically increases performance score influence to 95% specifically in the championship game while keeping other rounds at 90%. Since the championship alone is worth 320 points (1/6 of total bracket), and teams that reach the final have proven themselves through 5 rounds of elimination games, their statistical performance should almost completely override initial seeding decisions in this highest-value game.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams that reach the championship game have proven themselves through 5 rounds of elimination games, making their regular season statistics extremely predictive compared to initial seeding decisions. The championship game represents the single highest-value decision (320 points = 1/6 of total bracket), so maximizing stats influence (95%) while minimizing seed influence (5%) in this specific game could significantly improve overall bracket performance. This surgical approach targets only the championship while preserving the proven 90% stats weight for all other rounds.
