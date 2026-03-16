@@ -2294,3 +2294,37 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Previous experiments with defensive rating bonuses using very restrictive thresholds (def_rtg < 90, < 95, < 98, < 100) consistently failed because they applied to too few teams. Defense becomes exponentially more important in tournament play where possessions are precious. Using a more inclusive threshold (def_rtg < 102) should identify more defensively solid teams that can outperform their seeding by limiting opponents' scoring efficiency. The substantial +0.6 bonus should create larger performance score gaps that help overcome the persistent scaling threshold issues seen in recent experiments.
+
+
+## Experiment #157 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 18:34
+- Baseline Score: 1008.6
+- New Score: 985.7 (-22.9)
+- Change: I'm implementing a "championship pedigree amplification" system that dramatically increases the SRS weight to 0.6 while reducing effective field goal percentage to 0.4, targeting teams with overall dominance rather than just shooting efficiency. Additionally, I'm adding significant performance bonuses for teams with elite combined metrics (SRS > 10 AND off_rtg > 110) to create larger score gaps between truly championship-caliber teams and average ones. This should help the composite system flip more outcomes where proven excellence matters most.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1100
+  - 2019: 860 → 860
+  - 2021: 770 → 750
+  - 2022: 620 → 620
+  - 2023: 1160 → 1110
+  - 2024: 1330 → 1280
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -22.9). Previous experiments revealed a critical SRS weighting pattern in composite systems. While SRS is consistently the strongest predictor (pure stats models would theoretically score +27.5), dramatically increasing SRS weight beyond 1.0 consistently causes significant score drops (-140+ points). However, moderate increases within the 0.4-0.8 range may capture more of its predictive power without triggering architectural failures. The "Goldilocks zone" for SRS weight appears to be between 0.4-0.8, where it can lead the composite score without breaking the system's balanced integration of multiple statistical factors. Additionally, championship pedigree bonuses for teams with combined statistical excellence (SRS > 10 AND off_rtg > 110) may create larger performance score gaps needed to overcome the persistent +0.0 scaling threshold issues.
+
+
+## Experiment #158 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 18:35
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a round-specific performance weighting system that dramatically increases composite performance score influence in the Final Four (99%) and Championship (99.5%) while keeping earlier rounds at 95%. Since these two rounds alone represent 50% of total bracket value (960 points), maximizing statistical accuracy in the highest-value games where teams have proven themselves through multiple eliminations should significantly improve overall bracket performance.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making round-specific statistical weighting potentially the most critical optimization strategy. This approach recognizes that by later rounds, traditional seeding becomes less reliable as weaker teams have been eliminated and proven statistical excellence should dominate prediction logic in the highest-value games.
