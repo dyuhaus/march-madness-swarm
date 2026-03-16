@@ -1041,3 +1041,17 @@ Format for each entry:
   - 2024: 1320 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -15.0). The pattern of experiments shows that SRS has an optimal weight range within composite systems. Previous attempts to increase SRS to 1.0+ consistently caused -140+ point drops, but the current 0.4 weight may be underutilizing its predictive power. The key insight is finding the "Goldilocks zone" where SRS dominates but doesn't overwhelm complementary factors that provide stability to the composite framework. This experiment tests whether 0.7 (75% increase from 0.4) captures more of SRS's proven advantage while staying below the critical 1.0+ threshold that causes architectural failures.
+
+
+## Experiment #76 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 14:01
+- Baseline Score: 1067.5
+- New Score: 1052.5 (-15.0)
+- Change: I'm implementing an aggressive SRS-dominant performance scoring system that increases SRS weight from 0.4 to 0.5 while reducing effective field goal percentage from 0.5 to 0.4. Previous experiments show that balanced adjustments between these two key factors can improve scores, and SRS is consistently identified as the strongest statistical predictor while shooting efficiency remains important for tournament success.
+- Per-Year Breakdown:
+  - 2022: 610 → 620
+  - 2023: 1160 → 1120
+  - 2024: 1320 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -15.0). Previous experiments showed that SRS and effective field goal percentage are the two most impactful factors in the composite performance system, with balanced adjustments between them producing the best results. Experiment #65 proved that reducing SRS from 0.6 to 0.4 while increasing efg_pct from 0.3 to 0.5 improved scores by +15.0. This suggests an optimal balance exists between overall team strength (SRS) and shooting efficiency (efg_pct), with SRS needing to remain the dominant factor but not overwhelmingly so.
