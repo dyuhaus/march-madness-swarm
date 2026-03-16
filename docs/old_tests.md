@@ -1741,3 +1741,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making round-specific statistical weighting the most critical optimization strategy for maximizing overall bracket performance.
+
+
+## Experiment #124 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 18:12
+- Baseline Score: 1008.6
+- New Score: 997.1 (-11.5)
+- Change: I'm implementing a dramatic increase in the SRS weight from 0.4 to 0.55 while slightly reducing effective field goal percentage from 0.5 to 0.45. The baseline analysis and previous successful experiments demonstrate that SRS is consistently the strongest predictor of tournament success, with pure stats models theoretically scoring +27.5. However, experiments that pushed SRS weight to 1.0+ consistently failed with -140+ point drops. This balanced increase should capture more of SRS's proven predictive power while maintaining the successful composite framework, targeting the "Goldilocks zone" where SRS dominance improves predictions without triggering architectural failures.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1120
+  - 2024: 1330 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -11.5). Previous experiments revealed a critical pattern with SRS weighting in composite systems. While SRS is consistently the strongest statistical predictor (pure stats models would theoretically score +27.5), dramatically increasing SRS weight beyond 1.0 consistently causes significant score drops (-140+ points). However, moderate increases within the 0.4-0.8 range may capture more of its predictive power without triggering architectural failures. The key insight is finding the optimal balance where SRS dominates but doesn't overwhelm complementary factors that provide stability to the composite framework. The "Goldilocks zone" for SRS weight appears to be between 0.4-0.8, where it can lead the composite score without breaking the system's balanced integration of multiple statistical factors.
