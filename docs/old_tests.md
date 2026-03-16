@@ -1690,3 +1690,20 @@ Format for each entry:
   - 2024: 1330 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -11.5). Teams that protect the ball well (low turnover rate) have historically been undervalued in our composite performance score system. Tournament play emphasizes ball security exponentially more than regular season games because every possession matters in elimination scenarios. The -0.3 weight for turnover rate (doubled from -0.15) better reflects that teams who avoid costly turnovers under pressure often outperform their seeds, especially in later rounds where the 95% performance weighting makes this factor highly influential. Additionally, slightly increasing SRS weight from 0.4 to 0.5 while reducing shooting efficiency from 0.5 to 0.4 creates a more balanced approach between overall team strength and execution under pressure.
+
+
+## Experiment #121 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 18:10
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a championship bias system that dramatically increases the stats weighting specifically in the championship game (round 5) from 95% to 99%, while keeping all other rounds at 95%. The championship alone is worth 320 points (1/6 of total bracket), and teams reaching the final have proven themselves through 5 elimination rounds, making their statistical performance extremely predictive compared to initial seeding decisions. This surgical change targets only the highest-value single game where statistical excellence should almost completely override seeding.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams that reach the championship game have proven themselves through 5 rounds of elimination games, making their regular season statistical performance extremely predictive compared to initial seeding decisions. The championship game represents the single highest-value decision (320 points = 1/6 of total bracket), so maximizing stats influence (99%) while minimizing seed influence (1%) in this specific game should significantly improve overall bracket performance. This surgical approach targets only the championship while preserving the proven 95% stats weight for all other rounds.
