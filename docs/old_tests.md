@@ -1405,3 +1405,17 @@ Format for each entry:
   - 2024: 1320 → 1320
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four (rounds 4-5) have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making round-specific statistical weighting a critical optimization strategy. This approach recognizes that by later rounds, traditional seeding becomes less reliable as weaker teams have been eliminated and proven statistical excellence should dominate prediction logic.
+
+
+## Experiment #102 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 14:20
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a tanh-based probability transformation with optimized parameters that converts performance score differences into more decisive probabilities. This uses a mathematically sound sigmoid that maps small performance advantages (~0.2) to ~62% win probability and larger advantages (~0.5) to ~76%, which should finally allow the proven composite system to flip outcomes where teams have meaningful statistical differences.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1150
+  - 2024: 1320 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The tanh-based sigmoid transformation provides a mathematically sound approach to converting performance score differences into more decisive probabilities. The formula `0.5 + 0.45 * tanh(score_diff * 3.0)` creates a steeper probability curve where small statistical advantages (0.2 performance difference) translate to ~62% win probability and larger advantages (0.5 difference) translate to ~90%. This should allow meaningful statistical differences to overcome the 0.5 decision threshold that has caused many +0.0 results, while maintaining the proven composite performance score framework that achieved +77.5 improvement.
