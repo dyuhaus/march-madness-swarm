@@ -1911,3 +1911,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Teams with poor ball security (turnover rate >20%) may be significantly undervalued by basic turnover penalties. Tournament play emphasizes ball security exponentially more than regular season games because every possession matters in elimination scenarios. Teams that turn the ball over frequently under pressure often suffer devastating collapses in high-stakes tournament games, making additional penalties for poor ball security a critical factor in identifying teams likely to underperform their seeding.
+
+
+## Experiment #134 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 18:19
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a comprehensive performance score scaling adjustment by increasing the performance score scaling factor from 0.05 to 0.40 (8x increase) to make statistical differences much more decisive in determining game outcomes. The pattern of many recent +0.0 results suggests that even when teams have meaningfully different composite performance scores, the current conservative scaling prevents those differences from crossing the 0.5 decision threshold to actually flip game predictions and improve bracket accuracy.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The composite performance score system has shown significant success (+77.5, +15.0, +2.5 improvements) but many recent experiments scored exactly +0.0, indicating a critical scaling bottleneck. The issue appears to be that statistical differences between teams, even when meaningful, aren't large enough to cross the 0.5 decision threshold due to conservative scaling factors (0.05-0.30 range tested). This suggests that dramatically more aggressive scaling (8x+ increases to 0.40+) may be necessary to allow the proven composite statistical advantages to actually translate into changed game predictions and improved bracket accuracy.
