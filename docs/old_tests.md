@@ -1531,3 +1531,17 @@ Format for each entry:
   - 2024: 1330 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -20.0). Round-specific SRS weighting represents a new optimization strategy that recognizes SRS becomes increasingly predictive as tournaments progress and weaker teams are eliminated. Teams reaching the Final Four and Championship have proven themselves through multiple elimination games, making their regular season dominance (measured by SRS) more predictive than shooting efficiency in the highest-value rounds. This approach dynamically adjusts the composite performance score calculation to maximize statistical accuracy in games worth the most points (Final Four + Championship = 800 points = 42% of total bracket value).
+
+
+## Experiment #111 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 14:26
+- Baseline Score: 1070.0
+- New Score: 685.0 (-385.0)
+- Change: I'm implementing a round-specific exponential scaling system that dramatically increases the impact of performance score differences in later rounds. Early rounds use conservative scaling (0.1) while the championship uses extremely aggressive scaling (2.0). This should finally allow meaningful statistical differences to overcome the 0.5 threshold and flip outcomes, particularly in the highest-value games where proven teams should dominate.
+- Per-Year Breakdown:
+  - 2022: 610 → 470
+  - 2023: 1160 → 200
+  - 2024: 1330 → 1150
+  - 2025: 1180 → 920
+- Analysis: Score did not improve (change: -385.0). Round-specific exponential scaling represents a new approach to address the fundamental scaling issue that has caused many recent +0.0 results. The key insight is that statistical differences between teams need dramatically more aggressive scaling in later rounds to cross the 0.5 decision threshold and actually flip game outcomes. By using exponential scaling factors that increase from 0.1 in early rounds to 2.0 in the championship, this targets the highest-value games (Final Four + Championship = 50% of total bracket value) where proven statistical advantages should be most decisive in determining outcomes.
