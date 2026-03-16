@@ -2226,3 +2226,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The multiplicative probability blending approach represents a fundamentally different way to combine statistical and seed-based predictions. Instead of weighted averages that often produce probabilities close to 0.5, geometric mean amplification creates more decisive outcomes when both performance score and seed probability agree on the same team, while using weighted average as fallback when they disagree. This could overcome the persistent +0.0 scaling issues by creating larger probability deviations from 0.5 that actually flip game outcomes.
+
+
+## Experiment #153 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 18:31
+- Baseline Score: 1008.6
+- New Score: 988.6 (-20.0)
+- Change: I'm adding calculated win percentage as a new performance factor and increasing the offensive rating weight. Many teams don't have direct win_loss_pct in their stats, but I can calculate it from wins/losses when available. Win percentage is a fundamental measure of sustained success that should improve team strength assessment. I'm also increasing offensive rating weight since scoring efficiency is crucial in tournament play.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1100
+  - 2019: 860 → 860
+  - 2021: 770 → 750
+  - 2022: 620 → 610
+  - 2023: 1160 → 1140
+  - 2024: 1330 → 1280
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -20.0). Win percentage calculation and integration into the composite performance score provides another valuable team strength indicator that was previously missing. Many teams don't have direct win_loss_pct in their stats, but calculating it from wins/losses when available creates a fundamental measure of sustained success. Additionally, increasing offensive rating weight from 0.15 to 0.25 recognizes that scoring efficiency becomes increasingly critical in tournament play where possessions are limited and execution matters most. This approach adds new statistical dimensions to create larger performance score differences between teams, potentially overcoming the scaling threshold issues that caused many recent +0.0 results.
