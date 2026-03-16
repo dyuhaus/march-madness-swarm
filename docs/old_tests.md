@@ -2209,3 +2209,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The championship game represents the single highest-value decision (320 points = 1/6 of total bracket), and teams reaching the final have proven themselves through 5 rounds of elimination games, making their regular season statistical performance extremely predictive compared to initial seeding decisions. Round-specific performance scaling that dramatically increases the scaling factor specifically in the championship game (from 0.05 to 1.0) should allow statistical advantages to be much more decisive in the single most valuable game, while preserving proven scaling for all other rounds. This surgical approach targets only the championship where proven teams with superior statistics should dominate seeding considerations.
+
+
+## Experiment #152 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 18:31
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a multiplicative probability blending system where the performance probability and seed probability are combined using geometric mean rather than weighted average. This creates more decisive outcomes when statistical advantages are clear, while maintaining balance when they're not. The formula becomes `sqrt(perf_prob * seed_prob)` normalized appropriately.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The multiplicative probability blending approach represents a fundamentally different way to combine statistical and seed-based predictions. Instead of weighted averages that often produce probabilities close to 0.5, geometric mean amplification creates more decisive outcomes when both performance score and seed probability agree on the same team, while using weighted average as fallback when they disagree. This could overcome the persistent +0.0 scaling issues by creating larger probability deviations from 0.5 that actually flip game outcomes.
