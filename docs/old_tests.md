@@ -901,3 +901,17 @@ Format for each entry:
   - 2024: 1290 → 1320
   - 2025: 1180 → 1180
 - Analysis: Score improved by 15.0 points. Previous experiments revealed that dramatically increasing SRS weight beyond 1.0 consistently caused significant score drops (-140+ points), suggesting the current 0.6 weight may be near optimal. Effective field goal percentage is a proven tournament predictor that measures shooting efficiency under pressure, which becomes increasingly important in later rounds where shot quality and execution matter most. This balanced approach maintains SRS as the primary factor while recognizing that shooting efficiency may be underweighted in the current system.
+
+
+## Experiment #66 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 13:52
+- Baseline Score: 1067.5
+- New Score: 1052.5 (-15.0)
+- Change: I'm implementing a round-specific performance weighting system that reduces performance influence in early rounds (70% in R64/R32) where seeds are more predictive, but dramatically increases it in later rounds (95% in Final Four, 99% in Championship). This targets the highest-value games where teams have proven themselves through elimination and statistical performance becomes more predictive than initial seeding.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1270
+  - 2025: 1180 → 1170
+- Analysis: Score did not improve (change: -15.0). Teams that advance to later rounds have proven themselves through multiple elimination games, making their regular season statistics more predictive than initial seeding decisions. The Final Four (480 points) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing statistical accuracy in these rounds through round-specific weighting could significantly improve overall bracket performance. Early rounds should maintain more balanced seed/stats weighting since upsets are more random, while later rounds should heavily favor statistical performance as weaker teams are eliminated.
