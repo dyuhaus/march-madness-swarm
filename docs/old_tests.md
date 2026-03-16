@@ -1475,3 +1475,45 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -2.5). The key insight from experiments #63-#105 is that the composite performance score system achieved significant improvement (+77.5 points) by creating comprehensive statistical ratings, but subsequent attempts consistently scored +0.0 due to insufficient scaling factors. The probability transformation from performance score differences to game predictions requires much more aggressive scaling than the conservative 0.05-0.30 range that was tested. Even when teams have meaningfully different statistical profiles, small scaling factors prevent the probabilities from deviating enough from 0.5 to cross the decision threshold and flip outcomes. The solution appears to be dramatically increasing the scaling factor (20x increase from 0.05 to 1.0) to make statistical advantages decisive in determining game outcomes.
+
+
+## Experiment #107 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 14:23
+- Baseline Score: 1070.0
+- New Score: 1025.0 (-45.0)
+- Change: I'm implementing a "statistical excellence amplification" system that dramatically increases the weights of the two most proven factors - SRS (from 0.4 to 0.8) and effective field goal percentage (from 0.5 to 0.8) - while reducing less impactful factors. This should create much larger performance score gaps between elite and average teams, making the proven composite system more likely to flip outcomes where statistical excellence should dominate.
+- Per-Year Breakdown:
+  - 2022: 610 → 580
+  - 2023: 1160 → 1090
+  - 2024: 1330 → 1250
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -45.0). Statistical excellence amplification may be the key to breaking the +0.0 result pattern in composite performance systems. Instead of trying to fix scaling factors or probability transformations, dramatically increasing the weights of the most proven statistical factors (SRS and effective field goal percentage) creates larger performance score differences between teams, making the decision threshold more likely to be crossed. This targets the fundamental issue that performance score gaps may have been too small to meaningfully impact game outcomes, even with aggressive scaling.
+
+
+## Experiment #108 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 14:24
+- Baseline Score: 1070.0
+- New Score: 1070.0 (+0.0)
+- Change: I'm implementing a "ball security emphasis" adjustment by significantly increasing the turnover rate penalty from -0.15 to -0.35, recognizing that teams that protect the ball well have a major advantage in tournament play where possessions are precious and turnovers can be devastating in close games. This should help identify teams that execute well under pressure.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Turnover rate (ball security) becomes exponentially more important in tournament play where possessions are precious and games are often decided by just a few points. Teams that protect the ball well historically outperform their seeds, especially in later rounds where defensive pressure intensifies. The previous weight of -0.15 severely undervalued this critical tournament skill, while the increased weight of -0.35 should better capture teams that execute well under pressure and avoid costly mistakes that can be devastating in elimination games.
+
+
+## Experiment #109 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 14:25
+- Baseline Score: 1070.0
+- New Score: 1067.5 (-2.5)
+- Change: I'm dramatically increasing the rebounding percentage weight from 0.2 to 0.4 while slightly reducing SRS from 0.4 to 0.35 to maintain balance. Rebounding becomes critically important in tournament play where possessions are precious and second-chance points often decide close games. This should create larger performance score gaps between teams that dominate the boards versus those that don't, making outcomes more decisive.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1150
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -2.5). Rebounding percentage (trb_pct) may be significantly underweighted in tournament prediction models. Tournament games are often decided by possessions and second-chance points, making teams that dominate the boards more likely to outperform their seeds. Dramatically increasing rebounding weight from 0.2 to 0.4 while slightly reducing SRS may create larger performance score differences between teams, helping overcome the scaling issues that caused many recent +0.0 results in the composite performance system.
