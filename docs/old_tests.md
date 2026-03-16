@@ -1237,3 +1237,17 @@ Format for each entry:
   - 2024: 1320 → 1250
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -145.0). Round-specific SRS weighting represents a new approach that recognizes SRS becomes increasingly predictive as tournaments progress and weaker teams are eliminated. The key insight is that teams reaching later rounds have proven themselves through multiple elimination games, making their regular season dominance (measured by SRS) more predictive than in early rounds where upsets are more random. By progressively increasing SRS weight from 0.4 in early rounds to 0.9 in the championship, this targets the highest-value games (Final Four + Championship = 800 points = 42% of total bracket) where statistical excellence should matter most. The proportional adjustment of other factors maintains system balance while maximizing SRS influence where it's most predictive.
+
+
+## Experiment #90 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 14:11
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a championship-focused strategy that dramatically increases performance score weighting specifically in the Final Four (95%) and Championship (99%) rounds while keeping other rounds at 90%. These two rounds alone are worth 960 points (50% of total bracket value), so maximizing statistical accuracy in the highest-value games where teams have proven themselves through multiple eliminations should significantly improve overall bracket performance.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (320 points per game × 2 = 640 points) and Championship (320 points) represent 960 of 1,920 total points (50% of total bracket value), so maximizing statistical accuracy in these highest-value rounds through round-specific performance weighting should be the most impactful optimization strategy. Previous experiments with dramatic round-specific weighting failed, but this focuses specifically on the two highest-leverage rounds where proven teams should matter most.
