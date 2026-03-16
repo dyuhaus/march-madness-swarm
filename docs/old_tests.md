@@ -1724,3 +1724,20 @@ Format for each entry:
   - 2024: 1330 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -12.9). The previous successful experiments showed that balanced statistical factor weighting is crucial - Experiment #65 improved scores by reducing SRS weight while increasing effective field goal percentage weight. However, subsequent experiments attempting to make shooting efficiency dominant consistently failed or had no effect. This suggests that SRS (overall team strength) should remain the primary factor, but effective field goal percentage may have been overweighted. Win percentage provides another fundamental measure of sustained success that could be underutilized in the current system.
+
+
+## Experiment #123 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 18:11
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a round-specific performance weighting system that dramatically increases performance score influence in the Final Four (98%) and Championship (99%) while keeping earlier rounds at 95%. Since these two rounds alone represent 960 points (50% of total bracket value), and teams reaching them have proven themselves through multiple eliminations, their statistical performance should almost completely override seeding decisions in the highest-value games.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams that advance to the Final Four and Championship have proven themselves through multiple elimination games, making their regular season statistical performance increasingly predictive compared to initial seeding decisions. The Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making round-specific statistical weighting the most critical optimization strategy for maximizing overall bracket performance.
