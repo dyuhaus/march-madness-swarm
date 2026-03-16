@@ -1181,3 +1181,17 @@ Format for each entry:
   - 2024: 1320 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The composite performance score system has been the most successful approach (+77.5 improvement), but recent experiments consistently scored +0.0, suggesting that statistical differences weren't large enough to flip game outcomes past the 0.5 decision threshold. The key insight is that probability transformation is critical - linear scaling with small multipliers (0.05-0.30) appears fundamentally too conservative. A steep logistic sigmoid transformation `1 / (1 + exp(-score_diff * 5))` makes even small statistical advantages (0.2 performance difference = ~73% win probability) much more decisive in changing game predictions.
+
+
+## Experiment #86 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 14:08
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm dramatically increasing the importance of turnover rate (ball security) in the composite performance score by changing its weight from -0.15 to -0.4, recognizing that turnovers become exponentially more costly in tournament play where every possession matters and games are often decided by just a few points.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Turnover rate (tov_pct) becomes exponentially more important in tournament play where possessions are precious and games are often decided by just a few points. Teams that protect the ball well historically outperform their seeds, especially in later rounds where defensive pressure intensifies. The previous weight of -0.15 severely undervalued this critical tournament skill. Ball security often separates teams that can execute under pressure from those that crumble in high-stakes situations.
