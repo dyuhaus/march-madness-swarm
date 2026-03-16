@@ -1579,3 +1579,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Previous defensive bonus experiments with very restrictive thresholds (def_rtg < 90, < 95, < 98, < 100) consistently had no effect (+0.0 results), suggesting they were too selective and applied to too few teams to create meaningful performance score differences. Tournament success often correlates with solid defense that can limit opponents and create extra possessions. A more inclusive threshold (def_rtg < 105) should identify a broader set of defensively competent teams that can outperform their seeding through their ability to slow down opponents, which becomes increasingly valuable in later rounds where the 95% performance weighting makes defensive bonuses highly influential in game predictions.
+
+
+## Experiment #114 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 18:05
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a dramatic increase in the performance score scaling factor from 0.05 to 0.25 (5x increase) to make statistical differences much more decisive in flipping game outcomes. The pattern of many +0.0 results suggests that even when teams have meaningfully different composite performance scores, the current scaling is too conservative to cross the 0.5 decision threshold and actually change predictions.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Multiple experiments with scaling factors from 0.05 to 0.50 consistently showed minimal impact (+0.0 results), suggesting the fundamental issue may not be scaling alone but rather the magnitude of performance score differences between teams. The composite system successfully improved scores by +77.5 initially, but subsequent optimizations hit a scaling threshold where statistical differences aren't large enough to flip game outcomes regardless of the scaling factor used. This indicates that creating larger performance score gaps between teams (through adjusted weights or bonuses) may be more effective than simply scaling existing small differences more aggressively.
