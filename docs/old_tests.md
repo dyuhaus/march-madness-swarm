@@ -2141,3 +2141,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The composite performance score system has achieved significant improvements (+77.5, +15.0, +2.5 points) by proving that comprehensive statistical analysis dramatically outperforms seed-based predictions. The key insight is that team statistics (SRS, effective field goal percentage, offensive efficiency, etc.) are fundamentally better predictors of tournament success than seeding committee decisions. The baseline analysis showed that pure stats would theoretically score +27.5 improvement, and progressive movement toward stats-dominant weighting (70/30 → 90/10 → 95/5 → 99/1) continues to capture more of this statistical advantage while maintaining minimal architectural stability through seed fallbacks.
+
+
+## Experiment #148 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 18:28
+- Baseline Score: 1008.6
+- New Score: 995.7 (-12.9)
+- Change: I'm implementing a composite elite team identification system that gives substantial performance score bonuses (+1.0) to teams with MULTIPLE elite statistical categories. Teams that achieve excellence in both SRS (>10) AND effective field goal percentage (>0.52) get the bonus, targeting championship-caliber teams that combine overall dominance with clutch shooting. This creates larger performance score gaps that should finally overcome the persistent +0.0 scaling issues by making statistical differences more decisive.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1160
+  - 2019: 860 → 850
+  - 2021: 770 → 740
+  - 2022: 620 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1300
+  - 2025: 1180 → 1150
+- Analysis: Score did not improve (change: -12.9). The persistent +0.0 results from experiments #68-147 suggest the fundamental issue is creating performance score differences large enough to cross the 0.5 decision threshold. Rather than tweaking scaling factors or probability transformations, the solution may be to create larger gaps between elite and average teams through composite statistical bonuses. Teams with multiple areas of excellence (SRS >10 AND efg_pct >0.52) represent championship-caliber programs that should have meaningful advantages in head-to-head matchups, particularly valuable in later rounds where the 95% performance weighting makes these bonuses highly influential.
