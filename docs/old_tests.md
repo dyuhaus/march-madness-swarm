@@ -48,3 +48,17 @@ Format for each entry:
   - 2024: 1240 → 1240
   - 2025: 1120 → 1120
 - Analysis: Score did not improve (change: +0.0). Tested aggressive seed decay in Final Four (0.60→0.40) and Championship (0.55→0.30) rounds to increase upset likelihood in the highest-value games. This makes the algorithm more willing to pick lower seeds that have proven themselves by advancing deep into the tournament, which could capture historical patterns where teams like UConn (4-seed in 2023) or other lower seeds win championships.
+
+
+## Experiment #4 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 11:45
+- Baseline Score: 970.0
+- New Score: 970.0 (+0.0)
+- Change: I'm reducing the championship game seed decay from 0.55 to 0.75 to make the algorithm more conservative about picking upsets in the final game. The championship is worth 320 points (1/6 of total bracket), and historically 1-2 seeds win about 70% of championships. The current decay makes the algorithm too willing to pick lower seeds that have advanced, but championship games typically favor the higher seeds more than our current model suggests.
+- Per-Year Breakdown:
+  - 2022: 940 → 940
+  - 2023: 580 → 580
+  - 2024: 1240 → 1240
+  - 2025: 1120 → 1120
+- Analysis: Score did not improve (change: +0.0). Championship game seed decay should be higher (more conservative) than Final Four decay. The championship is the single highest-value game (320 points) and historically favors higher seeds more than our previous setting suggested. A decay of 0.75 vs 0.55 means seed advantages are preserved more in the final, which should align better with historical championship patterns where 1-2 seeds win about 70% of the time.
