@@ -775,3 +775,31 @@ Format for each entry:
   - 2024: 1290 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -2.5). Teams with exceptional combined statistical excellence (SRS > 12 AND off_rtg > 110) represent championship-caliber programs that combine overall season-long dominance with elite offensive efficiency. These dual criteria identify teams that have both demonstrated exceptional overall strength and possess the offensive firepower necessary for sustained tournament success. Elite offensive efficiency (>110 points per 100 possessions) becomes increasingly important in tournament play where games are often decided by execution in crucial moments, while high SRS (>12) indicates teams that consistently dominated throughout the regular season against quality competition.
+
+
+## Experiment #57 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 12:40
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a "bracket consistency bonus" system that gives substantial performance score boosts (+1.5) to teams with strong SRS AND exceptional win totals (SRS > 10 AND wins >= 30). This combination identifies teams that both dominated statistically and sustained that excellence throughout a long season, making them more reliable in high-pressure tournament situations. The substantial bonus should help these proven, consistent teams win more head-to-head matchups, especially valuable in later rounds where the 90% performance weighting makes this bonus highly influential.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams with both exceptional statistical dominance (SRS > 10) AND sustained excellence (wins >= 30) represent historically consistent programs that combine talent with proven execution over a full season. This dual criteria identifies championship-caliber teams that have demonstrated both quality and consistency, making them more reliable in high-pressure tournament situations where mental toughness and experience matter. The substantial +1.5 performance score bonus should help these teams win more head-to-head matchups in the 90% performance-weighted system, particularly valuable in later rounds where proven consistency becomes paramount.
+
+
+## Experiment #58 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 12:41
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm dramatically increasing the performance score scaling factor from 0.05 to 0.20 (4x increase) to make statistical differences more decisive in game predictions. The current scaling appears too conservative, preventing superior composite performance scores from overriding seed-based predictions even when teams have significantly different statistical profiles. This should allow the proven statistical advantages to actually flip more game outcomes.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The recent string of +0.0 results suggests that the composite performance score system may need more aggressive scaling to overcome seed-based predictions. The current 0.05 scaling factor appears too conservative - even when teams have meaningfully different statistical profiles, the performance probability may not deviate enough from 0.5 to change outcomes. Increasing the scaling factor should make statistical advantages more decisive while maintaining the proven 90/10 performance/seed weighting structure.
