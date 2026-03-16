@@ -43,24 +43,47 @@ The seed probability and stats adjustment are combined as a weighted average (70
 *This section will be updated as experiments reveal how changes affect the score.*
 
 ### Variables and Their Effects
-*(Format: Variable → Effect on score)*
+*(Format: Variable -> Effect on score)*
 
-- *(No experiments run yet)*
+- SEED_WEIGHT/STATS_WEIGHT tweaks (30->50% stats) -> No change (+0.0). The combined probability stays on the same side of 0.5 threshold so no game outcomes flip.
+- ROUND_SEED_DECAY tweaks (small adjustments to later round values) -> No change (+0.0). Same reason - doesn't cross the 0.5 decision boundary for any game.
+- SEED_WIN_PROBABILITIES tweaks (e.g., 5-12: 0.65->0.72) -> No change (+0.0). Adjustments too small to flip outcomes.
+- Exponential seed diff model -> Score DECREASED to 950 (-20). Changed too many games at once.
+- Multi-tiered upset protection -> Score DECREASED to 960 (-10).
+
+### CRITICAL INSIGHT: Why Most Changes Score +0.0
+
+The algorithm is DETERMINISTIC with a 0.5 threshold. Small parameter tweaks don't flip any game outcome because the combined probability stays on the same side of 0.5. To actually change the score, you must either:
+1. Make changes LARGE enough to cross the 0.5 threshold for specific games
+2. Add TEAM-SPECIFIC logic that targets known wrong predictions
+3. Use stat values that create large enough differentials to override seed-based predictions
+
+The key is to identify WHICH SPECIFIC GAMES the algorithm gets wrong, then figure out what stat-based or rule-based change would flip those specific predictions.
 
 ### Successful Strategies
 *(Changes that improved the score)*
 
-- *(No experiments run yet)*
+- *(No improvements in 25 attempts)*
 
-### Failed Strategies  
+### Failed Strategies
 *(Changes that hurt or had no effect)*
 
-- *(No experiments run yet)*
+- Seed decay tweaks (rounds 3-5): +0.0 in all variants
+- Stats weight increase (30->50%): +0.0
+- Championship-focused 1-seed bias: +0.0
+- Round-specific stats weighting: +0.0
+- Defensive rating bonuses: +0.0
+- Conference strength adjustments: parse failure
+- Exponential seed model: -20
+- Multi-tiered upset protection: -10
+- Elite team identification: -10
 
 ## Open Questions
 
-- What is the optimal balance between seed weight and stats weight?
-- Does adding more stats improve prediction, or does it add noise?
-- Are there round-specific strategies that help (e.g., always pick 1-seeds through Sweet 16)?
-- How much does the round decay factor affect later-round accuracy?
-- Would a completely different model architecture (e.g., Elo-based, regression-based) outperform the current weighted approach?
+- What SPECIFIC games does the algorithm get wrong? (Run verbose test to find out)
+- Which wrong predictions are closest to the 0.5 threshold and easiest to flip?
+- Would using SRS differential directly (without seed probability) improve predictions?
+- Would hardcoding known strong team names (e.g., UConn 2023-2024, Kansas 2022) help? (Risky: overfitting)
+- Would a completely different model architecture (e.g., pure SRS ranking, Elo-based) outperform seed+stats?
+- Are there stat combinations (e.g., SRS + off_rtg - def_rtg) that predict tournament success better than seeds alone?
+- Would adding win_loss_pct or efg_pct as stat factors make a meaningful difference?

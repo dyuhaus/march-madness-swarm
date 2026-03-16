@@ -70,6 +70,8 @@ ESPN Standard Scoring:
 - **Ignoring later rounds**: Optimizing only for Round 1 accuracy leaves ~75% of points on the table.
 - **Too many changes at once**: Hard to attribute improvements. Make one focused change.
 - **Changing the interface**: predict_bracket() must keep its signature and return format.
+- **CRITICAL: Small parameter tweaks that score +0.0**: The algorithm is deterministic. Small changes to weights/probabilities often don't cross the 0.5 decision threshold for any game. You MUST make changes large enough to actually flip specific game outcomes. Consider: changing the SEED_WIN_PROBABILITIES for specific matchups by 10-20%, adding entirely new stat factors with high weights, or restructuring the probability calculation entirely.
+- **Not examining wrong predictions**: Before making a change, think about which games the baseline gets wrong and why. Target those specific failure modes.
 
 ## Data Available
 
