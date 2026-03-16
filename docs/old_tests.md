@@ -1433,3 +1433,17 @@ Format for each entry:
   - 2024: 1320 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The pattern of +0.0 results with the composite performance score system suggests that the fundamental issue is probability transformation rather than scaling factors. Linear scaling (0.5 + score_diff * factor) appears mathematically insufficient to create probability deviations large enough to cross the 0.5 decision threshold, even with very large scaling factors (up to 0.50). Exponential transformations that create asymptotic probability curves may be necessary to convert statistical differences into decisive game outcome changes. The formula `0.5 + 0.4 * (1 - exp(-|score_diff| * 3.0))` creates much more aggressive probability mapping where a 0.3 performance difference yields ~70% win probability instead of ~52% with linear scaling.
+
+
+## Experiment #104 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 14:21
+- Baseline Score: 1067.5
+- New Score: 982.5 (-85.0)
+- Change: I'm rebalancing the composite performance score weights to make SRS and effective field goal percentage equal primary factors (0.35 each), while increasing turnover rate importance and reducing less predictive factors. This creates a more tournament-focused statistical profile that should generate larger performance score differences between teams, making outcomes more decisive.
+- Per-Year Breakdown:
+  - 2022: 610 → 600
+  - 2023: 1160 → 830
+  - 2024: 1320 → 1330
+  - 2025: 1180 → 1170
+- Analysis: Score did not improve (change: -85.0). The composite performance score system works well but needs better factor weighting to create larger performance differences between teams. Making SRS and effective field goal percentage equal primary factors (0.35 each) while increasing turnover rate importance to -0.25 should create more decisive statistical differences that can overcome the 0.5 threshold and flip game outcomes where superior teams should win.
