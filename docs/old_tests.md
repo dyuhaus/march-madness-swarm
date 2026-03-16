@@ -1826,3 +1826,20 @@ Format for each entry:
   - 2024: 1330 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -11.5). Previous experiments revealed a critical SRS weighting pattern in composite systems. While SRS is consistently the strongest predictor (pure stats models would theoretically score +27.5), dramatically increasing SRS weight beyond 1.0 consistently causes -140+ point score drops. The "Goldilocks zone" appears to be 0.4-0.8 where SRS can dominate without overwhelming complementary factors. Experiment #65 proved that balanced adjustments between SRS and effective field goal percentage can improve scores (+15.0). This experiment tests 0.6 SRS weight (50% increase from 0.4) as potentially optimal for capturing more of SRS's predictive power while maintaining system stability.
+
+
+## Experiment #129 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 18:15
+- Baseline Score: 1008.6
+- New Score: 997.1 (-11.5)
+- Change: I'm implementing a more sophisticated composite performance score calculation by adding a calculated win percentage factor and rebalancing the statistical weights. Teams without direct win_loss_pct can have it calculated from wins/losses, and I'm increasing the SRS weight to 0.5 while reducing effective field goal percentage to 0.4 to better balance overall team strength with shooting efficiency. This should create more meaningful performance score differences between teams.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1120
+  - 2024: 1330 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -11.5). Win percentage calculation and integration into the composite performance score provides another valuable team strength indicator. Many teams don't have direct win_loss_pct in their stats, but calculating it from wins/losses when available creates a fundamental measure of sustained success. The rebalanced weights (SRS 0.5, efg_pct 0.4, win_pct 0.3) create a more comprehensive evaluation that combines overall team strength, shooting efficiency, and sustained success - three key predictors of tournament performance.
