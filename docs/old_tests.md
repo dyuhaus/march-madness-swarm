@@ -957,3 +957,45 @@ Format for each entry:
   - 2024: 1320 → 1310
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: -2.5). Previous round-specific weighting experiments consistently failed or had no effect, but this represents a more targeted approach. Instead of dramatic 70%→99% jumps that may be too extreme, this implements gradual scaling (85%→98%) that recognizes teams reaching later rounds have proven themselves through elimination games. The Final Four (480 points) + Championship (320 points) = 800 points (42% of total bracket), making statistical accuracy in these rounds extremely valuable. The key insight is that by the championship game, teams have survived 5 rounds of elimination, making their regular season statistical performance almost completely predictive compared to initial seeding decisions.
+
+
+## Experiment #70 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 13:56
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a "stat availability bonus" system that gives significant performance score boosts to teams with comprehensive statistical profiles. Teams with more available stats (>= 8 factors) get a +0.3 bonus, recognizing that teams with complete statistical profiles are often major programs with better resources and coaching that tend to outperform their seeds in tournament play.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams with comprehensive statistical profiles (8+ available stats) are often major programs with better resources, coaching, and recruiting that tend to outperform their tournament seeding. The stat availability bonus system recognizes that data completeness itself is a signal of program quality and infrastructure, which historically correlates with tournament success regardless of specific statistical values.
+
+
+## Experiment #71 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 13:56
+- Baseline Score: 1067.5
+- New Score: 1062.5 (-5.0)
+- Change: I'm implementing a "championship dominance" bonus system that gives substantial performance score boosts (+0.8) to teams with both high SRS ratings (>10) and exceptional win-loss records (wins >= 28). This targets identifying championship-caliber teams that combine statistical dominance with sustained excellence throughout a long season, which should help them win more head-to-head matchups in high-value later rounds where the 90% performance weighting makes this bonus highly influential.
+- Per-Year Breakdown:
+  - 2022: 610 → 630
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1290
+  - 2025: 1180 → 1170
+- Analysis: Score did not improve (change: -5.0). Teams with combined statistical excellence (SRS > 10 AND wins >= 28) represent championship-caliber programs that combine statistical dominance with sustained excellence throughout a long season. This dual criteria identifies teams that have both demonstrated exceptional overall strength and proven they can maintain that level consistently. Unlike previous failed attempts with more restrictive criteria, these thresholds should capture enough elite teams to be meaningful while still being selective. The substantial +0.8 performance bonus should help these teams win more head-to-head matchups in the 90% performance-weighted system, particularly valuable in later rounds where proven excellence becomes more predictive.
+
+
+## Experiment #72 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 13:57
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a more aggressive performance score scaling factor, increasing it from 0.05 to 0.30 (6x increase). The recent pattern of multiple +0.0 results suggests that statistical differences between teams aren't translating into actual game outcome changes because the current scaling is too conservative. Even when teams have meaningfully different composite performance scores, the probability calculation needs to deviate enough from 0.5 to actually flip game outcomes.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1150
+  - 2024: 1320 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The pattern of multiple consecutive +0.0 results with the composite performance score system suggests a fundamental scaling issue. Previous experiments with 0.05, 0.10, and 0.20 scaling factors all resulted in no score changes, indicating that statistical differences between teams aren't large enough to overcome the 0.5 decision threshold. A dramatic increase to 0.30 (6x the original) should make even modest statistical advantages translate into actual game outcome changes, allowing the proven composite system to better utilize the statistical data for predictions.
