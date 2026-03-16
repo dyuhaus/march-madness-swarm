@@ -733,3 +733,45 @@ Format for each entry:
   - 2024: 1290 → 1290
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The championship game represents the single highest-value decision (320 points = 1/6 of total bracket). Teams that reach the final have proven themselves through 5 rounds of elimination games, making their regular season statistical performance extremely predictive compared to initial seeding decisions. This surgical approach targets only the championship game with extreme stats weighting (98/2) while preserving the proven 90/10 weighting for all other rounds.
+
+
+## Experiment #54 — FAIL
+- Agent: agent-2
+- Date: 2026-03-16 12:38
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a "elite team identification" system that gives substantial performance score bonuses to teams with exceptional combined statistical excellence (SRS > 10 AND wins >= 30). These teams represent historically dominant programs that often outperform their tournament seeding, especially in high-value later rounds. The +2.0 bonus should meaningfully impact head-to-head comparisons and help identify championship-caliber teams.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Teams with exceptional combined statistical excellence (SRS > 10 AND wins >= 30) represent historically dominant programs that often outperform their tournament seeding. These dual criteria identify teams that both dominated statistically throughout the season and sustained that excellence with a high win total, making them more likely to succeed in high-pressure tournament situations regardless of their seed. This targets championship-caliber teams like UConn (2023-2024) or other elite programs that may be underseeded relative to their actual strength.
+
+
+## Experiment #55 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 12:39
+- Baseline Score: 1052.5
+- New Score: 897.5 (-155.0)
+- Change: I'm implementing a "championship-caliber teams" identification system that gives substantial performance score bonuses (+3.0) to teams with exceptional combined statistical excellence (SRS > 12 AND efg_pct > 0.55). These teams represent historically dominant programs with both overall strength and elite shooting that often outperform their tournament seeding, especially in high-value later rounds where the 90% performance weighting makes this bonus highly influential.
+- Per-Year Breakdown:
+  - 2022: 620 → 600
+  - 2023: 1120 → 570
+  - 2024: 1290 → 1310
+  - 2025: 1180 → 1110
+- Analysis: Score did not improve (change: -155.0). Teams with exceptional combined statistical excellence (SRS > 12 AND efg_pct > 0.55) represent championship-caliber programs that combine overall dominance with elite shooting efficiency. These dual criteria identify teams that have both demonstrated season-long excellence and possess the offensive firepower necessary for tournament success. Elite shooting becomes increasingly important in tournament play where defenses tighten and shot quality decreases. The substantial +3.0 bonus should meaningfully impact head-to-head comparisons and help identify true championship contenders that may be underseeded relative to their combined statistical profile.
+
+
+## Experiment #56 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 12:39
+- Baseline Score: 1052.5
+- New Score: 1050.0 (-2.5)
+- Change: I'm implementing a championship performance bonus system that gives substantial performance score boosts (+0.8) to teams with elite combined metrics (SRS > 12 AND off_rtg > 110). This targets identifying championship-caliber teams that combine overall dominance (high SRS) with elite offensive efficiency (high offensive rating), which historically correlates with tournament success in high-value later rounds where the 90% performance weighting makes this bonus highly influential.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1110
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -2.5). Teams with exceptional combined statistical excellence (SRS > 12 AND off_rtg > 110) represent championship-caliber programs that combine overall season-long dominance with elite offensive efficiency. These dual criteria identify teams that have both demonstrated exceptional overall strength and possess the offensive firepower necessary for sustained tournament success. Elite offensive efficiency (>110 points per 100 possessions) becomes increasingly important in tournament play where games are often decided by execution in crucial moments, while high SRS (>12) indicates teams that consistently dominated throughout the regular season against quality competition.
