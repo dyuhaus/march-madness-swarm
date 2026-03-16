@@ -1996,3 +1996,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Round-specific performance score scaling represents a targeted approach to address the persistent pattern of +0.0 results in the composite performance system. The key insight is that the Final Four (640 points) and Championship (320 points) represent 50% of total bracket value, making statistical accuracy in these rounds the most critical optimization target. Teams advancing to these rounds have proven themselves through multiple elimination games, making their statistical advantages more meaningful and deserving of more aggressive scaling factors that can actually flip game outcomes where proven excellence should dominate seeding decisions.
+
+
+## Experiment #139 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 18:22
+- Baseline Score: 1008.6
+- New Score: 1005.7 (-2.9)
+- Change: I'm implementing a dramatic increase in the SRS weight from 0.4 to 0.35 while increasing effective field goal percentage from 0.5 to 0.55. Previous experiments showed that balanced adjustments between these two key factors produced the best results (Experiment #65: +15.0 improvement), and that modest changes work better than extreme SRS increases which consistently caused -140+ point drops. This fine-tunes the optimal balance between overall team strength (SRS) and shooting efficiency (efg_pct), targeting teams that can execute shots under tournament pressure.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1120
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -2.9). The pattern shows that successful experiments (like #65: +15.0) involved careful balancing between SRS and effective field goal percentage, with small adjustments producing better results than extreme changes. The optimal balance appears to be around 0.35-0.4 for SRS and 0.5-0.55 for efg_pct, making shooting efficiency slightly more important than overall team strength for tournament prediction. This recognizes that March Madness success often depends more on executing shots under pressure than regular season dominance.
