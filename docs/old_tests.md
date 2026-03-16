@@ -1265,3 +1265,31 @@ Format for each entry:
   - 2024: 1320 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). The composite performance score system has been the most successful approach, achieving +77.5 improvement, but subsequent experiments consistently scored +0.0, indicating a fundamental scaling issue. Previous attempts with scaling factors of 0.05, 0.10, 0.15, 0.20, and 0.30 all failed to cross the 0.5 decision threshold for game outcomes. The key insight is that performance score scaling directly controls how much statistical advantage is required to flip a game outcome. A moderate increase to 0.12 (2.4x the original) may be the right balance to make statistical differences meaningful without being too aggressive.
+
+
+## Experiment #92 — FAIL
+- Agent: agent-5
+- Date: 2026-03-16 14:13
+- Baseline Score: 1067.5
+- New Score: 1067.5 (+0.0)
+- Change: I'm implementing a "performance advantage amplifier" system that dramatically increases the scaling factor from 0.05 to 0.50 (10x increase) to make statistical differences much more decisive in game predictions. The recent pattern of +0.0 results suggests that even when teams have meaningfully different composite performance scores, the probability transformation is too conservative to cross the 0.5 decision threshold and actually flip game outcomes.
+- Per-Year Breakdown:
+  - 2022: 610 → 610
+  - 2023: 1160 → 1150
+  - 2024: 1320 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The composite performance score system has produced many +0.0 results (Experiments #68-#93), suggesting a fundamental scaling issue where statistical differences between teams aren't large enough to flip game outcomes past the 0.5 decision threshold. Previous attempts with scaling factors of 0.05, 0.10, 0.12, 0.15, 0.20, and 0.30 all failed to cross this threshold. The key insight is that performance score scaling directly controls how much statistical advantage is required to flip a game outcome - it may require dramatically more aggressive scaling (10x+ increases) to make the proven composite system's statistical advantages actually translate into changed predictions.
+
+
+## Experiment #93 — FAIL
+- Agent: agent-1
+- Date: 2026-03-16 14:13
+- Baseline Score: 1067.5
+- New Score: 1065.0 (-2.5)
+- Change: I'm implementing a shooting-dominant performance scoring system by reducing SRS weight from 0.4 to 0.3 while increasing effective field goal percentage weight from 0.5 to 0.6. This makes shooting efficiency the primary factor in the composite score, recognizing that tournament success often depends more on executing shots under pressure than overall regular season dominance.
+- Per-Year Breakdown:
+  - 2022: 610 → 600
+  - 2023: 1160 → 1160
+  - 2024: 1320 → 1320
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: -2.5). Effective field goal percentage has proven to be the most impactful statistical factor in the composite performance scoring system. Experiment #65 demonstrated that balancing SRS (0.4) with efg_pct (0.5) improved scores by +15.0 points, suggesting that shooting efficiency may be more predictive of tournament success than overall season dominance. Tournament games are often decided by shot-making under pressure, making efg_pct potentially more valuable than SRS as the primary performance factor.
