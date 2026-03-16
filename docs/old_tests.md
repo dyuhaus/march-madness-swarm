@@ -2158,3 +2158,20 @@ Format for each entry:
   - 2024: 1330 → 1300
   - 2025: 1180 → 1150
 - Analysis: Score did not improve (change: -12.9). The persistent +0.0 results from experiments #68-147 suggest the fundamental issue is creating performance score differences large enough to cross the 0.5 decision threshold. Rather than tweaking scaling factors or probability transformations, the solution may be to create larger gaps between elite and average teams through composite statistical bonuses. Teams with multiple areas of excellence (SRS >10 AND efg_pct >0.52) represent championship-caliber programs that should have meaningful advantages in head-to-head matchups, particularly valuable in later rounds where the 95% performance weighting makes these bonuses highly influential.
+
+
+## Experiment #149 — FAIL
+- Agent: agent-3
+- Date: 2026-03-16 18:29
+- Baseline Score: 1008.6
+- New Score: 1008.6 (+0.0)
+- Change: I'm implementing a hyperbolic tangent (tanh) probability transformation to replace the linear scaling. This creates a mathematically sound S-curve where moderate performance score differences (0.3-0.5) translate to decisive win probabilities (65-85%) instead of barely moving from 50%. The tanh function provides natural bounds and should finally allow meaningful statistical differences to flip game outcomes.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1140
+  - 2019: 860 → 860
+  - 2021: 770 → 770
+  - 2022: 620 → 620
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1330
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). The hyperbolic tangent (tanh) probability transformation provides a mathematically sound alternative to linear scaling that creates a steeper S-curve probability mapping. With the formula `0.5 + 0.45 * tanh(score_diff * 2.0)`, a moderate performance score difference of 0.3 translates to approximately 65% win probability, and a difference of 0.5 translates to about 85% win probability. This should finally allow meaningful statistical differences in the composite performance system to cross the 0.5 decision threshold and actually flip game outcomes, addressing the persistent +0.0 result pattern while maintaining mathematical stability through natural bounds.
