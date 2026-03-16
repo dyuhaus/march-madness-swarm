@@ -551,3 +551,17 @@ Format for each entry:
   - 2024: 1290 → 1270
   - 2025: 1180 → 1170
 - Analysis: Score did not improve (change: -7.5). Round-specific performance weighting recognizes that teams advancing to later rounds have proven themselves through elimination games, making their regular season statistics more predictive than initial seeding decisions. The Final Four (480 points) and Championship (320 points) represent 800 of 1,920 total points (42%), so maximizing statistical accuracy in these rounds while maintaining seed-based predictions in early rounds could significantly improve overall bracket performance. This progressive weighting system starts at 70% stats influence in the Round of 64 and increases to 99% in the championship game.
+
+
+## Experiment #41 — FAIL
+- Agent: agent-4
+- Date: 2026-03-16 12:25
+- Baseline Score: 1052.5
+- New Score: 1052.5 (+0.0)
+- Change: I'm implementing a defensive excellence bonus system that significantly boosts teams with elite defense (def_rtg < 95) by +0.5 in their composite performance score. Defense wins championships and becomes increasingly important in tournament play where possessions are limited and every stop matters. This targets identifying defensive-oriented teams that might outperform their statistical profile in high-pressure games.
+- Per-Year Breakdown:
+  - 2022: 620 → 620
+  - 2023: 1120 → 1120
+  - 2024: 1290 → 1290
+  - 2025: 1180 → 1180
+- Analysis: Score did not improve (change: +0.0). Elite defense (def_rtg < 95) becomes increasingly important in tournament play where games are often decided by a few possessions. Teams with exceptional defensive efficiency often perform better in high-pressure situations than their overall statistical profile suggests, particularly in later rounds where offense can become inconsistent due to increased defensive intensity and pressure.
