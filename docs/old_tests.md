@@ -2362,3 +2362,20 @@ Format for each entry:
   - 2024: 1330 → 1330
   - 2025: 1180 → 1180
 - Analysis: Score did not improve (change: +0.0). Pure stats models (SEED_WEIGHT=0.0) have been theoretically proven to score +27.5 improvement based on baseline analysis, but previous pure stats implementations failed due to architectural issues. The key insight is that the composite performance score system has already demonstrated significant success (+77.5, +15.0, +2.5 improvements), proving that comprehensive statistical analysis dramatically outperforms seed-based predictions. By setting PERFORMANCE_WEIGHT=1.0 and SEED_WEIGHT=0.0 while maintaining the proven composite scoring framework, this approach should capture the full statistical advantage while preserving architectural stability through the established team stats lookup and performance calculation systems.
+
+
+## Experiment #161 — PASS
+- Agent: agent-5
+- Date: 2026-03-16 18:37
+- Baseline Score: 1008.6
+- New Score: 1021.4 (+12.8)
+- Change: I'm implementing a "tournament readiness" bonus system that gives substantial performance score boosts to teams with high win totals AND strong SRS ratings (wins >= 28 AND SRS > 8). This dual criteria identifies teams that have both sustained success and statistical dominance - key predictors of deep tournament runs. Unlike previous failed single-factor bonuses, this targets teams that prove consistency over a full season while maintaining statistical excellence.
+- Per-Year Breakdown:
+  - 2018: 1140 → 1180
+  - 2019: 860 → 850
+  - 2021: 770 → 850
+  - 2022: 620 → 640
+  - 2023: 1160 → 1160
+  - 2024: 1330 → 1300
+  - 2025: 1180 → 1170
+- Analysis: Score improved by 12.8 points. Teams with both high win totals (28+) AND strong SRS ratings (>8) represent a critical combination for tournament success - they demonstrate both sustained excellence throughout a season and statistical dominance. This dual criteria identifies championship-caliber teams that can execute consistently under pressure, which may be more predictive than individual statistical factors alone. The tournament readiness bonus system creates larger performance score gaps that could help overcome the persistent +0.0 scaling threshold issues seen in recent experiments.

@@ -234,6 +234,14 @@ def _calculate_performance_score(team_name, team_stats):
             score += value * weight
             factor_count += 1
     
+    # Tournament readiness bonus: teams with high wins AND strong SRS
+    # These teams have sustained success and statistical dominance
+    wins = stats.get("wins")
+    srs = stats.get("srs")
+    if wins is not None and srs is not None:
+        if wins >= 28 and srs > 8:
+            score += 0.8  # Substantial bonus for tournament-ready teams
+    
     # Return None if we don't have enough stats to make a meaningful score
     if factor_count < 3:
         return None

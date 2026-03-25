@@ -94,6 +94,8 @@ To improve further from 997.5, consider:
 
 - The composite performance score system has been highly successful (+77.5 improvement), proving that comprehensive statistical analysis significantly outperforms seed-based predictions. However, recent experiments consistently scored +0.0, suggesting that the 90/10 performance/seed weighting may have reached a local optimum. Moving closer to pure statistical prediction (95/5) should capture more of the proven statistical advantage while maintaining minimal architectural stability through seed fallbacks. This targets the fundamental insight that stats are dramatically better predictors than seeds, as demonstrated by the theoretical +27.5 improvement from pure stats models.
 
+- Teams with both high win totals (28+) AND strong SRS ratings (>8) represent a critical combination for tournament success - they demonstrate both sustained excellence throughout a season and statistical dominance. This dual criteria identifies championship-caliber teams that can execute consistently under pressure, which may be more predictive than individual statistical factors alone. The tournament readiness bonus system creates larger performance score gaps that could help overcome the persistent +0.0 scaling threshold issues seen in recent experiments.
+
 ## Open Questions
 
 - What SPECIFIC games does the algorithm get wrong? (Run verbose test to find out)
